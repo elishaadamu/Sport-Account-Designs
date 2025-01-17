@@ -23,8 +23,9 @@
 </head>
 <body class="bg-white dark:bg-slate-950 overflow-x-hidden">
  
-    <!-- header -->
-    <header class="lg:py-4 lg:px-6 py-3 px-4 border-b border-slate-200/60 dark:border-slate-600/40 bg-white/95 backdrop-blur-xl z-40 dark:bg-slate-900/80 uk-animation-slide-top-small" uk-sticky>
+   <div class=" max-w-[1440px]">
+     <!-- header -->
+     <header class="lg:py-4 lg:px-6 py-3 px-4 border-b border-slate-200/60 dark:border-slate-600/40 bg-white/95 backdrop-blur-xl z-40 dark:bg-slate-900/80 uk-animation-slide-top-small" uk-sticky>
         <div class="max-w-5xl mx-auto">
             <div class="flex justify-between items-center">
               
@@ -33,36 +34,41 @@
                         <ion-icon name="menu" class="group-aria-expanded:inline hidden"></ion-icon>
                         <ion-icon name="close" class="group-aria-expanded:hidden"></ion-icon>
                     </button>
-                    <a href="index.html"><img src="assets/images/logo.png" alt="" class="h-7"></a>
+                    <a href="index.html"><img src="assets/images/logo.png" alt="" class="h-7 lg:w-24 md:w-16 sm:w-8"></a>
                 </div>
  
-                <div id="header-nav" class="max-md:hidden max-md:bg-white max-md:p-5 max-md:fixed max-md:top-0 max-md:shadow-md max-md:left-0 max-md:pt-14 max-md:w-full max-md:z-10">
+                <div  id="header-nav" class="max-md:hidden max-md:bg-white max-md:p-5 max-md:fixed max-md:top-0  max-md:left-0 max-md:pt-14 max-md:w-full max-md:z-10">
                     <nav class="flex lg:items-center font-semibold text-slate-500 dark:text-white/70 lg:gap-1 max-md:border-t max-md:pt-2 max-md:flex max-md:flex-col" uk-scrollspy-nav="closest: a ; scroll: true">
            
                         <a class="lg:py-1.5 py-2.5 px-3 duration-500 hover:text-black" href="#home">Home</a> 
                         <a class="lg:py-1.5 py-2.5 px-3 duration-500 hover:text-black" href="#features">Features</a> 
                         <a class="lg:py-1.5 py-2.5 px-3 duration-500 hover:text-black" href="#demos"> Demos</a> 
                         <a class="lg:py-1.5 py-2.5 px-3 duration-500 hover:text-black" href="#faq">Faq</a>
-                        
                     </nav>
                 </div>
 
-                <div class="flex items-center z-20 relative">
-
-                    <div class="flex items-center gap-4 relative pl-6 text-slate-600">
-                         
-                        <a class="bg-pink-500 dark:bg-pink-700/30 text-white shadow px-4 h-9 text-sm rounded-md flex items-center gap-2 font-semibold" target="_blank" href="https://themeforest.net/item/instello-ultimate-photo-sharing-html-template/29882650">
-                            <ion-icon name="cart-outline" class="text-xl"></ion-icon> Buy now 
-                        </a>
-                         
-                        <div class="w-[1px] bg-slate-200 h-6 absolute left-0 hidden"></div>
-                    </div>
-
+                
+                <button class="flex items-center px-3 py-2 text-sm bg-white rounded-md  dark:text-white dark:bg-slate-700 group" type="button" aria-haspopup="true" aria-expanded="false">
+                    <img class="w-6 h-6 rounded-full mr-2" src="/public/assets/images/icons-yoga/5456d9c431578988d2340c4b5c4edd1c.png" alt="">
+                    System Admin  <ion-icon name="chevron-down-outline" class="ml-2 text-lg duration-200 group-aria-expanded:rotate-180 md hydrated" role="img" aria-label="chevron down outline"></ion-icon> 
+                </button>
+                
+                <div uk-dropdown="offset:10;pos: bottom-right ; animation: uk-animation-slide-bottom-small" class="uk-dropdown"> 
+                    <nav>
+                        <a href="#"> <ion-icon class="text-xl md hydrated" name="person-outline" role="img" aria-label="person outline"></ion-icon>  Profile </a>  
+                        <a href="#"> <ion-icon class="text-xl md hydrated" name="mail-outline" role="img" aria-label="mail outline"></ion-icon>  Messages </a>  
+                        <a href="#"> <ion-icon class="text-xl md hydrated" name="bookmark-outline" role="img" aria-label="bookmark outline"></ion-icon>  Billing </a>  
+                        <hr>
+                        <a href="#" class="text-red-400 hover:!bg-red-50"> <ion-icon class="text-xl md hydrated" name="log-out-outline" role="img" aria-label="log out outline"></ion-icon>  Sing out </a>  
+                    </nav>
                 </div>
+
 
             </div>
         </div>
     </header>
+   </div>
+
     <!-- Uikit js you can use cdn  https://getuikit.com/docs/installation  or fine the latest  https://getuikit.com/docs/installation -->
     <script src="assets/js/uikit.min.js"></script>
     <script src="assets/js/script.js"></script>
