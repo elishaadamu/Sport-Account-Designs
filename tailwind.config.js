@@ -1,11 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
-  ],
+  content: ["./public/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: { 
+      colors: {
+        // Using modern `rgb`
+        primary:          "rgb(var(--color-primary) / <alpha-value>)",
+        "primary-soft":   "rgb(var(--color-primary-soft) / <alpha-value>)",
+        secondery:        "rgb(var(--color-secondery) / <alpha-value>)",
+        bgbody:           "rgb(var(--color-bgbody) / <alpha-value>)",
+      },
+    },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };

@@ -1,0 +1,243 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* google font */
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap);
+
+@layer base {
+
+    :root { 
+        --w-side:               290px; 
+        --w-side-md:            240px; 
+        --w-side-small:         73px; 
+
+        --color-bgbody:         246 249 251; 
+        --color-primary:        219 39 119; 
+        --color-primary-soft:   252 231 243; 
+        --color-secondery:      241 245 249; 
+    } 
+
+    .dark  {   
+        --color-bgbody:         15 23 42;  
+        --color-secondery:      51 65 80;
+    } 
+
+    
+    html {
+        font-family: inter, system-ui, sans-serif;
+    }
+
+    /* Basic */
+    body {
+        @apply text-gray-600 font-normal bg-bgbody dark:text-white  
+    }
+
+    body:has(#mood.active) { @apply  overflow-hidden }
+
+    /* Basic */ 
+    input[type='text'],
+    input[type='password'],
+    input[type='email'], 
+    input[type='number'],
+    input[type='url'],
+    input[type='date'],
+    select, 
+    textarea{
+        @apply rounded-md py-2 px-4 text-sm font-medium !text-gray-600 dark:!text-white/90 placeholder:!text-gray-600 dark:placeholder:!text-white/90
+    }
+ 
+    input[type='text'],
+    input[type='password'],
+    input[type='email'],
+    input[type='number'],
+    input[type='url'],
+    input[type='date'],
+    input[type='datetime-local'],
+    input[type='month'],
+    input[type='week'],
+    input[type='time'],
+    input[type='search'],
+    input[type='tel'],
+    input[type='checkbox'],
+    input[type='radio'],
+    select,
+    select[multiple],
+    textarea {
+        @apply bg-slate-100 border-transparent focus:ring-black focus:border-transparent dark:bg-dark3
+    }                           
+
+    select,
+    select[multiple]                       {  @apply  focus:!ring-transparent focus:shadow}
+
+    input[type='radio'],
+    input[type='checkbox']                 {  @apply !text-sky-600 bg-slate-100 focus:ring-sky-600}
+
+    .switch-button                         { @apply bg-slate-200 dark:bg-slate-800}
+    .switch-button:before                  { @apply bg-white dark:bg-sky-600}
+    input:checked + .switch-button         { @apply bg-sky-600 dark:bg-blue-300}
+    input:checked + .switch-button:before  { @apply dark:bg-sky-600}
+
+
+    /* sidebar  */
+
+    #sidebar__inner nav > a                                                                     { @apply flex items-center gap-3 capitalize font-medium text-sm relative p-3 rounded-lg lg:justify-start justify-center duration-300 text-gray-800 dark:text-white/70}
+    #sidebar__inner nav > a svg                                                                 { @apply w-6 h-6 shrink-0 text-black dark:text-white }
+    #sidebar__inner nav .button                                                                 { @apply px-4 py-1.5 text-sm font-medium rounded-lg capitalize }
+    #sidebar__inner:has(nav a[aria-expanded=true])                                              { @apply md:w-[73px] px-3.5 duration-500 }
+    #sidebar__inner:has(nav a[aria-expanded=true]) nav > a  svg                                 { @apply -ml-0.5}
+
+    #sidebar__inner:has(nav a[aria-expanded=true]) #logo #logo__text,
+    #sidebar__inner:has(nav a[aria-expanded=true]) nav a span, 
+    #sidebar__inner:has(nav a[aria-expanded=true]) #profile-link span                           { @apply md:!hidden}
+ 
+    #sidebar__inner:has(nav a[aria-expanded=true]) nav a span,
+    #sidebar__inner:has(nav a[aria-expanded=true]) #logo #logo__icon                            { @apply md:!block }
+
+    #sidebar__inner:has(nav a[aria-expanded=true]) nav > a[aria-expanded=true]                  { @apply ring-1 ring-slate-300 ring-inset dark:ring-slate-800 !bg-transparent hover:!bg-transparent}
+
+    #sidebar__inner nav a.active #icon__outline, 
+    #sidebar__inner:has(nav a[aria-expanded=true]) nav a.active,
+    #sidebar__inner:has(nav a[aria-expanded=true]) nav > a[aria-expanded=true]  #icon__outline  { @apply !hidden}
+
+    #sidebar__inner nav a.active #icon__solid,
+    #sidebar__inner:has(nav a[aria-expanded=true]) nav a.active,
+    #sidebar__inner:has(nav a[aria-expanded=true]) nav > a[aria-expanded=true]  #icon__solid    { @apply !flex}
+    
+    /* nav link color */
+    #sidebar__inner nav > a                                                                     { @apply hover:text-black hover:dark:text-white hover:!bg-secondery dark:hover:!bg-slate-700}
+    #sidebar__inner nav a.active                                                                { @apply text-black dark:text-white}
+    #sidebar__inner:has(nav a[aria-expanded=true]) nav > a                                      { @apply hover:!bg-secondery dark:hover:!bg-slate-700}           
+    #sidebar__inner:has(nav a[aria-expanded=true]) nav > a[aria-expanded=true]                  { @apply bg-secondery dark:bg-dark3}
+
+    #sidebar__inner:has(nav a[aria-expanded=true]) nav a span { 
+        @apply  scale-75 -left-40 bg-white absolute rounded-lg p-2.5 pr-3 drop-shadow z-[1000000] duration-200 transition-transform max-md:!opacity-0 dark:bg-dark3 dark:text-white
+                before:w-3 before:h-3 before:-left-1.5 before:rounded-sm before:absolute before:bg-white before:rotate-45 before:top-1/2 before:-translate-y-1/2 before:dark:bg-slate-700
+    }
+
+    #sidebar__inner:has(nav a[aria-expanded=true]) nav a:hover span                             { @apply left-[68px] scale-100 } 
+    #sidebar__inner:has(nav a[aria-expanded=true]) nav a.active                                 { @apply  bg-transparent } 
+
+ 
+
+
+    /* heading page title */
+    .page__heading                         { @apply mt-6 mb-3}
+    .page__heading a                       { @apply inline-flex items-center gap-1 text-blue-500 font-semibold text-sm lg:-ml-1 mb-3 }
+    .page__heading h1                      { @apply text-3xl capitalize font-bold text-black dark:text-white} 
+   
+    .main__inner                           { @apply  max-md:p-3 max-w-[935px] py-10 px-5 max-md:pt-14 mx-auto}
+   
+    /*button*/
+    .button                                { @apply py-2 px-4 rounded-md font-semibold text-sm dark:text-white}
+    .button__ico                           { @apply w-7 h-7 rounded-full grid place-items-center hover:bg-secondery dark:hover:bg-dark3}
+  
+    /* dark  */
+    .bg-dark1                              { @apply  bg-slate-900 }
+    .bg-dark2                              { @apply  bg-slate-800 }
+    .bg-dark3                              { @apply  bg-slate-700 }
+    .bg-dark4                              { @apply  bg-slate-600 }
+ 
+    /* border */
+    .border1                               { @apply  border border-slate-100 dark:border-slate-700/40 }
+    .border2                               { @apply  border border-slate-100 dark:border-slate-600/40 }
+ 
+
+    /* Explore gallery Layout */
+
+    .gallery                                    { @apply grid lg:grid-cols-3 sm:grid-cols-3 grid-cols-2 lg:gap-3 gap-1}
+    .gallery a { @apply block}
+    .gallery__card                                  { @apply relative overflow-hidden rounded-lg}
+    .gallery__card  a                               { @apply w-full h-full}
+    .card__image                                { @apply relative w-full lg:h-60 sm:h-52 h-full aspect-[2.5/3]}
+    .card__image img                            { @apply object-cover w-full h-full}
+
+    .gallery .gallery__card:nth-child(3), 
+    .gallery .gallery__card:nth-child(6),   
+    .gallery .gallery__card:nth-child(13), 
+    .gallery .gallery__card:nth-child(16), 
+    .gallery .gallery__card:nth-child(23), 
+    .gallery .gallery__card:nth-child(26) { 
+        @apply sm:row-span-2 
+    } 
+
+    .gallery .gallery__card:nth-child(3)   .card__image ,  
+    .gallery .gallery__card:nth-child(6)   .card__image ,  
+    .gallery .gallery__card:nth-child(13)  .card__image ,  
+    .gallery .gallery__card:nth-child(16)  .card__image ,  
+    .gallery .gallery__card:nth-child(23)  .card__image ,  
+    .gallery .gallery__card:nth-child(26)  .card__image  {  
+        @apply h-full 
+    }  
+    
+    .syntaxhighlighter .comments, .syntaxhighlighter .comments a   { @apply !text-gray-600}
+    .syntaxhighlighter .string, .syntaxhighlighter .string a       { @apply !text-sky-300}
+    .syntaxhighlighter .color1                                     { @apply !text-sky-200}
+    .syntaxhighlighter .keyword                                    { @apply !text-pink-400}
+    .syntaxhighlighter .plain, .syntaxhighlighter .plain a         { @apply !text-gray-500} 
+    .syntaxhighlighter table td.gutter .line                       { @apply !text-gray-500 }
+    .syntaxhighlighter table td.code,
+    .syntaxhighlighter , .code-editor,
+    .syntaxhighlighter .line.alt1, .syntaxhighlighter .line.alt2   { @apply !bg-[#162033]}
+    .syntaxhighlighter .gutter .line                               { @apply !border-[1.5px] !border-[#2a3a3d]}
+    
+    /*Scrollbar*/ 
+    .code-editor::-webkit-scrollbar                                { @apply  w-2 !bg-transparent }
+    .code-editor::-webkit-scrollbar-thumb                          { @apply rounded-md !bg-[#8b8b8b]}
+
+}
+
+@layer components {
+    
+    /* switcher tabs */
+    .uk-switcher > :not(.uk-active)        { @apply hidden }
+    
+    /*slider tab*/
+    .uk-invisible                          { @apply !hidden }
+
+    /* tooltip */
+    .uk-tooltip                            { @apply bg-slate-800/80 hidden absolute z-[1030] top-0 text-[13px] px-2 py-1.5 text-white rounded-md font-semibold tracking-wide max-w-[200px] }
+    .uk-tooltip.uk-active                  { @apply block } 
+
+    /* drop */
+    .uk-drop                               { @apply hidden absolute z-[1020] }
+    .uk-drop.uk-open                       { @apply !block } 
+
+    /* dropdown */
+    .uk-dropdown                           { @apply hidden absolute z-[1020] max-w-[200px] w-52 p-2 bg-white rounded-lg shadow-lg border border-gray-100 dark:border-slate-700/40 dark:bg-dark2}
+    .uk-dropdown.uk-open                   { @apply !block } 
+    .uk-dropdown nav                       { @apply font-semibold capitalize text-sm text-slate-700 dark:text-white }
+    .uk-dropdown nav > a                   { @apply flex items-center gap-3 py-2 px-2.5 rounded-md hover:bg-secondery}
+    .uk-dropdown nav > hr                  { @apply my-1.5 -mx-2 border-gray-100 dark:border-slate-700/40 }
+ 
+    /* dotnav */ 
+    .uk-dotnav > * > *                     { @apply hover:scale-[1.2] block w-2.5 h-2.5 rounded-full bg-gray-200 dark:bg-white/30 overflow-hidden whitespace-nowrap ease-in-out duration-75 transition-all }
+    .uk-dotnav > * > :hover ,   
+    .uk-dotnav > * > :active ,
+    .uk-dotnav > .uk-active > *            { @apply bg-slate-600 dark:bg-white/90}
+      
+    /* Modal */ 
+    .uk-modal                              { @apply !bg-white/5 backdrop-blur-sm dark:bg-black/5 fixed top-0 right-0 bottom-0 left-0 z-[1010] overflow-y-auto opacity-0 invisible transition-transform}
+    .uk-modal.uk-open                      { @apply opacity-100 visible !flex items-center justify-center scale-100 }
+    .uk-modal-dialog                       { @apply opacity-100 scale-75}
+    .uk-open > .uk-modal-dialog            { @apply opacity-100 scale-100 }
+
+    /* Slider */ 
+    .uk-slider-container                   { @apply  overflow-hidden }
+    .uk-slider-items                       { @apply  relative flex !m-0 !p-0 list-none will-change-transform touch-pan-y}
+    .uk-slider-items > *                   { @apply  relative flex-none max-w-full }
+    .uk-slider-items.grid-small            { @apply lg:w-[calc(100%+0.5rem)]  w-[calc(100%+0.3rem)]}
+    .uk-slider-items.grid-small > *        { @apply lg:pr-[0.5rem] pr-[0.3rem]}
+
+    /* slideshow */ 
+    .uk-slideshow-items                    { @apply relative !m-0 !p-0 z-0 list-none overflow-hidden touch-pan-y }
+    .uk-slideshow-items > *                { @apply absolute top-0 left-0 right-0 bottom-0 overflow-hidden }
+    .uk-slideshow-items > :not(.uk-active) { @apply hidden }
+
+    .wow:not(.bg-blue)  { @apply  bg-red-700  }
+
+}
+ 
+ 
+
+ 
