@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link href="assets/images/favicon.png" rel="icon" type="image/png" />
+
+    <!-- title and description-->
+    <title>Work out Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta
+      name="description"
+      content="Instello - Sharing Photos platform HTML Template"
+    />
+
+    <!-- css files -->
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- custom style -->
+    <style>
+      #header-nav nav a.uk-active {
+        color: rgb(236 72 153);
+      }
+      .dark #header-nav nav a.uk-active {
+        color: #fff !important;
+      }
+      @media screen and (max-width: 768px) {
+        header {
+          width: 100% !important;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 dark:bg-slate-950 overflow-x-hidden">
+    <!-- header -->
+    <header
+      class="lg:py-4 h-20 lg:px-6 py-3 px-4 shadow-[0_4px_4px_0px_rgba(0,0,0,0.3)] bg-white/100 backdrop-blur-xl z-40 dark:bg-slate-900/80 uk-animation-slide-top-small"
+      uk-sticky
+    >
+      <div class="max-w-[[1440px]] mx-auto">
+        <div class="flex justify-between items-center">
+          <div class="flex gap-2 items-center z-20 relative">
+            <button
+              type="button"
+              class="p-2.5 text-lg max-md:flex hidden group z"
+              uk-toggle="target: #header-nav ; cls:max-md:hidden"
+            >
+              <ion-icon
+                name="menu"
+                class="group-aria-expanded:inline hidden"
+              ></ion-icon>
+              <ion-icon
+                name="close"
+                class="group-aria-expanded:hidden"
+              ></ion-icon>
+            </button>
+            <a href="workoutpage.html"
+              ><img
+                src="assets/images/logo.png"
+                alt=""
+                class="mt-3 w-[189.70px] h-[59px]"
+            /></a>
+          </div>
+          <div
+            id="header-nav"
+            class="max-md:hidden max-md:bg-white max-md:p-5 max-md:fixed max-md:top-0 max-md:shadow-md max-md:left-0 max-md:pt-14 max-md:w-full max-md:z-10"
+          >
+            <nav
+              class="flex sm:items-start lg:items-center font-semibold text-slate-500 dark:text-white/70 lg:gap-1 max-md:border-t max-md:pt-2 max-md:flex max-md:flex-col"
+              uk-scrollspy-nav="closest: a ; scroll: true"
+            >
+              <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+                ><img
+                  class="h-auto w-[36px]"
+                  src="/public/assets/images/workout_icons/calender-checked.png"
+              /></a>
+              <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+                ><img
+                  class="h-auto w-[36px]"
+                  src="/public/assets/images/workout_icons/calender-date.png"
+              /></a>
+              <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+                ><img
+                  class="h-auto w-[36px]"
+                  src="/public/assets/images/workout_icons/3d-folder.png"
+                />
+              </a>
+              <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+                ><img
+                  class="h-auto w-[36px]"
+                  src="/public/assets/images/workout_icons/realistic-upward.png"
+                />
+              </a>
+              <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+                ><img
+                  class="h-auto w-[36px]"
+                  src="/public/assets/images/workout_icons/3d-movie.png"
+                />
+              </a>
+              <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+                ><img
+                  class="h-auto w-[36px]"
+                  src="/public/assets/images/workout_icons/sports-gym.png"
+                />
+              </a>
+            </nav>
+          </div>
+          <div class=" flex flex-row gap-4">
+            <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+                ><img
+                  class="h-auto w-[54px]"
+                  src="/public/assets/images/workout_icons/minimal-notification.png"
+                />
+            </a>
+            <button
+              class="flex border-0 items-center px-1 py-2 text-sm bg-white rounded-md dark:text-white dark:bg-slate-700 group"
+              type=""
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <img
+                class="w-[36.84px] h-[36.84px] rounded-full"
+                src="/public/assets/images/icons-yoga/5456d9c431578988d2340c4b5c4edd1c.png"
+              />
+              <div
+                class="w-[185.64px] h-[39.27px] text-[#222222] text-[18.99px] font-semibold font-['Inter'] leading-[42.02px]"
+              >
+                System Admin
+              </div>
+            </button>
+          </div>
+        </div>
+    </header>
+    <div class="w-max:[1440px] lg:mx-[40px] md:mx-[40px] my-[40px]  sm:mx-[0px]">
+        <div class="flex flex-wrap gap-4 justify-center sm:justify-center lg:justify-center">
+            <div
+              class="w-[255px] h-[138px] bg-[#6dc51b] rounded-[10px] shadow-[4px_4px_28px_-15px_rgba(0,0,0,0.20)]"
+            >
+                <div class="flex gap-[22px] relative justify-start flex-row items-center w-[213px] h-[102px] m-[18px_21px_18px_21px] ">
+                    <img class="w-[50px] absolute h-[50px] bg-[#f5ffeb]/20 rounded-full" src="/public/assets/images/workout_icons/Ellipse 23.svg " alt="">
+                    <img class="w-6 h-6 m-[13px] relative overflow-hidden" src="/public/assets/images/workout_icons/Icon.svg" alt="">
+                    <div class="flex flex-col gap-[9]">
+                        <div class="text-white text-[15px] italic font-normal font-['Inter']">Total Students</div>
+                        <div class="text-white text-[25px] font-bold font-['Inter']">1750</div>
+                        <img src="/public/assets/images/workout_icons/line.svg" alt="">
+                        <div class="text-white text-[10px] font-normal font-['Inter'] mt-[10px]">80% Increase in 20 Days</div>
+                    </div>
+                </div>
+            </div>
+            <div
+              class="w-[255px] h-[138px] bg-[#ff9432] rounded-[10px] shadow-[4px_4px_28px_-15px_rgba(0,0,0,0.20)]"
+            >
+                <div class="flex gap-[22px] relative justify-start flex-row items-center w-[213px] h-[102px] m-[18px_21px_18px_21px] ">
+                    <img class="w-[50px] absolute h-[50px] bg-[#f5ffeb]/20 rounded-full" src="/public/assets/images/workout_icons/Ellipse 23.svg " alt="">
+                    <img class="w-6 h-6 m-[13px] relative overflow-hidden" src="/public/assets/images/workout_icons/Icon.svg" alt="">
+                    <div class="flex flex-col gap-[9]">
+                        <div class="text-white text-[15px] italic font-normal font-['Inter']">New Students</div>
+                        <div class="text-white text-[25px] font-bold font-['Inter']">234</div>
+                        <img src="/public/assets/images/workout_icons/line.svg" alt="">
+                        <div class="text-white text-[10px] font-normal font-['Inter'] mt-[10px]">50% Increase in 20 Days</div>
+                    </div>
+                </div>
+            </div>
+            <div
+              class="w-[255px] h-[138px] bg-[#c046d2] rounded-[10px] shadow-[4px_4px_28px_-15px_rgba(0,0,0,0.20)]"
+            >
+                <div class="flex gap-[22px] relative justify-start flex-row items-center w-[213px] h-[102px] m-[18px_21px_18px_21px] ">
+                    <img class="w-[50px] absolute h-[50px] bg-[#f5ffeb]/20 rounded-full" src="/public/assets/images/workout_icons/Ellipse 23.svg " alt="">
+                    <img class="w-6 h-6 m-[13px] relative overflow-hidden" src="/public/assets/images/workout_icons/Icon.svg" alt="">
+                    <div class="flex flex-col gap-[9]">
+                        <div class="text-white text-[15px] italic font-normal font-['Inter']">Total Courses</div>
+                        <div class="text-white text-[25px] font-bold font-['Inter']">28</div>
+                        <img src="/public/assets/images/workout_icons/line.svg" alt="">
+                        <div class="text-white text-[10px] font-normal font-['Inter'] mt-[10px]">78% Increase in 20 Days</div>
+                    </div>
+                </div>
+            </div>
+            <div
+              class="w-[255px] h-[138px] bg-[#fe275c] rounded-[10px] shadow-[4px_4px_28px_-15px_rgba(0,0,0,0.20)]"
+            >
+                <div class="flex gap-[22px] relative justify-start flex-row items-center w-[213px] h-[102px] m-[18px_21px_18px_21px] ">
+                    <img class="w-[50px] absolute h-[50px] bg-[#f5ffeb]/20 rounded-full" src="/public/assets/images/workout_icons/Ellipse 23.svg " alt="">
+                    <img class="w-6 h-6 m-[13px] relative overflow-hidden" src="/public/assets/images/workout_icons/Icon.svg" alt="">
+                    <div class="flex flex-col gap-[9]">
+                        <div class="text-white text-[15px] italic font-normal font-['Inter']">Fees Collect</div>
+                        <div class="text-white text-[25px] font-bold font-['Inter']">$250</div>
+                        <img src="/public/assets/images/workout_icons/line.svg" alt="">
+                        <div class="text-white text-[10px] font-normal font-['Inter'] mt-[10px]">80% Increase in 20 Days</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-max:[1440px]  mx-auto mt-8 mb-8">
+      <div class="flex sm:w-[100%] md:w-[600px] lg:w-[1270px] justify-evenly items-center   bg-gray-100 mx-[40px] md:mx-[0px] lg:mx-[0px] gap-5 md:gap-0 lg:gap-0" style="margin: auto;">
+          <!-- Search Form -->
+          <form class="flex items-center w-2/3">
+            <input
+              type="text"
+              placeholder=" 🔍 Search"
+              class="w-full p-2 border-1 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" style="border: 1px solid gray;"
+            />
+          </form>
+        
+          <!-- Button -->
+          <button
+            class="text-[10px] md:text-[15px] lg:text-[15px] p-2 w-[100px] rounded-full md:w-[150px] lg:w-[150px]  bg-[#22b6f2] text-white  hover:bg-[#4a9bec]"
+          >
+            Book a Class
+          </button>
+        </div>
+        
+    </div>       
+  <div class="h-[317px] rounded-2xl flex-col  justify-start items-start flex w-max:[1440px]  w-full md:w-[560px] lg:w-[1074px] ml[0px] md:ml-[95px] lg:ml-[95px] my-6 mx-auto bg-white" style="margin: 0 auto !important;">
+    <div class="self-stretch p-2.5 bg-white rounded-tl-[10px] rounded-tr-[10px] border-b border-[#9ea2a3]/30 justify-start items-center gap-2.5 flex">
+        <div class="text-black text-sm font-semibold font-['Inter']">Recent Payment Queue</div>
+    </div>
+    <div class="self-stretch bg-white border-b border-[#9ea2a4]/30 justify-start items-start flex">
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-medium font-['Inter']">Ward No.</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-medium font-['Inter']">Patient</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">Dr Name</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">Date</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">Status</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="grow shrink basis-0 text-center text-black text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">Bills</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="w-[37px] text-black text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">Action</div>
+        </div>
+    </div>
+    <div class="self-stretch bg-white border-b border-[#9ea2a4]/30 justify-start items-start flex">
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">12</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">Mr Bobby</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">Dr Jackson</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">01 August 2025</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="h-[23px] px-3 py-1 bg-[#6cc51f] rounded-[10px] justify-center items-center gap-2.5 flex">
+                <div class="w-12 text-white text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-semibold font-['Inter']">Checkin</div>
+            </div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="grow shrink basis-0 text-center text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">$11</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+          <div class="w-[50px] md:w-[70px] lg:w-[90px] h-[17px] sm:gap-[3px] md:gap-[10px] lg:gap-[10px] sm:ml-[-45px] md:ml-[-5px] lg:ml-[-5px] relative flex flex-row  overflow-visible mt-[0px]">
+            <a href="#"><img src="/public/assets/images/workout_icons/currency.svg" alt=""></a>
+            <a href="#"><img src="/public/assets/images/workout_icons/note.svg" alt=""></a>
+            <a href="#"><img src="/public/assets/images/workout_icons/delete.png" alt=""></a>
+            <a href="#"><img src="/public/assets/images/workout_icons/eye.svg" alt=""></a>
+          </div>
+        </div>
+    </div>
+    <div class="self-stretch bg-white border-b border-[#9ea2a4]/30 justify-start items-start flex">
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">12</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">Mr Bobby</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">Dr Jackson</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">01 August 2025</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="h-[23px] px-3 py-1 bg-[#fa9432] rounded-[10px] justify-center items-center gap-2.5 flex">
+                <div class="w-12 text-white text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-semibold font-['Inter']">Pending</div>
+            </div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="grow shrink basis-0 text-center text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">$11</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+          <div class="w-[50px] md:w-[70px] lg:w-[90px] h-[17px] sm:gap-[3px] md:gap-[10px] lg:gap-[10px] sm:ml-[-45px] md:ml-[-5px] lg:ml-[-5px] relative flex flex-row  overflow-visible mt-[0px]">
+            <a href="#"><img src="/public/assets/images/workout_icons/currency.svg" alt=""></a>
+            <a href="#"><img src="/public/assets/images/workout_icons/note.svg" alt=""></a>
+            <a href="#"><img src="/public/assets/images/workout_icons/delete.png" alt=""></a>
+            <a href="#"><img src="/public/assets/images/workout_icons/eye.svg" alt=""></a>
+          </div>
+        </div>
+    </div>
+    <div class="self-stretch bg-white border-b border-[#9ea2a4]/30 justify-start items-start flex">
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">12</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">Mr Bobby</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">Dr Jackson</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">01 August 2025</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="h-[23px] px-3 py-1 bg-[#fb2b5c] rounded-[10px] justify-center items-center gap-2.5 flex">
+                <div class="text-white text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-semibold font-['Inter']">Connected</div>
+            </div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="grow shrink basis-0 text-center text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">$11</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+          <div class="w-[50px] md:w-[70px] lg:w-[90px] h-[17px] sm:gap-[3px] md:gap-[10px] lg:gap-[10px] sm:ml-[-45px] md:ml-[-5px] lg:ml-[-5px] relative flex flex-row  overflow-visible mt-[0px]">
+            <a href="#"><img src="/public/assets/images/workout_icons/currency.svg" alt=""></a>
+            <a href="#"><img src="/public/assets/images/workout_icons/note.svg" alt=""></a>
+            <a href="#"><img src="/public/assets/images/workout_icons/delete.png" alt=""></a>
+            <a href="#"><img src="/public/assets/images/workout_icons/eye.svg" alt=""></a>
+          </div>
+        </div>
+    </div>
+    <div class="self-stretch bg-white border-b border-[#9ea2a4]/30 justify-start items-start flex">
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">12</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">Mr Bobby</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">Dr Jackson</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">01 August 2025</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="h-[23px] px-3 py-1 bg-[#35d2bd] rounded-[10px] justify-center items-center gap-2.5 flex">
+                <div class="w-12 text-white text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-semibold font-['Inter']">Checkin</div>
+            </div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="grow shrink basis-0 text-center text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">$11</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+          <div class="w-[50px] md:w-[70px] lg:w-[90px] h-[17px] sm:gap-[3px] md:gap-[10px] lg:gap-[10px] sm:ml-[-45px] md:ml-[-5px] lg:ml-[-5px] relative flex flex-row  overflow-visible mt-[0px]">
+            <a href="#"><img src="/public/assets/images/workout_icons/currency.svg" alt=""></a>
+            <a href="#"><img src="/public/assets/images/workout_icons/note.svg" alt=""></a>
+            <a href="#"><img src="/public/assets/images/workout_icons/delete.png" alt=""></a>
+            <a href="#"><img src="/public/assets/images/workout_icons/eye.svg" alt=""></a>
+          </div>
+        </div>
+    </div>
+    <div class="self-stretch bg-white border-b border-[#9ea2a4]/30 justify-start items-start flex">
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">12</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">Mr Bobby</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">Dr Jackson</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">01 August 2025</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="h-[23px] px-3 py-1 bg-[#6cc51f] rounded-[10px] justify-center items-center gap-2.5 flex">
+                <div class="w-12 text-white text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-semibold font-['Inter']">Checkin</div>
+            </div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="grow shrink basis-0 text-center text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">$11</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+          <div class="w-[50px] md:w-[70px] lg:w-[90px] h-[17px] sm:gap-[3px] md:gap-[10px] lg:gap-[10px] sm:ml-[-45px] md:ml-[-5px] lg:ml-[-5px] relative flex flex-row  overflow-visible mt-[0px]">
+            <a href="#"><img src="/public/assets/images/workout_icons/currency.svg" alt=""></a>
+            <a href="#"><img src="/public/assets/images/workout_icons/note.svg" alt=""></a>
+            <a href="#"><img src="/public/assets/images/workout_icons/delete.png" alt=""></a>
+            <a href="#"><img src="/public/assets/images/workout_icons/eye.svg" alt=""></a>
+          </div>
+        </div>
+    </div>
+    <div class="self-stretch bg-white border-b border-[#9ea2a4]/30 justify-start items-start flex">
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">12</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">Mr Bobby</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">Dr Jackson</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">01 August 2025</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="h-[23px] px-3 py-1 bg-[#6cc51f] rounded-[10px] justify-center items-center gap-2.5 flex">
+                <div class="w-12 text-white text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-semibold font-['Inter']">Checkin</div>
+            </div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="grow shrink basis-0 text-center text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">$11</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+          <div class="w-[50px] md:w-[70px] lg:w-[90px] h-[17px] sm:gap-[3px] md:gap-[10px] lg:gap-[10px] sm:ml-[-45px] md:ml-[-5px] lg:ml-[-5px] relative flex flex-row  overflow-visible mt-[0px]">
+            <a href="#"><img src="/public/assets/images/workout_icons/currency.svg" alt=""></a>
+            <a href="#"><img src="/public/assets/images/workout_icons/note.svg" alt=""></a>
+            <a href="#"><img src="/public/assets/images/workout_icons/delete.png" alt=""></a>
+            <a href="#"><img src="/public/assets/images/workout_icons/eye.svg" alt=""></a>
+          </div>
+        </div>
+    </div>
+    <div class="self-stretch bg-white rounded-bl-[10px] rounded-br-[10px] border-b border-[#9ea2a4]/30 justify-start items-start flex">
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">12</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">Mr Bobby</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">Dr Jackson</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">01 August 2025</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="h-[23px] px-3 py-1 bg-[#6cc51f] rounded-[10px] justify-center items-center gap-2.5 flex">
+                <div class="w-12 text-white text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-semibold font-['Inter']">Checkin</div>
+            </div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+            <div class="grow shrink basis-0 text-center text-black/50 text-[0.5rem] md:text-xs lg:text-xs leading-[0.5rem] md:leading-none lg:leading-none font-normal font-['Inter']">$11</div>
+        </div>
+        <div class="grow shrink basis-0 h-[35px] p-2.5 justify-center items-center gap-2.5 flex">
+          <div class="w-[50px] md:w-[70px] lg:w-[90px] h-[17px] sm:gap-[3px] md:gap-[10px] lg:gap-[10px] sm:ml-[-45px] md:ml-[-5px] lg:ml-[-5px] relative flex flex-row  overflow-visible mt-[0px]">
+            <a href="#"><img src="/public/assets/images/workout_icons/currency.svg" alt=""></a>
+            <a href="#"><img src="/public/assets/images/workout_icons/note.svg" alt=""></a>
+            <a href="#"><img src="/public/assets/images/workout_icons/delete.png" alt=""></a>
+            <a href="#"><img src="/public/assets/images/workout_icons/eye.svg" alt=""></a>
+          </div>
+        </div>
+    </div>
+</div>
+<div class="w-max:[1440px] flex-col md:flex-row lg:flex-row justify-center mx-auto mt-8 mb-8 h-auto  items-start gap-[22.34px] flex">
+  <div class="w-full md:w-[778.27px] lg:w-[778.27px] h-[400.34px] relative">
+      <div class="w-full md:w-[778.27px] lg:w-[778.27px] h-[450.01px] left-0 top-0 absolute bg-white rounded-[10.15px]"></div>
+      <div class="w-full md:w-[693.73px] lg:w-[693.73px] h-3 left-[66.38px] top-[364.56px] absolute flex flex-row gap-[3px] md:gap-3 lg:gap-4 justify-start">
+        <div class="top-0  text-center text-[#615e82] text-[10.44px] font-normal font-['Inter'] uppercase leading-3 tracking-wide">JAN</div>
+        <div class="top-0  text-center text-[#615e82] text-[10.44px] font-normal font-['Inter'] uppercase leading-3 tracking-wide">FEB</div>
+        <div class="top-0  text-center text-[#615e82] text-[10.44px] font-normal font-['Inter'] uppercase leading-3 tracking-wide">MAR</div>
+        <div class="top-0  text-center text-[#615e82] text-[10.44px] font-normal font-['Inter'] uppercase leading-3 tracking-wide">APR</div>
+        <div class="top-0  text-center text-[#615e82] text-[10.44px] font-normal font-['Inter'] uppercase leading-3 tracking-wide">MAY</div>
+        <div class="top-0  text-center text-[#615e82] text-[10.44px] font-normal font-['Inter'] uppercase leading-3 tracking-wide">JUN</div>
+        <div class="top-0  text-center text-[#615e82] text-[10.44px] font-normal font-['Inter'] uppercase leading-3 tracking-wide">JUL</div>
+        <div class="top-0  text-center text-[#615e82] text-[10.44px] font-normal font-['Inter'] uppercase leading-3 tracking-wide">AUG</div>
+        <div class="top-0  text-center text-[#615e82] text-[10.44px] font-normal font-['Inter'] uppercase leading-3 tracking-wide">SEP</div>
+        <div class="top-0  text-center text-[#615e82] text-[10.44px] font-normal font-['Inter'] uppercase leading-3 tracking-wide">OCT</div>
+        <div class="top-0  text-center text-[#615e82] text-[10.44px] font-normal font-['Inter'] uppercase leading-3 tracking-wide">NOV</div>
+          <div class="w-[27.67px] top-0  text-center text-[#615e82] text-[10.44px] font-normal font-['Inter'] uppercase leading-3 tracking-wide">DEC</div>
+      </div>
+      <div class="w-[29.67px] h-[242.01px] left-[23.86px] top-[111.20px] absolute">
+          <div class="left-[21.62px] top-[228.01px] absolute text-right text-[#615e82] text-xs font-normal font-['Inter'] leading-[13.42px]">0</div>
+          <div class="left-[7.45px] top-[179.63px] absolute text-right text-[#615e82] text-xs font-normal font-['Inter'] leading-[13.42px]">50k</div>
+          <div class="left-[1.49px] top-[134.91px] absolute text-right text-[#615e82] text-xs font-normal font-['Inter'] leading-[13.42px]">100k</div>
+          <div class="left-[-0px] top-[88.66px] absolute text-right text-[#615e82] text-xs font-normal font-['Inter'] leading-[13.42px]">500k</div>
+          <div class="left-[12.67px] top-[45.45px] absolute text-right text-[#615e82] text-xs font-normal font-['Inter'] leading-[13.42px]">1M</div>
+          <div class="left-[11.18px] top-0 absolute text-right text-[#615e82] text-xs font-normal font-['Inter'] leading-[13.42px]">5M</div>
+      </div>
+      <div class="w-[688.03px] h-[229.19px] left-[66.38px] top-[117.91px] absolute">
+          <div class="w-[688.03px] h-[0px] left-0 top-[229.19px] absolute border border-[#e5e5ef]"></div>
+          <div class="w-[688.03px] h-[0px] left-0 top-[179.63px] absolute border border-[#e5e5ef]"></div>
+          <div class="w-[688.03px] h-[0px] left-0 top-[134.91px] absolute border border-[#e5e5ef]"></div>
+          <div class="w-[688.03px] h-[0px] left-0 top-[90.18px] absolute border border-[#e5e5ef]"></div>
+          <div class="w-[688.03px] h-[0px] left-0 top-[45.45px] absolute border border-[#e5e5ef]"></div>
+          <div class="w-[688.03px] h-[0px] left-0 top-0 absolute border border-[#e5e5ef]"></div>
+      </div>
+      <div class="w-[686.04px] h-[227.96px] left-[67.33px] top-[117.91px] absolute">
+      </div>
+      <div class="w-[730.55px] h-[0px] left-[23.86px] top-[81.41px] absolute border border-[#e5e5ef]"></div>
+      <div class="w-[208.77px] h-[36.53px] left-[545.31px] top-[23.35px] absolute">
+          <div class="w-[208.77px] h-[36.53px] left-0 top-0 absolute bg-[#f8f8ff] rounded-[10.15px]"></div>
+          <div class="h-[27.65px] px-[11.18px] pt-[7.45px] pb-[8.20px] left-[127.48px] top-[4.47px] absolute bg-[#22b6f2] rounded-[10.15px] justify-end items-center gap-[7.45px] flex">
+              <div class="text-center text-white text-[10.44px] font-medium font-['Inter'] leading-3">12 months</div>
+          </div>
+          <div class="left-[74.55px] top-[12.26px] absolute text-center text-[#9290a4] text-[10.44px] font-normal font-['Inter'] leading-3">30 days</div>
+          <div class="left-[17.89px] top-[12.34px] absolute text-center text-[#9290a4] text-[10.44px] font-normal font-['Inter'] leading-3">7 days</div>
+      </div>
+      <div class="h-[22.93px] left-[290.37px] top-[30.46px] absolute justify-start items-center gap-[32.49px] flex">
+          <div class="px-[8.95px] py-1.5 rounded-[10.15px] border border-[#e5e5ef] justify-end items-center gap-[4.47px] flex">
+              <div class="w-[6.17px] h-[6.17px] bg-[#952cff] rounded-full "></div>
+              <div class="text-center text-[#1e1b39] text-[8.95px] font-normal font-['Inter'] leading-[10.44px]">Running</div>
+          </div>
+          <div class="px-[8.95px] py-1.5 rounded-[10.15px] border border-[#e5e5ef] justify-end items-center gap-[4.47px] flex">
+              <div class="w-[6.17px] h-[6.17px] bg-[#ff718b] rounded-full"></div>
+              <div class="text-center text-[#1e1b39] text-[8.95px] font-normal font-['Inter'] leading-[10.44px]">Cycling</div>
+          </div>
+          <div class="px-[8.95px] py-1.5 rounded-[10.15px] border border-[#e5e5ef] justify-end items-center gap-[4.47px] flex">
+              <div class="w-[6.17px] h-[6.17px] bg-[#db93fd] rounded-full"></div>
+              <div class="text-center text-[#1e1b39] text-[8.95px] font-normal font-['Inter'] leading-[10.44px]">Yoga</div>
+          </div>
+      </div>
+      <div class="w-[123px] h-[38.89px] left-[23.86px] top-[26.24px] absolute">
+          <div class="left-[-0px] top-[17.89px] absolute text-[#1e1b39] text-base font-bold font-['Inter'] leading-[20.87px]">Workout report</div>
+          <div class="left-0 top-0 absolute text-[#9290a4] text-sm font-normal font-['Inter'] leading-[14.91px]">Statistics</div>
+      </div>
+  </div>
+  <div class="w-max-[w-[400.39px]] w-[291.39px] h-[450.01px] mx-auto md:mx-0 lg:mx-0 sm:ml-4 relative bg-white rounded-lg  overflow-hidden">
+      <div class="left-[21.32px] top-[79.19px] absolute flex-col justify-center items-start gap-[13.50px] flex">
+          <div class="w-[84px] h-[72.15px]  bg-center relative" style="background: url(/public/assets/images/workout_icons/green.svg); background-repeat: no-repeat;">
+              <div class="w-[23.95px] h-[25.38px] left-[27.49px] top-[24.47px] absolute  overflow-hidden" style="background: url(/public/assets/images/workout_icons/sleep.png); background-repeat: no-repeat;"></div>
+          </div>
+          <div class="w-[84px] h-[72.15px] relative" style="background: url(/public/assets/images/workout_icons/purple.svg); background-repeat: no-repeat;">
+              <div class="w-[29.44px] h-[29.44px] left-[27.44px] top-[27.34px] absolute  overflow-hidden" style="background: url(/public/assets/images/workout_icons/step.png); background-repeat: no-repeat;"></div>
+          </div>
+          <div class="w-[84px] h-[72.15px] relative" style="background: url(/public/assets/images/workout_icons/red.svg); background-repeat: no-repeat;">
+              <div class="w-[29.32px] h-[21.32px] left-[28.50px] top-[30.32px] absolute  overflow-hidden" style="background: url(/public/assets/images/workout_icons/gym.png); background-repeat: no-repeat;" ></div>
+          </div>
+          <div class="w-[84px] h-[72.15px] relative" style="background: url(/public/assets/images/workout_icons/red.svg); background-repeat: no-repeat;">
+            <div class="w-[29.32px] h-[21.32px] left-[28.50px] top-[30.32px] absolute  overflow-hidden" style="background: url(/public/assets/images/workout_icons/speedometer.png); background-repeat: no-repeat;" ></div>
+        </div>
+      </div>
+      <div class="left-[16.24px] top-[24.37px] absolute text-black text-base font-semibold font-['Inter']">Progress</div>
+      <div class="px-[10.15px] py-[8.12px] left-[195.95px] top-[17.26px] absolute rounded-2xl border border-[#c3c3c3] justify-center items-center gap-[10.15px] flex overflow-hidden">
+          <div class="text-black/75 text-xs font-normal font-['Inter']">Set Target</div>
+      </div>
+      <div class="h-[38.61px] left-[123.87px] top-[90.35px] absolute flex-col justify-start items-start gap-[6.61px] flex">
+          <div class="self-stretch text-black text-[13.20px] font-medium font-['Inter']">Sleep</div>
+          <div class="self-stretch text-black text-[13.20px] font-light font-['Inter']">45km / 100km</div>
+      </div>
+      <div class="h-[38.61px] left-[123.87px] top-[178.03px] absolute flex-col justify-start items-start gap-[6.61px] flex">
+          <div class="self-stretch text-black text-[13.20px] font-medium font-['Inter']">Steps</div>
+          <div class="self-stretch text-black text-[13.20px] font-light font-['Inter']">45km / 100km</div>
+      </div>
+      <div class="h-[38.61px] left-[123.87px] top-[260.63px] absolute flex-col justify-start items-start gap-[6.61px] flex">
+          <div class="self-stretch text-black text-[13.20px] font-medium font-['Inter']">Weight</div>
+          <div class="self-stretch text-black text-[13.20px] font-light font-['Inter']">45km / 100km</div>
+      </div>
+      <div class="h-[38.61px] left-[123.87px] top-[347.63px] absolute flex-col justify-start items-start gap-[6.61px] flex">
+        <div class="self-stretch text-black text-[13.20px] font-medium font-['Inter']">BMI</div>
+        <div class="self-stretch text-black text-[13.20px] font-light font-['Inter']">45km / 100km</div>
+    </div>
+  </div>
+</div>
+<div class="w-max-[[1440px]] mx-auto rounded-2xl mt-6 ml-[0px] md:ml-[95px] lg:ml-[95px] relative flex" style="margin: 0 auto !important;">
+  <!-- Image -->
+  <div class="w-[1074px] h-[412.04px] relative bg-cover rounded-2xl" style="background-image: url(/public/assets/images/workout_images/sport-girl.jpeg); margin: 32px auto;">
+     <!-- Text Overlay -->
+  <div class="absolute top-[130px] md:top-[110px] lg:top-[130px] sm:left-[30px] mdleft-[50px] lg:left-[70px] w-[358.25px] h-[207.03px] px-[22.33px] py-[10.15px] bg-black/70 rounded-lg flex flex-col justify-center items-center gap-[16.24px]">
+    <div class="self-stretch flex flex-col justify-start items-start gap-[4.06px]">
+      <div class="self-stretch">
+        <span class="text-white text-base font-bold font-['Poppins'] leading-[29.55px]">
+          Maecenas elementum in risus sed
+        </span>
+        <span class="text-white text-sm font-normal font-['Poppins'] leading-relaxed">
+          condimentum. Duis convallis ante ac tempus maximus. Fusce malesuada sed velit ut dictum. Morbi faucibus vitae orci at euismod. Integer auctor augue in erat vehicula, quis fermentum ex finibus.
+        </span>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="w-max-[[1440px]]  rounded-2xl mt-6 ml-[0px] md:ml-[95px] lg:ml-[95px] relative table" style="margin: 32px auto;">
+  <div class="mt-6 text-black text-[28px] font-semibold font-['Inter']">Upcoming Workout</div>
+  <div class="w-full md:w-[600px] lg:w-[1092px] mt-8 flex flex-wrap gap-4 justify-start">
+    <!-- Card -->
+    <div class="w-full md:w-1/3 lg:w-[23.8%] bg-white rounded-xl shadow-lg overflow-hidden">
+      <img src="/public/assets/images/workout_images/Frame1000002509.png" alt="Hip Workout" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-800">Hip Workout</h3>
+        <p class="text-gray-500 text-sm">August 15, 2025</p>
+        <button class="mt-4 w-full py-2 border border-gray-300 rounded-lg flex items-center justify-center text-gray-700 hover:bg-gray-100">
+          + Add
+        </button>
+      </div>
+    </div>
+  
+    <!-- Repeat the card as needed -->
+    <div class="w-full md:w-1/3 lg:w-[23.8%] bg-white rounded-xl shadow-lg overflow-hidden">
+      <img src="/public/assets/images/workout_images/Frame1000002509.png" alt="Hip Workout" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-800">Hip Workout</h3>
+        <p class="text-gray-500 text-sm">August 15, 2025</p>
+        <button class="mt-4 w-full py-2 border border-gray-300 rounded-lg flex items-center justify-center text-gray-700 hover:bg-gray-100">
+          + Add
+        </button>
+      </div>
+    </div>
+    <div class="w-full md:w-1/3 lg:w-[23.8%] bg-white rounded-xl shadow-lg overflow-hidden">
+      <img src="/public/assets/images/workout_images/Frame1000002509.png" alt="Hip Workout" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-800">Hip Workout</h3>
+        <p class="text-gray-500 text-sm">August 15, 2025</p>
+        <button class="mt-4 w-full py-2 border border-gray-300 rounded-lg flex items-center justify-center text-gray-700 hover:bg-gray-100">
+          + Add
+        </button>
+      </div>
+    </div>
+    <div class="w-full md:w-1/3 lg:w-[23.8%] text-sm bg-white shadow-xl overflow-hidden rounded-lg  text-gray-900 font-semibold text-center">
+      <div class="flex text-left p-3  ">
+        <div class="text-lg">January, 2025</div>
+      </div>
+      <div class="grid grid-cols-7 grid-col-dense grid-rows-6 p-6 gap-1">
+        <div class="text-gray-400">Mon</div>
+        <div class="text-gray-400">Tue</div>
+        <div class="text-gray-400">Wed</div>
+        <div class="text-gray-400">Thu</div>
+        <div class="text-gray-400">Fri</div>
+        <div class="text-gray-400">Sat</div>
+        <div class="text-gray-400">Sun</div>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2 text-gray-500">27</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2 text-gray-500">28</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2 text-gray-500">29</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2 text-gray-500">30</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2">1</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2">2</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2">3</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2">4</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2">5</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2">6</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2">7</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2">8</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2">9</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2">10</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2">11</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2">12</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2">13</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2">14</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2">15</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2">16</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2">17</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2">18</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2">19</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2">20</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2">21</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2">22</a>
+        <a href="#" class="hover:bg-indigo-600 rounded-md p-2 bg-grey-500 text-white">23</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2">24</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2">25</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2">26</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2">27</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2">28</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2">29</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2">30</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2">31</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2 text-gray-500">1</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2 text-gray-500">2</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2 text-gray-500">3</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2 text-gray-500">4</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2 text-gray-500">5</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2 text-gray-500">6</a>
+        <a href="#" class="hover:bg-indigo-100 rounded-md p-2 text-gray-500">7</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w-max:[1440px]  mx-auto mt-8">
+  <div class="flex sm:w-[100%] md:w-[600px] lg:w-[1270px] justify-evenly items-center  bg-gray-100 mx-[40px] md:mx-[0px] lg:mx-[0px] gap-5 md:gap-0 lg:gap-0" style="margin: auto;">
+      <!-- Search Form -->
+      <form class="flex items-center w-[53.333%]">
+        <input
+          type="text"
+          placeholder=" 🔍 Search"
+          class="w-full p-2 border-1 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" style="border: 1px solid gray;"
+        />
+      </form>
+    
+      <div class=" flex flex-col md:flex-row lg:flex-row gap-5"> 
+        <!-- Button -->
+            <button
+            class="text-[10px] md:text-[15px] lg:text-[15px] p-2 w-[100px] rounded-full md:w-[150px] lg:w-[150px]  bg-[#22b6f2] text-white  hover:bg-[#4a9bec]"
+          >
+            Book a Class
+          </button>
+          <button
+            class="text-[10px] md:text-[15px] lg:text-[15px] p-2 w-[100px] rounded-full md:w-[150px] lg:w-[150px]  bg-[#c3c3c3] text-white  hover:bg-[#e9e9e9]"
+          >
+            Book a Class
+          </button>
+      </div>
+    </div>
+    
+</div>       
+<div class="w-max-[[1440px]] mx-auto mt-8 rounded-2xl  ml-[0px] md:ml-[95px] lg:ml-[95px] relative mb-8 table" style="margin: 32px auto;">
+  <div class="w-full md:w-[600px] lg:w-[1092px] mt-8 flex flex-wrap gap-4 justify-start">
+    <!-- Card -->
+    <div class="w-full md:w-1/3 lg:w-[23.8%] bg-white rounded-xl shadow-lg overflow-hidden h-[300px]">
+      <img src="/public/assets/images/workout_images/Frame1000002509.png" alt="Hip Workout" class="w-full h-40 object-cover">
+      <div class="p-4">
+        <h3 class="text-lg  font-semibold text-gray-800">Hip Workout</h3>
+        <div class="text-black/60 text-xs font-light font-['Poppins'] leading-snug mt-3">ndimentum. Duis convallis ante ac tempus maximus. Fusce malesuada sed velit ut dictum.</div>
+      </div>
+    </div>
+  
+    <!-- Repeat the card as needed -->
+    <div class="w-full md:w-1/3 lg:w-[23.8%] bg-white rounded-xl shadow-lg overflow-hidden h-[300px]">
+      <img src="/public/assets/images/workout_images/Frame1000002509.png" alt="Hip Workout" class="w-full h-40 object-cover">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-800">Hip Workout</h3>
+        <div class="flex flex-row items-center justify-start gap-4 mt-3">
+          <div class="w-[58px] h-[60px] px-[7px] py-2 bg-white rounded-[100px] shadow-[0px_4px_20px_0px_rgba(0,0,0,0.06)] flex-col justify-center items-center flex overflow-hidden">
+            <div class="self-stretch h-11 flex-col justify-start items-center gap-1.5 flex">
+                <div class="self-stretch h-4 text-center text-black/60 text-xs font-light font-['Poppins'] leading-snug">4</div>
+                <img src="/public/assets/images/workout_icons/line-2.svg" alt="">
+                <div class="self-stretch h-4 text-center text-black/60 text-xs font-light font-['Poppins'] leading-snug">Step</div>
+            </div>
+        </div>
+        <div class="w-[110px]"><span class="text-black/60 text-xs font-normal font-['Poppins'] leading-snug">Muscle group:<br/></span><span class="text-black/50 text-xs font-light font-['Poppins'] leading-snug">lower muscle</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full md:w-1/3 lg:w-[23.8%] bg-white rounded-xl shadow-lg overflow-hidden h-[300px]">
+      <img src="/public/assets/images/workout_images/Frame1000002509.png" alt="Hip Workout" class="w-full h-40 object-cover">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-800">Hip Workout</h3>
+        <div class="flex flex-row items-center justify-start gap-4 mt-3">
+          <div class="w-[58px] h-[60px] px-[7px] py-2 bg-white rounded-[100px] shadow-[0px_4px_20px_0px_rgba(0,0,0,0.06)] flex-col justify-center items-center flex overflow-hidden">
+            <div class="self-stretch h-11 flex-col justify-start items-center gap-1.5 flex">
+                <div class="self-stretch h-4 text-center text-black/60 text-xs font-light font-['Poppins'] leading-snug">4</div>
+                <img src="/public/assets/images/workout_icons/line-2.svg" alt="">
+                <div class="self-stretch h-4 text-center text-black/60 text-xs font-light font-['Poppins'] leading-snug">Step</div>
+            </div>
+        </div>
+        <div class="w-[110px]"><span class="text-black/60 text-xs font-normal font-['Poppins'] leading-snug">Muscle group:<br/></span><span class="text-black/50 text-xs font-light font-['Poppins'] leading-snug">lower muscle</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full md:w-1/3 lg:w-[23.8%] bg-white rounded-xl shadow-lg overflow-hidden h-[300px]">
+      <img src="/public/assets/images/workout_images/Frame1000002509.png" alt="Hip Workout" class="w-full h-40 object-cover">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-800">Hip Workout</h3>
+        <div class="flex flex-row items-center justify-start gap-4 mt-3">
+          <div class="w-[58px] h-[60px] px-[7px] py-2 bg-white rounded-[100px] shadow-[0px_4px_20px_0px_rgba(0,0,0,0.06)] flex-col justify-center items-center flex overflow-hidden">
+            <div class="self-stretch h-11 flex-col justify-start items-center gap-1.5 flex">
+                <div class="self-stretch h-4 text-center text-black/60 text-xs font-light font-['Poppins'] leading-snug">4</div>
+                <img src="/public/assets/images/workout_icons/line-2.svg" alt="">
+                <div class="self-stretch h-4 text-center text-black/60 text-xs font-light font-['Poppins'] leading-snug">Step</div>
+            </div>
+        </div>
+        <div class="w-[110px]"><span class="text-black/60 text-xs font-normal font-['Poppins'] leading-snug">Muscle group:<br/></span><span class="text-black/50 text-xs font-light font-['Poppins'] leading-snug">lower muscle</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="w-max-[1440px] mx-auto w-full md:w-[640px] lg:w-[1117px] h-3 px-3  ">
+  <div class="bg-white rounded-lg pb-8 mt-8">
+    <div class=" flex flex-col md:flex-row lg:flex-row items-center justify-between gap-9">
+      <div class="m-[20px_0px_0px_15px] md:m-[30px_0px_0px_25px] lg:m-[20px_0px_0px_45px] gap-8">
+        <h1 class="font-600 font-[Inter] text-[32px] md:text-[40px] lg:text-[52px] leading-[60px] md:leading-[75px] lg:leading-[97px]">Goal Achievement</h1>
+        <p class="font-400 font-[Inter] text-[18px] leading-[20px] md:leading-[25px] lg:leading-[41px]">Good slogens for food delivery business are the key to attractive then more customers and earn money and especially food. </p>
+        <button
+        class="text-[10px] md:text-[15px] lg:text-[15px] p-2 mt-8 w-[100px] rounded-full md:w-[150px] lg:w-[150px]  bg-[#22b6f2] text-white  hover:bg-[#4a9bec]"
+        >
+        More
+        </button>
+      </div>
+      <img class="object-contain w-[443.81px] h-[369.97px] left-[633px]" src="/public/assets/images/workout_icons/person-gift.png" alt="">
+    </div>
+    <h1 class="text-center mb-6 font-bold text-[40px]">100%</h1>
+    <div class=" relative w-max-[1020px] mb-6 w-full mx-auto md:w-[640px] lg:w-[1011px] rounded-[80px] h-[60px] bg-[#22B6F2] ">
+    </div>
+    <div class="flex flex-col md:flex-row lg:flex-row  mb-10">
+      <div class="w-full md:w-1/2 lg:w-1/2  md:ml-8 lg:ml-8 ">
+        <div class="flex flex-col md:flex-row lg:flex-row  rounded-lg text-center md:text-left lg:text-left m-auto p-[10px] mb-7 gap-4 items-center">
+          <img class="w-[60.13px] md:w-[65.13px] lg:w-[73.13px] h-[61px]" src="/public/assets/images/workout_icons/rb_985 1.png" alt="">
+          <div class="flex flex-col gap-2 mt-4">
+            <p class="font-semibold">Reach your goal and become a gold memeber</p>
+            <p>Good slogens for food delivery business are the key to attractive then more customers </p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row lg:flex-row  rounded-lg text-center md:text-left lg:text-left m-auto p-[10px] mb-7 ml-0 md:ml-3  lg:ml-3 gap-4 items-center">
+          <img class="w-[60.13px] md:w-[65.13px] lg:w-[73.13px] h-[61px]" src="/public/assets/images/workout_icons/delete-1.png" alt="">
+          <div class="flex flex-col gap-2 mt-4">
+            <p class="font-semibold">Reach your goal and become a gold memeber</p>
+            <p>Good slogens for food delivery business are the key to attractive then more customers </p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row lg:flex-row  rounded-lg text-center md:text-left lg:text-left m-auto p-[10px] mb-7 ml-0 md:ml-3  lg:ml-3 gap-4 items-center">
+          <img class="w-[60.13px] md:w-[65.13px] lg:w-[73.13px] h-[61px]" src="/public/assets/images/workout_icons/hand-student.png" alt="">
+          <div class="flex flex-col gap-2 mt-4">
+            <p class="font-semibold">Reach your goal and become a gold memeber</p>
+            <p>Good slogens for food delivery business are the key to attractive then more customers </p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row lg:flex-row  rounded-lg text-center md:text-left lg:text-left m-auto p-[10px] mb-7 ml-0 md:ml-3  lg:ml-3 gap-4 items-center">
+          <img class="w-[60.13px] md:w-[65.13px] lg:w-[73.13px] h-[61px]" src="/public/assets/images/workout_icons/gallery.png" alt="">
+          <div class="flex flex-col gap-2 mt-4">
+            <p class="font-semibold">Reach your goal and become a gold memeber</p>
+            <p>Good slogens for food delivery business are the key to attractive then more customers </p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row lg:flex-row  rounded-lg text-center md:text-left lg:text-left m-auto p-[10px] mb-7 ml-0 md:ml-3  lg:ml-3 gap-4 items-center">
+          <img class="w-[60.13px] md:w-[65.13px] lg:w-[73.13px] h-[61px]" src="/public/assets/images/workout_icons/gallery.png" alt="">
+          <div class="flex flex-col gap-2 mt-4">
+            <p class="font-semibold">Reach your goal and become a gold memeber</p>
+            <p>Good slogens for food delivery business are the key to attractive then more customers </p>
+          </div>
+        </div>
+      </div >
+      <div class="w-full md:w-1/2 lg:w-1/2">
+        <div class="flex flex-col md:flex-row lg:flex-row  rounded-lg text-center md:text-left lg:text-left m-auto p-[10px] mb-7 gap-4 items-center">
+          <img class="w-[60.13px] md:w-[65.13px] lg:w-[73.13px] h-[61px]" src="/public/assets/images/workout_icons/rb_985 1.png" alt="">
+          <div class="flex flex-col gap-2 mt-[14px]">
+            <p class="font-semibold">Reach your goal and become a gold memeber</p>
+            <p>Good slogens for food delivery business are the key to attractive then more customers </p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row lg:flex-row  rounded-lg text-center md:text-left lg:text-left m-auto p-[10px] mb-7 ml-0 md:ml-3  lg:ml-3 gap-4 items-center">
+          <img class="w-[60.13px] md:w-[65.13px] lg:w-[73.13px] h-[61px]" src="/public/assets/images/workout_icons/delete-1.png" alt="">
+          <div class="flex flex-col gap-2 mt-[14px]">
+            <p class="font-semibold">Reach your goal and become a gold memeber</p>
+            <p>Good slogens for food delivery business are the key to attractive then more customers </p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row lg:flex-row  rounded-lg text-center md:text-left lg:text-left m-auto p-[10px] mb-7 ml-0 md:ml-3  lg:ml-3 gap-4 items-center">
+          <img class="w-[60.13px] md:w-[65.13px] lg:w-[73.13px] h-[61px]" src="/public/assets/images/workout_icons/hand-student.png" alt="">
+          <div class="flex flex-col gap-2 mt-[14px]">
+            <p class="font-semibold">Reach your goal and become a gold memeber</p>
+            <p>Good slogens for food delivery business are the key to attractive then more customers </p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row lg:flex-row  rounded-lg text-center md:text-left lg:text-left m-auto p-[10px] mb-7 ml-0 md:ml-3  lg:ml-3 gap-4 items-center">
+          <img class="w-[60.13px] md:w-[65.13px] lg:w-[73.13px] h-[61px]" src="/public/assets/images/workout_icons/gallery.png" alt="">
+          <div class="flex flex-col gap-2 mt-[14px]">
+            <p class="font-semibold">Reach your goal and become a gold memeber</p>
+            <p>Good slogens for food delivery business are the key to attractive then more customers </p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row lg:flex-row  rounded-lg text-center md:text-left lg:text-left m-auto p-[10px] mb-7 ml-0 md:ml-3  lg:ml-3 gap-4 items-center">
+          <img class="w-[60.13px] md:w-[65.13px] lg:w-[73.13px] h-[61px]" src="/public/assets/images/workout_icons/gallery.png" alt="">
+          <div class="flex flex-col gap-2 mt-[14px]">
+            <p class="font-semibold">Reach your goal and become a gold memeber</p>
+            <p>Good slogens for food delivery business are the key to attractive then more customers </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Uikit js you can use cdn  https://getuikit.com/docs/installation  or fine the latest  https://getuikit.com/docs/installation -->
+    <script src="assets/js/uikit.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <!-- Ion icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
