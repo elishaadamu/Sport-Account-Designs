@@ -12,17 +12,15 @@
   -Simplebar
 
 */
- 
 
 [hidden] {
   display: none !important;
 }
 
-
- /* ========================================================================
+/* ========================================================================
   On/Off Switch
  ========================================================================== */
- 
+
 .switch-button {
   position: relative;
   display: inline-block;
@@ -38,7 +36,7 @@
   top: 2px;
   left: 0;
 }
-   
+
 .switch input {
   display: none;
 }
@@ -116,12 +114,10 @@ input:checked + .switch-button:before {
   transform: translateX(14px);
 }
 
-
-
 /* ========================================================================
    Ripple Effect
  ========================================================================== */
- 
+
 .ripple-effect-dark {
   overflow: hidden;
   position: relative;
@@ -184,45 +180,46 @@ input:checked + .switch-button:before {
     -webkit-transform: scale(40);
     transform: scale(40);
   }
-} 
-
+}
 
 /* ========================================================================
     Component: modal
 ========================================================================== */
 .uk-modal {
   -webkit-overflow-scrolling: touch;
-  transition: opacity 0.15s linear; 
-} 
+  transition: opacity 0.15s linear;
+}
 .uk-modal-dialog {
   transition: 0.3s linear;
   transition-property: opacity, transform;
-  box-sizing: border-box; 
-} 
+  box-sizing: border-box;
+}
 
 /* ========================================================================
     Component: Slider and Slideshow
  ========================================================================== */
 /*  Prevent tab highlighting on iOS. */
-.uk-slider , .uk-slideshow { 
+.uk-slider,
+.uk-slideshow {
   -webkit-tap-highlight-color: transparent;
-} 
-.uk-slider-items , .uk-slideshow-items{ 
+}
+.uk-slider-items,
+.uk-slideshow-items {
   touch-action: pan-y;
 }
 /*  Prevent displaying the callout information on iOS.*/
-.uk-slider-items , .uk-slideshow-items { 
+.uk-slider-items,
+.uk-slideshow-items {
   -webkit-touch-callout: none;
-} 
+}
 
 /* ========================================================================
     Component: Slideshow
 ========================================================================== */
 /* Optimize animation */
-.uk-slideshow-items > * { 
+.uk-slideshow-items > * {
   will-change: transform, opacity;
-} 
-
+}
 
 /* Transform Origin
 ========================================================================== */
@@ -250,7 +247,6 @@ input:checked + .switch-button:before {
 .uk-transform-origin-bottom-right {
   transform-origin: 100% 100%;
 }
-
 
 /* ========================================================================
      Component: lightbox
@@ -812,7 +808,6 @@ input:checked + .switch-button:before {
   transition-duration: 0.7s;
 }
 
-
 /* Simplebar */
 
 [data-simplebar] {
@@ -1016,27 +1011,81 @@ input:checked + .switch-button:before {
 }
 
 @media screen and (max-width: 768px) {
-  #main{
+  #main {
     width: 1130px;
   }
-  #home{
+  #home {
     margin-left: -20px;
   }
-  #hero_buttons{
+  #hero_buttons {
     flex-direction: column;
     gap: 10px;
   }
-  #upper_category{
+  #upper_category {
     gap: 350px !important;
-
   }
-  #upper_category a{
+  #upper_category a {
     margin-left: 60px !important;
   }
-  #lower_category{
+  #lower_category {
     gap: 350px !important;
   }
-  #category_text{
+  #category_text {
     margin-left: -12px !important;
   }
+}
+/* Fade animations for meal cards container */
+#meal-cards-container.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+#meal-cards-container.fade-out {
+  animation: fadeOut 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+/* Click animation for meal cards */
+.meal-card.clicked {
+  animation: scaleClick 0.3s ease-in-out;
+}
+
+@keyframes scaleClick {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Hover animation for meal cards */
+.meal-card:hover {
+  transform: scale(1.05);
+}
+header {
+  width: 100% !important;
 }

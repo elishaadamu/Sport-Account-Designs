@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link href="/public/assets/images/favicon.png" rel="icon" type="image/png">
+
+    <!-- title and description-->
+    <title>Fruits | Goals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Instello - Sharing Photos platform HTML Template">
+   
+    <!-- css files -->
+    <link rel="stylesheet" href="/public/assets/css/tailwind.css">
+    <link rel="stylesheet" href="/public/assets/css/style.css">  
+    
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ 
+    <!-- custom style -->
+    <style>
+        #header-nav nav a.uk-active         { color:rgb(236 72 153)}
+        .dark #header-nav nav a.uk-active   { color:#fff !important}
+        @media screen and (max-width: 768px) {
+            header{ width: 100% !important;}
+        }
+    </style>
+ 
+</head>
+<body class="bg-white dark:bg-slate-950 overflow-x-hidden">
+ 
+     <!-- Header -->
+     <header
+     class="lg:py-4 h-20 lg:px-6 py-3 px-4 shadow-[0_4px_4px_0px_rgba(0,0,0,0.3)] bg-white/100 backdrop-blur-xl z-40 dark:bg-slate-900/80 uk-animation-slide-top-small"
+     uk-sticky
+   >
+     <div class="max-w-[1440px] mx-auto">
+       <div class="flex justify-between items-center">
+         <div class="flex gap-2 items-center z-20 relative">
+           <button
+             type="button"
+             class="p-2.5 text-lg max-md:flex hidden group z"
+             uk-toggle="target: #header-nav ; cls:max-md:hidden"
+           >
+             <ion-icon
+               name="menu"
+               class="group-aria-expanded:inline hidden"
+             ></ion-icon>
+             <ion-icon
+               name="close"
+               class="group-aria-expanded:hidden"
+             ></ion-icon>
+           </button>
+           <a href="home.html"
+             ><img
+               src="/public/assets/images/logo.png"
+               alt=""
+               class="hidden md:block lg:block mt-[5px] w-[189.70px] h-[59px]"
+           /></a>
+         </div>
+         <div
+           id="header-nav"
+           class="max-md:hidden max-md:bg-white max-md:p-5 max-md:fixed max-md:top-0 max-md:shadow-md max-md:left-0 max-md:pt-14 max-md:w-full max-md:z-10"
+         >
+           <nav
+             class="flex sm:items-start lg:items-center font-semibold text-slate-500 dark:text-white/70 lg:gap-1 max-md:border-t max-md:pt-2 max-md:flex max-md:flex-col"
+             uk-scrollspy-nav="closest: a ; scroll: true"
+           >
+             <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+               ><img
+                 class="h-auto w-[40px]"
+                 src="/public/assets/images/workout_icons/calender-checked.png"
+             /></a>
+             <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+               ><img
+                 class="h-auto w-[40px]"
+                 src="/public/assets/images/workout_icons/calender-date.png"
+             /></a>
+             <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+               ><img
+                 class="h-auto w-[40px]"
+                 src="/public/assets/images/workout_icons/3d-folder.png"
+               />
+             </a>
+             <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+               ><img
+                 class="h-auto w-[40px]"
+                 src="/public/assets/images/workout_icons/realistic-upward.png"
+               />
+             </a>
+             <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+               ><img
+                 class="h-auto w-[40px]"
+                 src="/public/assets/images/workout_icons/3d-movie.png"
+               />
+             </a>
+             <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+               ><img
+                 class="h-auto w-[40px]"
+                 src="/public/assets/images/workout_icons/sports-gym.png"
+               />
+             </a>
+           </nav>
+         </div>
+         <div class=" flex flex-row gap-4 mt-[-10px]">
+           <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+               ><img
+                 class="h-auto w-[54px]"
+                 src="/public/assets/images/workout_icons/minimal-notification.png"
+               />
+           </a>
+           <button
+             class="flex border-0 items-center px-1 py-2 text-sm bg-white rounded-md dark:text-white dark:bg-slate-700 group"
+             type=""
+             aria-haspopup="true"
+             aria-expanded="false"
+           >
+             <img
+               class="w-[36.84px] h-[36.84px] rounded-full"
+               src="/public/assets/images/icons-yoga/5456d9c431578988d2340c4b5c4edd1c.png"
+             />
+             <div
+               class="w-[185.64px] h-[39.27px] text-[#222222] text-[18.99px] font-semibold font-['Inter'] leading-[42.02px]"
+             >
+               System Admin
+             </div>
+           </button>
+         </div>
+         
+       <button class=" font-bold mt-[-10px] items-center px-3  text-lg bg-white dark:text-white dark:bg-slate-700 group" type="button" aria-haspopup="true" aria-expanded="false">
+           Navigations  <ion-icon name="chevron-down-outline" class="ml-2 text-lg duration-200 group-aria-expanded:rotate-180 md hydrated" role="img" aria-label="chevron down outline"></ion-icon> 
+       </button>
+       
+       <div uk-dropdown="offset:10;pos: bottom-right ; animation: uk-animation-slide-bottom-small" class="uk-dropdown"> 
+         <nav>
+           <a href="home.html"> <ion-icon class="text-xl md hydrated" name="home-outline" role="img" aria-label="home outline"></ion-icon>  Home </a>  
+           <a href="products.html"> <ion-icon class="text-xl md hydrated" name="apps-outline" role="img" aria-label="apps outline"></ion-icon>  Products </a>  
+           <a href="goals.html"> <ion-icon class="text-xl md hydrated" name="ribbon-outline" role="img" aria-label="ribbon outline"></ion-icon> Goals </a>  
+
+       </nav>
+       </div>
+ 
+       </div>
+   </header>
+    
+   <div class="max-w-[1440px] m-auto mb-6  w-[1117px]">
+    <div class="bg-[#e9f1f4]  w-[1117px] mt-4 rounded-2xl pl-[21px] pr-[23px] pt-[22px] pb-[22.49px] m-auto  h-full">
+        <div class="flex flex-col gap-7 text-center">
+            <div class="text-center text-[#222222] text-[28.80px] font-extrabold font-['Inter'] leading-loose">Farm Fresh Products</div>
+            <ul class="flex flex-row gap-8 justify-center list-disc">
+                <li class="text-[12.80px] font-bold font-['Inter'] leading-tight list-none">
+                    <div class="flex flex-col justify-center gap-1 mt-[-16px]" style="align-items: center;">
+                        <span class="text-center"><img src="/public/assets/images/icons-fruits/vegetable.png" alt=""></span>
+                        <span class="text-[#00afe9]">Vegetables</span>
+                    </div>
+                </li>
+                <li class="text-[#222222] text-[12.80px] font-bold font-['Inter'] leading-tight"> Fruits</li>
+                <li class="text-[#222222] text-[12.80px] font-bold font-['Inter'] leading-tight"> Drinks</li>
+                <li class="text-[#222222] text-[12.80px] font-bold font-['Inter'] leading-tight"> Bee Products</li>
+            </ul>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="hover:shadow-[5px_5px_0px_0px_rgba(0,175,233,0.3)] cursor-pointer w-[238px] h-[370.80px] relative bg-white rounded-[14.40px] overflow-hidden">
+                    <img class="w-[238px] h-[238px] left-0 top-0 absolute" src="/public/assets/images/fruits_images/Link → 1-37-600x600.jpg.png" />
+                    <div class="w-[53.78px] pl-[10.40px] pr-[10.10px] pt-1 pb-[4.80px] left-[12.80px] top-[16px] absolute bg-[#d8e4e8] rounded-[20.80px] justify-center items-start gap-[0.80px] inline-flex">
+                        <div class="w-[9.60px] h-[9.60px] relative flex-col justify-start items-start flex overflow-hidden mt-[2px]" style="background: url(/public/assets/images/icons-fruits/strike.svg);"></div>
+                        <div class="w-[22.88px] h-3 text-center text-[#222222] text-[8.80px] font-semibold font-['Inter'] leading-[14.40px]">-11%</div>
+                    </div>
+                    <div class="w-[238px] h-[78.40px] left-0 top-[247.60px] absolute bg-white">
+                        <div class="w-[11.08px] h-[15.20px] left-[83.20px] top-[9.60px] absolute text-[#5e5e5e] text-[8px] font-medium font-['Nunito'] leading-tight">(0)</div>
+                        <div class="w-[57.56px] h-[11.51px] left-[22.40px] top-[13.44px] absolute justify-center items-center inline-flex overflow-hidden">
+                            <div class="w-[57.56px] h-[11.51px] relative flex-col justify-start items-start flex overflow-hidden" style="background: url(/public/assets/images/icons-fruits/rating.svg);" ></div>
+                        </div>
+                        <div class="pr-[72.40px] left-[22.40px] top-[40px] absolute justify-start items-center inline-flex overflow-hidden">
+                            <div class="text-[#222222] text-[12.80px] font-bold font-['Inter'] leading-tight">Green Broccoli</div>
+                        </div>
+                    </div>
+                    <div class="h-4 pr-[92.80px] left-[22.40px] top-[326px] absolute bg-white justify-start items-start gap-[7.80px] inline-flex">
+                        <div class="text-[#067ea6] text-[11.20px] font-extrabold font-['Inter'] leading-none">$8.00</div>
+                        <div class="w-[29.80px] self-stretch justify-end items-center inline-flex">
+                            <div class="text-[#d6d6d6] text-[11.20px] font-extrabold font-['Inter'] mt-[-5px] line-through leading-none">$9.00</div>
+                        </div>
+                    </div>
+                    <div class="w-9 h-9 px-2.5 pt-[9.60px] pb-[10.40px] left-[186px] top-[312.40px] absolute bg-[#ececec] rounded-[36px] justify-center items-center inline-flex overflow-hidden">
+                        <div class="w-4 h-4 relative flex-col justify-start items-start flex overflow-hidden" style="background: url(/public/assets/images/icons-fruits/shop.svg);"></div>
+                    </div>
+                    <div class="left-[185px] top-[18.40px] absolute justify-start items-start gap-3 inline-flex">
+                        <a href="#">
+                            <img class="w-[12.24px] h-3 relative" src="/public/assets/images/icons-fruits/heart-colorless.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img class="w-4 h-4 relative" src="/public/assets/images/icons-fruits/dislike-colorless.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="hover:shadow-[5px_5px_0px_0px_rgba(0,175,233,0.3)] cursor-pointer group w-[238px] h-[370.80px] relative bg-white rounded-[14.40px] overflow-hidden transition-transform duration-300">
+                    <img class="w-[238px] h-[238px] left-0 top-0 absolute" src="/public/assets/images/fruits_images/Link → 1-30-600x600.jpg.png" />
+                    <div class="bg-[#00AFE9] h-[20.8px]  w-[64.05px] pl-[10.40px] pr-[10.10px] pt-1 pb-[4.80px] left-[12.80px] top-[16px] absolute  rounded-[20.80px] gap-[0.80px] ">
+                        <div class=" h-3 w-[46px]  text-white text-[8.80px] font-[700] font-['Inter'] leading-[14.40px]">SOLD OUT</div>
+                    </div>
+                    <div class="w-[238px] h-[78.40px] left-0 top-[247.60px] absolute bg-white">
+                        <div class="w-[11.08px] h-[15.20px] left-[83.20px] top-[9.60px] absolute text-[#5e5e5e] text-[8px] font-medium font-['Nunito'] leading-tight">(0)</div>
+                        <div class="w-[57.56px] h-[11.51px] left-[22.40px] top-[13.44px] absolute justify-center items-center inline-flex overflow-hidden">
+                            <div class="w-[57.56px] h-[11.51px] relative flex-col justify-start items-start flex overflow-hidden" style="background: url(/public/assets/images/icons-fruits/rating.svg);" ></div>
+                        </div>
+                        <div class="pr-[72.40px] left-[22.40px] top-[40px] absolute justify-start items-center inline-flex overflow-hidden">
+                            <div class="text-[#222222] text-[12.80px] font-bold font-['Inter'] leading-tight">Purple Onion</div>
+                        </div>
+                    </div>
+                    <div class="h-4 pr-[92.80px] left-[22.40px] top-[326px] absolute bg-white justify-start items-start gap-[7.80px] inline-flex">
+                        <div class="text-[#067ea6] text-[11.20px] font-extrabold font-['Inter'] leading-none">$12.00</div>
+                        <div class="w-[29.80px] self-stretch justify-end items-center inline-flex">
+                            <!-- <div class="text-[#d6d6d6] text-[11.20px] font-extrabold font-['Inter'] mt-[-5px] line-through leading-none">$9.00</div> -->
+                        </div>
+                    </div>
+                    <div class="w-9 h-9 px-2.5 pt-[9.60px] pb-[10.40px] left-[186px] top-[312.40px] absolute bg-[#ececec] rounded-[36px] justify-center items-center inline-flex overflow-hidden">
+                        <div class="w-4 h-4 relative flex-col justify-start items-start flex overflow-hidden" style="background: url(/public/assets/images/icons-fruits/shop.svg);"></div>
+                    </div>
+                    <div class="left-[185px] top-[18.40px] absolute justify-start items-start gap-3 inline-flex">
+                        <a href="#">
+                            <img class="w-[12.24px] h-3 relative" src="/public/assets/images/icons-fruits/heart-colorless.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img class="w-4 h-4 relative" src="/public/assets/images/icons-fruits/dislike-colorless.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="hover:shadow-[5px_5px_0px_0px_rgba(0,175,233,0.3)] cursor-pointer w-[238px] h-[370.80px] relative bg-white rounded-[14.40px] overflow-hidden">
+                    <img class="w-[238px] h-[238px] left-0 top-0 absolute" src="/public/assets/images/fruits_images/Link → 1-31-600x600.jpg.png" />
+                    <!-- <div class="w-[53.78px] pl-[10.40px] pr-[10.10px] pt-1 pb-[4.80px] left-[12.80px] top-[16px] absolute bg-[#d8e4e8] rounded-[20.80px] justify-center items-start gap-[0.80px] inline-flex">
+                        <div class="w-[9.60px] h-[9.60px] relative flex-col justify-start items-start flex overflow-hidden mt-[2px]" style="background: url(/public/assets/images/icons-fruits/strike.svg);"></div>
+                        <div class="w-[22.88px] h-3 text-center text-[#222222] text-[8.80px] font-semibold font-['Inter'] leading-[14.40px]">-11%</div>
+                    </div> -->
+                    <div class="w-[238px] h-[78.40px] left-0 top-[247.60px] absolute bg-white">
+                        <div class="w-[11.08px] h-[15.20px] left-[83.20px] top-[9.60px] absolute text-[#5e5e5e] text-[8px] font-medium font-['Nunito'] leading-tight">(0)</div>
+                        <div class="w-[57.56px] h-[11.51px] left-[22.40px] top-[13.44px] absolute justify-center items-center inline-flex overflow-hidden">
+                            <div class="w-[57.56px] h-[11.51px] relative flex-col justify-start items-start flex overflow-hidden" style="background: url(/public/assets/images/icons-fruits/rating.svg);" ></div>
+                        </div>
+                        <div class="pr-[72.40px] left-[22.40px] top-[40px] absolute justify-start items-center inline-flex overflow-hidden">
+                            <div class="text-[#222222] text-[12.80px] font-bold font-['Inter'] leading-tight">Chile Bell Pepper</div>
+                        </div>
+                    </div>
+                    <div class="h-4 pr-[92.80px] left-[22.40px] top-[326px] absolute bg-white justify-start items-start gap-[7.80px] inline-flex">
+                        <div class="text-[#067ea6] text-[11.20px] font-extrabold font-['Inter'] leading-none">$18.00</div>
+                        <!-- <div class="w-[29.80px] self-stretch justify-end items-center inline-flex">
+                            <div class="text-[#d6d6d6] text-[11.20px] font-extrabold font-['Inter'] mt-[-5px] line-through leading-none">$9.00</div>
+                        </div> -->
+                    </div>
+                    <div class="w-9 h-9 px-2.5 pt-[9.60px] pb-[10.40px] left-[186px] top-[312.40px] absolute bg-[#ececec] rounded-[36px] justify-center items-center inline-flex overflow-hidden">
+                        <div class="w-4 h-4 relative flex-col justify-start items-start flex overflow-hidden" style="background: url(/public/assets/images/icons-fruits/shop.svg);"></div>
+                    </div>
+                    <div class="left-[185px] top-[18.40px] absolute justify-start items-start gap-3 inline-flex">
+                        <a href="#">
+                            <img class="w-[12.24px] h-3 relative" src="/public/assets/images/icons-fruits/heart-colored.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img class="w-4 h-4 relative" src="/public/assets/images/icons-fruits/dislike-colorless.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="hover:shadow-[5px_5px_0px_0px_rgba(0,175,233,0.3)] cursor-pointer w-[238px] h-[370.80px] relative bg-white rounded-[14.40px] overflow-hidden">
+                    <img class="w-[238px] h-[238px] left-0 top-0 absolute" src="/public/assets/images/fruits_images/Link → 1-37-600x600.jpg.png" />
+                    <!-- <div class="w-[53.78px] pl-[10.40px] pr-[10.10px] pt-1 pb-[4.80px] left-[12.80px] top-[16px] absolute bg-[#d8e4e8] rounded-[20.80px] justify-center items-start gap-[0.80px] inline-flex">
+                        <div class="w-[9.60px] h-[9.60px] relative flex-col justify-start items-start flex overflow-hidden mt-[2px]" style="background: url(/public/assets/images/icons-fruits/strike.svg);"></div>
+                        <div class="w-[22.88px] h-3 text-center text-[#222222] text-[8.80px] font-semibold font-['Inter'] leading-[14.40px]">-11%</div>
+                    </div> -->
+                    <div class="w-[238px] h-[78.40px] left-0 top-[247.60px] absolute bg-white">
+                        <div class="w-[11.08px] h-[15.20px] left-[83.20px] top-[9.60px] absolute text-[#5e5e5e] text-[8px] font-medium font-['Nunito'] leading-tight">(0)</div>
+                        <div class="w-[57.56px] h-[11.51px] left-[22.40px] top-[13.44px] absolute justify-center items-center inline-flex overflow-hidden">
+                            <div class="w-[57.56px] h-[11.51px] relative flex-col justify-start items-start flex overflow-hidden" style="background: url(/public/assets/images/icons-fruits/rating.svg);" ></div>
+                        </div>
+                        <div class="pr-[72.40px] left-[22.40px] top-[40px] absolute justify-start items-center inline-flex overflow-hidden">
+                            <div class="text-[#222222] text-[12.80px] font-bold font-['Inter'] leading-tight">Green Cabbage</div>
+                        </div>
+                    </div>
+                    <div class="h-4 pr-[92.80px] left-[22.40px] top-[326px] absolute bg-white justify-start items-start gap-[7.80px] inline-flex">
+                        <div class="text-[#067ea6] text-[11.20px] font-extrabold font-['Inter'] leading-none">$15.00</div>
+                        <!-- <div class="w-[29.80px] self-stretch justify-end items-center inline-flex">
+                            <div class="text-[#d6d6d6] text-[11.20px] font-extrabold font-['Inter'] mt-[-5px] line-through leading-none">$9.00</div>
+                        </div> -->
+                    </div>
+                    <div class="w-9 h-9 px-2.5 pt-[9.60px] pb-[10.40px] left-[186px] top-[312.40px] absolute bg-[#ececec] rounded-[36px] justify-center items-center inline-flex overflow-hidden">
+                        <div class="w-4 h-4 relative flex-col justify-start items-start flex overflow-hidden" style="background: url(/public/assets/images/icons-fruits/shop.svg);"></div>
+                    </div>
+                    <div class="left-[185px] top-[18.40px] absolute justify-start items-start gap-3 inline-flex">
+                        <a href="#">
+                            <img class="w-[12.24px] h-3 relative" src="/public/assets/images/icons-fruits/heart-colorless.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img class="w-4 h-4 relative" src="/public/assets/images/icons-fruits/dislike-colorless.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="hover:shadow-[5px_5px_0px_0px_rgba(0,175,233,0.3)] cursor-pointer w-[238px] h-[370.80px] relative bg-white rounded-[14.40px] overflow-hidden">
+                    <img class="w-[238px] h-[238px] left-0 top-0 absolute" src="/public/assets/images/fruits_images/Link → 1-33-600x600.jpg.png" />
+                    <!-- <div class="w-[53.78px] pl-[10.40px] pr-[10.10px] pt-1 pb-[4.80px] left-[12.80px] top-[16px] absolute bg-[#d8e4e8] rounded-[20.80px] justify-center items-start gap-[0.80px] inline-flex">
+                        <div class="w-[9.60px] h-[9.60px] relative flex-col justify-start items-start flex overflow-hidden mt-[2px]" style="background: url(/public/assets/images/icons-fruits/strike.svg);"></div>
+                        <div class="w-[22.88px] h-3 text-center text-[#222222] text-[8.80px] font-semibold font-['Inter'] leading-[14.40px]">-11%</div>
+                    </div> -->
+                    <div class="w-[238px] h-[78.40px] left-0 top-[247.60px] absolute bg-white">
+                        <div class="w-[11.08px] h-[15.20px] left-[83.20px] top-[9.60px] absolute text-[#5e5e5e] text-[8px] font-medium font-['Nunito'] leading-tight">(0)</div>
+                        <div class="w-[57.56px] h-[11.51px] left-[22.40px] top-[13.44px] absolute justify-center items-center inline-flex overflow-hidden">
+                            <div class="w-[57.56px] h-[11.51px] relative flex-col justify-start items-start flex overflow-hidden" style="background: url(/public/assets/images/icons-fruits/rating.svg);" ></div>
+                        </div>
+                        <div class="pr-[72.40px] left-[22.40px] top-[40px] absolute justify-start items-center inline-flex overflow-hidden">
+                            <div class="text-[#222222] text-[12.80px] font-bold font-['Inter'] leading-tight">Roasted Corn</div>
+                        </div>
+                    </div>
+                    <div class="h-4 pr-[92.80px] left-[22.40px] top-[326px] absolute bg-white justify-start items-start gap-[7.80px] inline-flex">
+                        <div class="text-[#067ea6] text-[11.20px] font-extrabold font-['Inter'] leading-none">$15.00</div>
+                        <div class="w-[29.80px] self-stretch justify-end items-center inline-flex">
+                            <div class="text-[#d6d6d6] text-[11.20px] font-extrabold font-['Inter'] mt-[-5px] line-through leading-none">$9.00</div>
+                        </div>
+                    </div>
+                    <div class="w-9 h-9 px-2.5 pt-[9.60px] pb-[10.40px] left-[186px] top-[312.40px] absolute bg-[#ececec] rounded-[36px] justify-center items-center inline-flex overflow-hidden">
+                        <div class="w-4 h-4 relative flex-col justify-start items-start flex overflow-hidden" style="background: url(/public/assets/images/icons-fruits/shop.svg);"></div>
+                    </div>
+                    <div class="left-[185px] top-[18.40px] absolute justify-start items-start gap-3 inline-flex">
+                        <a href="#">
+                            <img class="w-[12.24px] h-3 relative" src="/public/assets/images/icons-fruits/heart-colorless.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img class="w-4 h-4 relative" src="/public/assets/images/icons-fruits/dislike-colorless.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="hover:shadow-[5px_5px_0px_0px_rgba(0,175,233,0.3)] cursor-pointer w-[238px] h-[370.80px] relative bg-white rounded-[14.40px] overflow-hidden">
+                    <img class="w-[238px] h-[238px] left-0 top-0 absolute" src="/public/assets/images/fruits_images/Link → 1-35-600x600.jpg.png" />
+                    <div class="w-[53.78px] pl-[10.40px] pr-[10.10px] pt-1 pb-[4.80px] left-[12.80px] top-[16px] absolute bg-[#d8e4e8] rounded-[20.80px] justify-center items-start gap-[0.80px] inline-flex">
+                        <div class="w-[9.60px] h-[9.60px] relative flex-col justify-start items-start flex overflow-hidden mt-[2px]" style="background: url(/public/assets/images/icons-fruits/strike.svg);"></div>
+                        <div class="w-[22.88px] h-3 text-center text-[#222222] text-[8.80px] font-semibold font-['Inter'] leading-[14.40px]">-16%</div>
+                    </div>
+                    <div class="w-[238px] h-[78.40px] left-0 top-[247.60px] absolute bg-white">
+                        <div class="w-[11.08px] h-[15.20px] left-[83.20px] top-[9.60px] absolute text-[#5e5e5e] text-[8px] font-medium font-['Nunito'] leading-tight">(0)</div>
+                        <div class="w-[57.56px] h-[11.51px] left-[22.40px] top-[13.44px] absolute justify-center items-center inline-flex overflow-hidden">
+                            <div class="w-[57.56px] h-[11.51px] relative flex-col justify-start items-start flex overflow-hidden" style="background: url(/public/assets/images/icons-fruits/rating.svg);" ></div>
+                        </div>
+                        <div class="pr-[72.40px] left-[22.40px] top-[40px] absolute justify-start items-center inline-flex overflow-hidden">
+                            <div class="text-[#222222] text-[12.80px] font-bold font-['Inter'] leading-tight">Organic Asparagus</div>
+                        </div>
+                    </div>
+                    <div class="h-4 pr-[92.80px] left-[22.40px] top-[326px] absolute bg-white justify-start items-start gap-[7.80px] inline-flex">
+                        <div class="text-[#067ea6] text-[11.20px] font-extrabold font-['Inter'] leading-none">$16.00</div>
+                        <div class="w-[29.80px] self-stretch justify-end items-center inline-flex ml-2">
+                            <div class="text-[#d6d6d6] text-[11.20px] font-extrabold font-['Inter'] mt-[-5px] line-through leading-none">$19.00</div>
+                        </div>
+                    </div>
+                    <div class="w-9 h-9 px-2.5 pt-[9.60px] pb-[10.40px] left-[186px] top-[312.40px] absolute bg-[#ececec] rounded-[36px] justify-center items-center inline-flex overflow-hidden">
+                        <div class="w-4 h-4 relative flex-col justify-start items-start flex overflow-hidden" style="background: url(/public/assets/images/icons-fruits/shop.svg);"></div>
+                    </div>
+                    <div class="left-[185px] top-[18.40px] absolute justify-start items-start gap-3 inline-flex">
+                        <a href="#">
+                            <img class="w-[12.24px] h-3 relative" src="/public/assets/images/icons-fruits/heart-colorless.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img class="w-4 h-4 relative" src="/public/assets/images/icons-fruits/dislike-colorless.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 7 -->
+                <div class="hover:shadow-[5px_5px_0px_0px_rgba(0,175,233,0.3)] cursor-pointer w-[238px] h-[370.80px] relative bg-white rounded-[14.40px] overflow-hidden">
+                    <img class="w-[238px] h-[238px] left-0 top-0 absolute" src="/public/assets/images/fruits_images/Link → 1-34-600x600.jpg.png" />
+                    <div class="bg-[#00AFE9] h-[20.8px]  w-[64.05px] pl-[10.40px] pr-[10.10px] pt-1 pb-[4.80px] left-[12.80px] top-[16px] absolute  rounded-[20.80px] gap-[0.80px] ">
+                        <div class=" h-3 w-[46px]  text-white text-[8.80px] font-[700] font-['Inter'] leading-[14.40px]">SOLD OUT</div>
+                    </div>
+                    <div class="w-[238px] h-[78.40px] left-0 top-[247.60px] absolute bg-white">
+                        <div class="w-[11.08px] h-[15.20px] left-[83.20px] top-[9.60px] absolute text-[#5e5e5e] text-[8px] font-medium font-['Nunito'] leading-tight">(0)</div>
+                        <div class="w-[57.56px] h-[11.51px] left-[22.40px] top-[13.44px] absolute justify-center items-center inline-flex overflow-hidden">
+                            <div class="w-[57.56px] h-[11.51px] relative flex-col justify-start items-start flex overflow-hidden" style="background: url(/public/assets/images/icons-fruits/rating.svg);" ></div>
+                        </div>
+                        <div class="pr-[72.40px] left-[22.40px] top-[40px] absolute justify-start items-center inline-flex overflow-hidden">
+                            <div class="text-[#222222] text-[12.80px] font-bold font-['Inter'] leading-tight">Purple Onion</div>
+                        </div>
+                    </div>
+                    <div class="h-4 pr-[92.80px] left-[22.40px] top-[326px] absolute bg-white justify-start items-start gap-[7.80px] inline-flex">
+                        <div class="text-[#067ea6] text-[11.20px] font-extrabold font-['Inter'] leading-none">$18.00</div>
+                        <!-- <div class="w-[29.80px] self-stretch justify-end items-center inline-flex">
+                            <div class="text-[#d6d6d6] text-[11.20px] font-extrabold font-['Inter'] mt-[-5px] line-through leading-none">$9.00</div>
+                        </div> -->
+                    </div>
+                    <div class="w-9 h-9 px-2.5 pt-[9.60px] pb-[10.40px] left-[186px] top-[312.40px] absolute bg-[#ececec] rounded-[36px] justify-center items-center inline-flex overflow-hidden">
+                        <div class="w-4 h-4 relative flex-col justify-start items-start flex overflow-hidden" style="background: url(/public/assets/images/icons-fruits/shop.svg);"></div>
+                    </div>
+                    <div class="left-[185px] top-[18.40px] absolute justify-start items-start gap-3 inline-flex">
+                        <a href="#">
+                            <img class="w-[12.24px] h-3 relative" src="/public/assets/images/icons-fruits/heart-colorless.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img class="w-4 h-4 relative" src="/public/assets/images/icons-fruits/dislike-colored.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 8 -->
+                <div class="hover:shadow-[5px_5px_0px_0px_rgba(0,175,233,0.3)] cursor-pointer w-[238px] h-[370.80px] relative bg-white rounded-[14.40px] overflow-hidden">
+                    <img class="w-[238px] h-[238px] left-0 top-0 absolute  object-cover transition-transform duration-300 group-hover:scale-105" src="/public/assets/images/fruits_images/Link → 1-38-600x600.jpg.png" />
+                    <!-- <div class="w-[53.78px] pl-[10.40px] pr-[10.10px] pt-1 pb-[4.80px] left-[12.80px] top-[16px] absolute bg-[#d8e4e8] rounded-[20.80px] justify-center items-start gap-[0.80px] inline-flex">
+                        <div class="w-[9.60px] h-[9.60px] relative flex-col justify-start items-start flex overflow-hidden mt-[2px]" style="background: url(/public/assets/images/icons-fruits/strike.svg);"></div>
+                        <div class="w-[22.88px] h-3 text-center text-[#222222] text-[8.80px] font-semibold font-['Inter'] leading-[14.40px]">-11%</div>
+                    </div> -->
+                    <div class="w-[238px] h-[78.40px] left-0 top-[247.60px] absolute bg-white">
+                        <div class="w-[11.08px] h-[15.20px] left-[83.20px] top-[9.60px] absolute text-[#5e5e5e] text-[8px] font-medium font-['Nunito'] leading-tight">(0)</div>
+                        <div class="w-[57.56px] h-[11.51px] left-[22.40px] top-[13.44px] absolute justify-center items-center inline-flex overflow-hidden">
+                            <div class="w-[57.56px] h-[11.51px] relative flex-col justify-start items-start flex overflow-hidden" style="background: url(/public/assets/images/icons-fruits/rating.svg);" ></div>
+                        </div>
+                        <div class="pr-[72.40px] left-[22.40px] top-[40px] absolute justify-start items-center inline-flex overflow-hidden">
+                            <div class="text-[#222222] text-[12.80px] font-bold font-['Inter'] leading-tight">Cherry Tomato</div>
+                        </div>
+                    </div>
+                    <div class="h-4 pr-[92.80px] left-[22.40px] top-[326px] absolute bg-white justify-start items-start gap-[7.80px] inline-flex">
+                        <div class="text-[#067ea6] text-[11.20px] font-extrabold font-['Inter'] leading-none">$14.00</div>
+                        <!-- <div class="w-[29.80px] self-stretch justify-end items-center inline-flex">
+                            <div class="text-[#d6d6d6] text-[11.20px] font-extrabold font-['Inter'] mt-[-5px] line-through leading-none">$9.00</div>
+                        </div> -->
+                    </div>
+                    <div class="w-9 h-9 px-2.5 pt-[9.60px] pb-[10.40px] left-[186px] top-[312.40px] absolute bg-[#ececec] rounded-[36px] justify-center items-center inline-flex overflow-hidden">
+                        <div class="w-4 h-4 relative flex-col justify-start items-start flex overflow-hidden" style="background: url(/public/assets/images/icons-fruits/shop.svg);"></div>
+                    </div>
+                    <div class="left-[185px] top-[18.40px] absolute justify-start items-start gap-3 inline-flex">
+                        <a href="#">
+                            <img class="w-[12.24px] h-3 relative" src="/public/assets/images/icons-fruits/heart-colorless.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img class="w-4 h-4 relative" src="/public/assets/images/icons-fruits/dislike-colorless.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- load more -->
+         <div class="flex justify-center" style="margin-top: 48px !important; margin-bottom: 48px !important;">
+            <button type="button" class=" bg-[#00afe9] text-white py-3 px-6 rounded-full  font-semibold text-sm dark:bg-dark2">Load more...</button>
+        </div>
+    </div>
+</div> 
+
+    <!-- Uikit js you can use cdn  https://getuikit.com/docs/installation  or fine the latest  https://getuikit.com/docs/installation -->
+    <script src="/public/assets/js/uikit.min.js"></script>
+    <script src="/public/assets/js/script.js"></script>
+
+    <!-- Ion icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ 
+
+</body>
+</html>

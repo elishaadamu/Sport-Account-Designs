@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link href="/public/assets/images/favicon.png" rel="icon" type="image/png">
+
+    <!-- title and description-->
+    <title>Fruits | Goals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Instello - Sharing Photos platform HTML Template">
+   
+    <!-- css files -->
+    <link rel="stylesheet" href="/public/assets/css/tailwind.css">
+    <link rel="stylesheet" href="/public/assets/css/style.css">  
+    
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ 
+    <!-- custom style -->
+    <style>
+        #header-nav nav a.uk-active         { color:rgb(236 72 153)}
+        .dark #header-nav nav a.uk-active   { color:#fff !important}
+        @media screen and (max-width: 768px) {
+            header{ width: 100% !important;}
+        }
+    </style>
+ 
+</head>
+<body class="bg-white dark:bg-slate-950 overflow-x-hidden">
+ 
+     <!-- Header -->
+     <header
+     class="lg:py-4 h-20 lg:px-6 py-3 px-4 shadow-[0_4px_4px_0px_rgba(0,0,0,0.3)] bg-white/100 backdrop-blur-xl z-40 dark:bg-slate-900/80 uk-animation-slide-top-small"
+     uk-sticky
+   >
+     <div class="max-w-[1440px] mx-auto">
+       <div class="flex justify-between items-center">
+         <div class="flex gap-2 items-center z-20 relative">
+           <button
+             type="button"
+             class="p-2.5 text-lg max-md:flex hidden group z"
+             uk-toggle="target: #header-nav ; cls:max-md:hidden"
+           >
+             <ion-icon
+               name="menu"
+               class="group-aria-expanded:inline hidden"
+             ></ion-icon>
+             <ion-icon
+               name="close"
+               class="group-aria-expanded:hidden"
+             ></ion-icon>
+           </button>
+           <a href="home.html"
+             ><img
+               src="/public/assets/images/logo.png"
+               alt=""
+               class="hidden md:block lg:block mt-[5px] w-[189.70px] h-[59px]"
+           /></a>
+         </div>
+         <div
+           id="header-nav"
+           class="max-md:hidden max-md:bg-white max-md:p-5 max-md:fixed max-md:top-0 max-md:shadow-md max-md:left-0 max-md:pt-14 max-md:w-full max-md:z-10"
+         >
+           <nav
+             class="flex sm:items-start lg:items-center font-semibold text-slate-500 dark:text-white/70 lg:gap-1 max-md:border-t max-md:pt-2 max-md:flex max-md:flex-col"
+             uk-scrollspy-nav="closest: a ; scroll: true"
+           >
+             <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+               ><img
+                 class="h-auto w-[40px]"
+                 src="/public/assets/images/workout_icons/calender-checked.png"
+             /></a>
+             <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+               ><img
+                 class="h-auto w-[40px]"
+                 src="/public/assets/images/workout_icons/calender-date.png"
+             /></a>
+             <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+               ><img
+                 class="h-auto w-[40px]"
+                 src="/public/assets/images/workout_icons/3d-folder.png"
+               />
+             </a>
+             <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+               ><img
+                 class="h-auto w-[40px]"
+                 src="/public/assets/images/workout_icons/realistic-upward.png"
+               />
+             </a>
+             <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+               ><img
+                 class="h-auto w-[40px]"
+                 src="/public/assets/images/workout_icons/3d-movie.png"
+               />
+             </a>
+             <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+               ><img
+                 class="h-auto w-[40px]"
+                 src="/public/assets/images/workout_icons/sports-gym.png"
+               />
+             </a>
+           </nav>
+         </div>
+         <div class=" flex flex-row gap-4 mt-[-10px]">
+           <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+               ><img
+                 class="h-auto w-[54px]"
+                 src="/public/assets/images/workout_icons/minimal-notification.png"
+               />
+           </a>
+           <button
+             class="flex border-0 items-center px-1 py-2 text-sm bg-white rounded-md dark:text-white dark:bg-slate-700 group"
+             type=""
+             aria-haspopup="true"
+             aria-expanded="false"
+           >
+             <img
+               class="w-[36.84px] h-[36.84px] rounded-full"
+               src="/public/assets/images/icons-yoga/5456d9c431578988d2340c4b5c4edd1c.png"
+             />
+             <div
+               class="w-[185.64px] h-[39.27px] text-[#222222] text-[18.99px] font-semibold font-['Inter'] leading-[42.02px]"
+             >
+               System Admin
+             </div>
+           </button>
+         </div>
+         
+       <button class=" font-bold mt-[-10px] items-center px-3  text-lg bg-white dark:text-white dark:bg-slate-700 group" type="button" aria-haspopup="true" aria-expanded="false">
+           Navigations  <ion-icon name="chevron-down-outline" class="ml-2 text-lg duration-200 group-aria-expanded:rotate-180 md hydrated" role="img" aria-label="chevron down outline"></ion-icon> 
+       </button>
+       
+       <div uk-dropdown="offset:10;pos: bottom-right ; animation: uk-animation-slide-bottom-small" class="uk-dropdown"> 
+         <nav>
+           <a href="home.html"> <ion-icon class="text-xl md hydrated" name="home-outline" role="img" aria-label="home outline"></ion-icon>  Home </a>  
+           <a href="products.html"> <ion-icon class="text-xl md hydrated" name="apps-outline" role="img" aria-label="apps outline"></ion-icon>  Products </a>  
+           <a href="goals.html"> <ion-icon class="text-xl md hydrated" name="ribbon-outline" role="img" aria-label="ribbon outline"></ion-icon> Goals </a>  
+
+       </nav>
+       </div>
+ 
+       </div>
+   </header>
+    
+   <div class="max-w-[1440px] m-auto  w-[1117px]">
+    <div class="flex  mx-auto mt-[27px] justify-center" style="margin-left: -25px;">
+        <div class="w-[333px] h-[522px]  ml-6 mr-[23px] pt-[27px] pb-[18.08px] bg-[#eaf1ef] rounded-lg flex-col justify-end items-center gap-[43.65px] inline-flex">
+            <div class="self-stretch h-[45.35px] flex-col justify-start items-center gap-[16.50px] inline-flex">
+                <div class="flex justify-center flex-col gap-4">
+                    <div class="text-center text-[#1e6075] text-xl font-bold font-['Inter'] leading-tight">Top Categories</div>
+                    <img class="w-[47.15px] h-[8.85px] m-auto" src="/public/assets/images/icons-fruits/wave.svg.svg" alt="">
+                </div>
+                
+            </div>
+            <div class="self-stretch flex-col justify-start items-start gap-8 pl-6 inline-flex">
+                <div class="w-[286px] h-[51.98px] relative">
+                    <img class="w-[34.33px] h-[34.33px] left-[2.13px] top-[8.83px] absolute" src="/public/assets/images/icons-fruits/vegetable-min.png.png" />
+                    <div class="w-[183px] h-[22px] left-[53px] top-[1px] absolute text-[#222222] text-sm font-extrabold font-['Inter'] leading-normal">Organic Vegetables</div>
+                    <div class="w-[233px] h-6 left-[53px] top-[28px] absolute text-[#434343] text-[11px] font-normal font-['Inter'] leading-normal">More than 20 different types of vegetables.</div>
+                </div>
+                <div class="w-[286px] h-[51.98px] relative">
+                    <img class="w-[34.33px] h-[34.33px] left-[2.13px] top-[8.83px] absolute" src="/public/assets/images/icons-fruits/fruits-min.png.png" />
+                    <div class="w-[88.28px] h-[21.58px] left-[53.30px] top-[0.98px] absolute text-[#222222] text-sm font-extrabold font-['Inter'] leading-normal">Fresh Fruits</div>
+                    <div class="w-[193.14px] h-[23.54px] left-[53.30px] top-[28.44px] absolute text-[#434343] text-[11px] font-normal font-['Inter'] leading-normal">More than 20 different types of fuits.</div>
+                </div>
+                <div class="w-[286px] h-[51.98px] relative">
+                    <img class="w-[34.33px] h-[34.33px] left-[2.13px] top-[8.83px] absolute" src="/public/assets/images/icons-fruits/drink-min.png.png" />
+                    <div class="left-[53.30px] top-[-1.02px] absolute text-[#222222] text-base font-extrabold font-['Inter'] leading-normal">Drinks & Juices</div>
+                    <div class="w-[222px] h-6 left-[53px] top-[28.03px] absolute text-[#434343] text-[11px] font-normal font-['Inter'] leading-normal">Fruit juices and carbonated soft drinks</div>
+                </div>
+                <div class="w-[286px] h-[51.98px] relative">
+                    <img class="w-[34.33px] h-[34.33px] left-[2.13px] top-[8.83px] absolute" src="/public/assets/images/icons-fruits/salmon-min.png.png" />
+                    <div class="w-[85.11px] h-[21.58px] left-[53.30px] top-[0.98px] absolute text-[#222222] text-sm font-extrabold font-['Inter'] leading-normal">Frozen Fish</div>
+                    <div class="w-[212.36px] h-[23.54px] left-[53.30px] top-[28.44px] absolute text-[#434343] text-[11px] font-normal font-['Inter'] leading-normal">Get the freshest salmon and ocean trout</div>
+                </div>
+                <div class="w-[286px] h-[51.98px] relative">
+                    <img class="w-[34.33px] h-[34.33px] left-[2.13px] top-[8.83px] absolute" src="/public/assets/images/icons-fruits/bee-product-min.png.png" />
+                    <div class="w-[99.15px] h-[21.58px] left-[53.30px] top-[0.98px] absolute text-[#222222] text-sm font-extrabold font-['Inter'] leading-normal">Bee Products</div>
+                    <div class="w-[228px] h-6 left-[53px] top-[28.06px] absolute text-[#434343] text-xs font-normal font-['Inter'] leading-normal">Get the freshest salmon and ocean trout</div>
+                </div>
+            </div>
+        </div>
+        <div class="w-[767px] h-[527.75px]  relative bg-gradient-to-r from-[#3f535a] to-[#1e6075] rounded-lg flex-col  items-start inline-flex overflow-hidden" >
+            <div class="w-[766.88px] h-[528px] bg-black/20" style="background-image: url(/public/assets/images/fruits_images/Bannar_Big-removebg-preview\ 1.png);"></div>
+            <div class="absolute pt-[136px] pl-[59px]">
+                <div class="text-white text-xl font-extrabold font-['Inter'] leading-[33.40px]">Organic Fruit</div>
+                <div class="text-white text-[50.10px] font-extrabold font-['Inter'] leading-[75.15px]">Strawberry</div>
+                <div class="text-white text-sm font-medium font-['Inter'] leading-relaxed">Good slogens for food delivery business are the key to attractive the<br/>more customers and earn money and especially food.</div>
+                <a href="#">
+                    <div class="w-[168px] h-[44.86px] mt-[43px] pl-[35.18px] pr-[35.19px] pt-[14.07px] pb-[13.79px] bg-white rounded-[46.62px] justify-center items-center gap-[14.44px] inline-flex">
+                        <div class="text-gray-800 text-sm font-semibold font-['Poppins'] leading-[16.89px]">Shop now</div>
+                        <img class="w-[13.19px] h-[10.60px] relative" src="/public/assets/images/icons-fruits/Group.svg" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w-[1117px] h-full mx-auto mt-6  pl-[21px] pr-[23px] pt-[22px] pb-[22.49px] bg-white rounded-lg justify-center items-center flex overflow-hidden">
+        <div class="w-[1073px] self-stretch flex-col justify-start items-start gap-[22px] inline-flex">
+            <div class="self-stretch justify-between items-center inline-flex">
+                <div class="flex h-[45px] w-full rounded-md border border-[#e6e6e6]">
+                    <!-- Search Input -->
+                    <input 
+                      type="text" 
+                      placeholder=" 🔍 Search" 
+                      class="grow px-4 text-[15px] text-[#7f7f7f] font-['Inter'] focus:outline-none" 
+                    />
+                    <!-- Search Button -->
+                    <button class="px-6 bg-[#00afe9] text-white text-sm font-semibold rounded-tr-md rounded-br-md hover:bg-[#008bc0]">Search</button>
+                  </div>
+            </div>
+            <div class="self-stretch h-[678.51px] flex-col justify-start items-start gap-[42.50px] flex">
+                <div class="h-[318.01px] justify-center items-start inline-flex">
+                    <div class="w-[214.60px] h-[318.01px] relative rounded-[21.30px] items-center gap-[29px] flex-col justify-start flex">
+                        <div class="w-[188.39px] h-[216.44px] relative rounded-tl-3xl rounded-tr-3xl  overflow-hidden">
+                            <img class="w-[188.39px] h-[216.44px] left-[-0px] top-[-0px] absolute" src="/public/assets/images/fruits_images/slider-cate.jpg.png" />
+                            <img class="w-[188.39px] h-[216.44px] left-0 top-[2.46px] absolute" src="/public/assets/images/fruits_images/background.png" />
+                            <div class="w-[50.78px] h-[50.78px] left-[68.80px] top-[165.66px] absolute rounded-full">
+                                <div class="w-[40.95px] h-[40.95px] px-[13.11px] pt-[13.10px] pb-[13.11px] left-[4.91px] top-[4.92px] absolute bg-[#00afe9] rounded-full justify-center items-center inline-flex">
+                                    <div class="w-[14.74px] h-[14.74px] relative flex-col justify-start items-start flex overflow-hidden" style="background: url(/public/assets/images/icons-fruits/home.svg)"></div>
+                                </div>
+                                <div class="w-[50.78px] h-[50.78px] left-0 top-[-0px] absolute rounded-[50.78px] border-dashed border-2 border-[#00afe9]"></div>
+                            </div>
+                        </div>
+                        <div class="text-center text-[#067ea6] text-xs font-bold font-['Inter'] leading-[18.02px]">$3,99/Kg</div>
+                        <div class="text-center text-[#222222] text-[13.11px] font-bold font-['Inter'] leading-tight">Fresh Strawberries</div>
+                    </div>
+                    <div class="w-[214.60px] h-[318.01px] relative rounded-[21.30px] items-center gap-[29px] flex-col justify-start flex">
+                        <div class="w-[188.39px] h-[216.44px] relative rounded-tl-3xl rounded-tr-3xl  overflow-hidden">
+                            <img class="w-[188.39px] h-[216.44px] left-0 top-0 absolute" src="/public/assets/images/fruits_images/slider-cate2.jpg.png" />
+                            <img class="w-[188.39px] h-[216.44px] left-0 top-[2.46px] absolute" src="/public/assets/images/fruits_images/background.png" />
+                            <div class="w-[50.78px] h-[50.78px] left-[68.80px] top-[165.66px] absolute rounded-full">
+                                <div class="w-[40.95px] h-[40.95px] px-[13.11px] pt-[13.10px] pb-[13.11px] left-[4.91px] top-[4.92px] absolute bg-[#00afe9] rounded-full justify-center items-center inline-flex">
+                                    <div class="w-[14.74px] h-[14.74px] relative flex-col justify-start items-start flex overflow-hidden" style="background: url(/public/assets/images/icons-fruits/home.svg)"></div>
+                                </div>
+                                <div class="w-[50.78px] h-[50.78px] left-0 top-0 absolute rounded-[50.78px] border-dashed border-2 border-[#00afe9]"></div>
+                            </div>
+                        </div>
+                        <div class="text-center text-[#067ea6] text-xs font-bold font-['Inter'] leading-[18.02px]">$5,99/Kg</div>
+                        <div class="text-center text-[#222222] text-[13.11px] font-bold font-['Inter'] leading-tight">Australian Avocado</div>
+                    </div>
+                    <div class="w-[214.60px] h-[318.01px] relative rounded-[21.30px] items-center gap-[29px] flex-col justify-start flex">
+                        <div class="w-[188.39px] h-[216.44px] relative rounded-tl-3xl rounded-tr-3xl  overflow-hidden">
+                            <img class="w-[188.39px] h-[216.44px] left-0 top-0 absolute" src="/public/assets/images/fruits_images/slider-cate3.jpg.png" />
+                            <img class="w-[188.39px] h-[216.44px] left-0 top-[2.46px] absolute" src="/public/assets/images/fruits_images/background.png" />
+                            <div class="w-[50.78px] h-[50.78px] left-[68.80px] top-[165.66px] absolute rounded-full">
+                                <div class="w-[40.95px] h-[40.95px] pl-[13.11px] pr-[13.10px] pt-[13.10px] pb-[13.11px] left-[4.91px] top-[4.92px] absolute bg-[#00afe9] rounded-full justify-center items-center inline-flex">
+                                    <div class="w-[14.74px] h-[14.74px] relative flex-col justify-start items-start flex overflow-hidden" style="background: url(/public/assets/images/icons-fruits/home.svg)"></div>
+                                </div>
+                                <div class="w-[50.78px] h-[50.78px] left-0 top-0 absolute rounded-[50.78px] border-dashed border-2 border-[#00afe9]"></div>
+                            </div>
+                        </div>
+                        <div class="text-center text-[#067ea6] text-xs font-bold font-['Inter'] leading-[18.02px]">$20,99/Kg</div>
+                        <div class="text-center text-[#222222] text-[13.11px] font-bold font-['Inter'] leading-tight">Salmon Fillet</div>
+                    </div>
+                    <div class="w-[214.60px] h-[318.01px] relative rounded-[21.30px] items-center gap-[29px] flex-col justify-start flex">
+                        <div class="w-[188.39px] h-[216.44px] relative rounded-tl-3xl rounded-tr-3xl  overflow-hidden">
+                            <img class="w-[188.39px] h-[216.44px] left-0 top-[-0px] absolute" src="/public/assets/images/fruits_images/slider-cate4.jpg.png" />
+                            <img class="w-[188.39px] h-[216.44px] left-0 top-[2.46px] absolute" src="/public/assets/images/fruits_images/background.png" />
+                            <div class="w-[50.78px] h-[50.78px] left-[68.80px] top-[165.66px] absolute rounded-full">
+                                <div class="w-[40.95px] h-[40.95px] px-[13.11px] pt-[13.10px] pb-[13.11px] left-[4.92px] top-[4.92px] absolute bg-[#00afe9] rounded-full justify-center items-center inline-flex">
+                                    <div class="w-[14.74px] h-[14.74px] relative flex-col justify-start items-start flex overflow-hidden" style="background: url(/public/assets/images/icons-fruits/home.svg)"></div>
+                                </div>
+                                <div class="w-[50.78px] h-[50.78px] left-0 top-0 absolute rounded-[50.78px] border-dashed border-2 border-[#00afe9]"></div>
+                            </div>
+                        </div>
+                        <div class="text-center text-[#067ea6] text-xs font-bold font-['Inter'] leading-[18.02px]">$2,99/Kg</div>
+                        <div class="text-center text-[#222222] text-[13.11px] font-bold font-['Inter'] leading-tight">Cabbage</div>
+                    </div>
+                    <div class="w-[214.60px] h-[318.01px] relative rounded-[21.30px] items-center gap-[29px] flex-col justify-start flex">
+                        <div class="w-[188.39px] h-[216.44px] relative rounded-tl-3xl rounded-tr-3xl  overflow-hidden">
+                            <img class="w-[188.39px] h-[216.44px] left-0 top-[-0px] absolute" src="/public/assets/images/fruits_images/slider-cate5.jpg.png" />
+                            <img class="w-[188.39px] h-[216.44px] left-0 top-[2.46px] absolute" src="/public/assets/images/fruits_images/background.png" />
+                            <div class="w-[50.78px] h-[50.78px] left-[68.80px] top-[165.66px] absolute rounded-full">
+                                <div class="w-[40.95px] h-[40.95px] px-[13.11px] pt-[13.10px] pb-[13.11px] left-[4.92px] top-[4.92px] absolute bg-[#00afe9] rounded-full justify-center items-center inline-flex">
+                                    <div class="w-[14.74px] h-[14.74px] relative flex-col justify-start items-start flex overflow-hidden" style="background: url(/public/assets/images/icons-fruits/home.svg)"></div>
+                                </div>
+                                <div class="w-[50.78px] h-[50.78px] absolute rounded-full border-2 border-dashed border-[#00afe9]"></div>
+
+                            </div>
+                        </div>
+                        <div class="text-center text-[#067ea6] text-xs font-bold font-['Inter'] leading-[18.02px]">$6,99/Kg</div>
+                        <div class="text-center text-[#222222] text-[13.11px] font-bold font-['Inter'] leading-tight">Pomegranate</div>
+                    </div>
+                </div>
+                <div class="h-[318.01px] justify-center items-start inline-flex">
+                    <div class="w-[214.60px] h-[318.01px] relative rounded-[21.30px] items-center gap-[29px] flex-col justify-start flex">
+                        <div class="w-[188.39px] h-[216.44px] relative rounded-tl-3xl rounded-tr-3xl  overflow-hidden">
+                            <img class="w-[188.39px] h-[216.44px] left-[-0px] top-[-0px] absolute" src="/public/assets/images/fruits_images/slider-cate.jpg.png" />
+                            <img class="w-[188.39px] h-[216.44px] left-0 top-[2.46px] absolute" src="/public/assets/images/fruits_images/background.png" />
+                            <div class="w-[50.78px] h-[50.78px] left-[68.80px] top-[165.66px] absolute rounded-full">
+                                <div class="w-[40.95px] h-[40.95px] px-[13.11px] pt-[13.10px] pb-[13.11px] left-[4.91px] top-[4.92px] absolute bg-[#00afe9] rounded-full justify-center items-center inline-flex">
+                                    <div class="w-[14.74px] h-[14.74px] relative flex-col justify-start items-start flex overflow-hidden" style="background: url(/public/assets/images/icons-fruits/home.svg)"></div>
+                                </div>
+                                <div class="w-[50.78px] h-[50.78px] left-0 top-[-0px] absolute rounded-[50.78px] border-dashed border-2 border-[#00afe9]"></div>
+                            </div>
+                        </div>
+                        <div class="text-center text-[#067ea6] text-xs font-bold font-['Inter'] leading-[18.02px]">$3,99/Kg</div>
+                        <div class="text-center text-[#222222] text-[13.11px] font-bold font-['Inter'] leading-tight">Fresh Strawberries</div>
+                    </div>
+                    <div class="w-[214.60px] h-[318.01px] relative rounded-[21.30px] items-center gap-[29px] flex-col justify-start flex">
+                        <div class="w-[188.39px] h-[216.44px] relative rounded-tl-3xl rounded-tr-3xl  overflow-hidden">
+                            <img class="w-[188.39px] h-[216.44px] left-0 top-0 absolute" src="/public/assets/images/fruits_images/slider-cate2.jpg.png" />
+                            <img class="w-[188.39px] h-[216.44px] left-0 top-[2.46px] absolute" src="/public/assets/images/fruits_images/background.png" />
+                            <div class="w-[50.78px] h-[50.78px] left-[68.80px] top-[165.66px] absolute rounded-full">
+                                <div class="w-[40.95px] h-[40.95px] px-[13.11px] pt-[13.10px] pb-[13.11px] left-[4.91px] top-[4.92px] absolute bg-[#00afe9] rounded-full justify-center items-center inline-flex">
+                                    <div class="w-[14.74px] h-[14.74px] relative flex-col justify-start items-start flex overflow-hidden" style="background: url(/public/assets/images/icons-fruits/home.svg)"></div>
+                                </div>
+                                <div class="w-[50.78px] h-[50.78px] left-0 top-0 absolute rounded-[50.78px] border-dashed border-2 border-[#00afe9]"></div>
+                            </div>
+                        </div>
+                        <div class="text-center text-[#067ea6] text-xs font-bold font-['Inter'] leading-[18.02px]">$5,99/Kg</div>
+                        <div class="text-center text-[#222222] text-[13.11px] font-bold font-['Inter'] leading-tight">Australian Avocado</div>
+                    </div>
+                    <div class="w-[214.60px] h-[318.01px] relative rounded-[21.30px] items-center gap-[29px] flex-col justify-start flex">
+                        <div class="w-[188.39px] h-[216.44px] relative rounded-tl-3xl rounded-tr-3xl  overflow-hidden">
+                            <img class="w-[188.39px] h-[216.44px] left-0 top-0 absolute" src="/public/assets/images/fruits_images/slider-cate3.jpg.png" />
+                            <img class="w-[188.39px] h-[216.44px] left-0 top-[2.46px] absolute" src="/public/assets/images/fruits_images/background.png" />
+                            <div class="w-[50.78px] h-[50.78px] left-[68.80px] top-[165.66px] absolute rounded-full">
+                                <div class="w-[40.95px] h-[40.95px] pl-[13.11px] pr-[13.10px] pt-[13.10px] pb-[13.11px] left-[4.91px] top-[4.92px] absolute bg-[#00afe9] rounded-full justify-center items-center inline-flex">
+                                    <div class="w-[14.74px] h-[14.74px] relative flex-col justify-start items-start flex overflow-hidden" style="background: url(/public/assets/images/icons-fruits/home.svg)"></div>
+                                </div>
+                                <div class="w-[50.78px] h-[50.78px] left-0 top-0 absolute rounded-[50.78px] border-dashed border-2 border-[#00afe9]"></div>
+                            </div>
+                        </div>
+                        <div class="text-center text-[#067ea6] text-xs font-bold font-['Inter'] leading-[18.02px]">$20,99/Kg</div>
+                        <div class="text-center text-[#222222] text-[13.11px] font-bold font-['Inter'] leading-tight">Salmon Fillet</div>
+                    </div>
+                    <div class="w-[214.60px] h-[318.01px] relative rounded-[21.30px] items-center gap-[29px] flex-col justify-start flex">
+                        <div class="w-[188.39px] h-[216.44px] relative rounded-tl-3xl rounded-tr-3xl  overflow-hidden">
+                            <img class="w-[188.39px] h-[216.44px] left-0 top-[-0px] absolute" src="/public/assets/images/fruits_images/slider-cate4.jpg.png" />
+                            <img class="w-[188.39px] h-[216.44px] left-0 top-[2.46px] absolute" src="/public/assets/images/fruits_images/background.png" />
+                            <div class="w-[50.78px] h-[50.78px] left-[68.80px] top-[165.66px] absolute rounded-full">
+                                <div class="w-[40.95px] h-[40.95px] px-[13.11px] pt-[13.10px] pb-[13.11px] left-[4.92px] top-[4.92px] absolute bg-[#00afe9] rounded-full justify-center items-center inline-flex">
+                                    <div class="w-[14.74px] h-[14.74px] relative flex-col justify-start items-start flex overflow-hidden" style="background: url(/public/assets/images/icons-fruits/home.svg)"></div>
+                                </div>
+                                <div class="w-[50.78px] h-[50.78px] left-0 top-0 absolute rounded-[50.78px] border-dashed border-2 border-[#00afe9]"></div>
+                            </div>
+                        </div>
+                        <div class="text-center text-[#067ea6] text-xs font-bold font-['Inter'] leading-[18.02px]">$2,99/Kg</div>
+                        <div class="text-center text-[#222222] text-[13.11px] font-bold font-['Inter'] leading-tight">Cabbage</div>
+                    </div>
+                    <div class="w-[214.60px] h-[318.01px] relative rounded-[21.30px] items-center gap-[29px] flex-col justify-start flex">
+                        <div class="w-[188.39px] h-[216.44px] relative rounded-tl-3xl rounded-tr-3xl  overflow-hidden">
+                            <img class="w-[188.39px] h-[216.44px] left-0 top-[-0px] absolute" src="/public/assets/images/fruits_images/slider-cate5.jpg.png" />
+                            <img class="w-[188.39px] h-[216.44px] left-0 top-[2.46px] absolute" src="/public/assets/images/fruits_images/background.png" />
+                            <div class="w-[50.78px] h-[50.78px] left-[68.80px] top-[165.66px] absolute rounded-full">
+                                <div class="w-[40.95px] h-[40.95px] px-[13.11px] pt-[13.10px] pb-[13.11px] left-[4.92px] top-[4.92px] absolute bg-[#00afe9] rounded-full justify-center items-center inline-flex">
+                                    <div class="w-[14.74px] h-[14.74px] relative flex-col justify-start items-start flex overflow-hidden" style="background: url(/public/assets/images/icons-fruits/home.svg)"></div>
+                                </div>
+                                <div class="w-[50.78px] h-[50.78px] absolute rounded-full border-2 border-dashed border-[#00afe9]"></div>
+
+                            </div>
+                        </div>
+                        <div class="text-center text-[#067ea6] text-xs font-bold font-['Inter'] leading-[18.02px]">$6,99/Kg</div>
+                        <div class="text-center text-[#222222] text-[13.11px] font-bold font-['Inter'] leading-tight">Pomegranate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div> 
+
+    <!-- Uikit js you can use cdn  https://getuikit.com/docs/installation  or fine the latest  https://getuikit.com/docs/installation -->
+    <script src="/public/assets/js/uikit.min.js"></script>
+    <script src="/public/assets/js/script.js"></script>
+
+    <!-- Ion icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ 
+
+</body>
+</html>

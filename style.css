@@ -1,0 +1,52 @@
+/* Fade animations for meal cards container */
+#meal-cards-container.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+#meal-cards-container.fade-out {
+  animation: fadeOut 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+/* Click animation for meal cards */
+.meal-card.clicked {
+  animation: scaleClick 0.3s ease-in-out;
+}
+
+@keyframes scaleClick {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Hover animation for meal cards */
+.meal-card:hover {
+  transform: scale(1.05);
+}

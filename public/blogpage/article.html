@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Articles</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- UIkit CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.16.27/dist/css/uikit.min.css"
+    />
+        <!-- css files -->
+        <link rel="stylesheet" href="/public/assets/css/tailwind.css">
+        <link rel="stylesheet" href="/public/assets/css/style.css">  
+  </head>
+
+  <body
+    class="bg-gray-100 min-h-screen flex flex-col items-center justify-start"
+  >
+  <!-- Header -->
+  <header
+  class="lg:py-4 h-20 lg:px-6 py-3 px-4 shadow-[0_4px_4px_0px_rgba(0,0,0,0.3)] bg-white/100 backdrop-blur-xl z-40 dark:bg-slate-900/80 uk-animation-slide-top-small"
+  uk-sticky
+>
+  <div class="max-w-[1440px] mx-auto">
+    <div class="flex justify-between items-cnter">
+      <div class="flex gap-2 items-center z-20 relative">
+        <button
+          type="button"
+          class="p-2.5 text-lg max-md:flex hidden group z"
+          uk-toggle="target: #header-nav ; cls:max-md:hidden"
+        >
+          <ion-icon
+            name="menu"
+            class="group-aria-expanded:inline hidden"
+          ></ion-icon>
+          <ion-icon
+            name="close"
+            class="group-aria-expanded:hidden"
+          ></ion-icon>
+        </button>
+        <a href="home.html"
+          ><img
+            src="/public/assets/images/logo.png"
+            alt=""
+            class="hidden md:block lg:block mt-[5px] w-[189.70px] h-[59px]"
+        /></a>
+      </div>
+      <div
+        id="header-nav"
+        class="max-md:hidden max-md:bg-white max-md:p-5 max-md:fixed max-md:top-0 max-md:shadow-md max-md:left-0 max-md:pt-14 max-md:w-full max-md:z-10"
+      >
+        <nav
+          class="flex sm:items-start lg:items-center font-semibold text-slate-500 dark:text-white/70 lg:gap-1 max-md:border-t max-md:pt-2 max-md:flex max-md:flex-col"
+          uk-scrollspy-nav="closest: a ; scroll: true"
+        >
+          <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+            ><img
+              class="h-auto w-[40px]"
+              src="/public/assets/images/workout_icons/calender-checked.png"
+          /></a>
+          <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+            ><img
+              class="h-auto w-[40px]"
+              src="/public/assets/images/workout_icons/calender-date.png"
+          /></a>
+          <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+            ><img
+              class="h-auto w-[40px]"
+              src="/public/assets/images/workout_icons/3d-folder.png"
+            />
+          </a>
+          <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+            ><img
+              class="h-auto w-[40px]"
+              src="/public/assets/images/workout_icons/realistic-upward.png"
+            />
+          </a>
+          <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+            ><img
+              class="h-auto w-[40px]"
+              src="/public/assets/images/workout_icons/3d-movie.png"
+            />
+          </a>
+          <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+            ><img
+              class="h-auto w-[40px]"
+              src="/public/assets/images/workout_icons/sports-gym.png"
+            />
+          </a>
+        </nav>
+      </div>
+      <div class=" flex flex-row gap-4 mt-[-10px]">
+        <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+            ><img
+              class="h-auto w-[54px]"
+              src="/public/assets/images/workout_icons/minimal-notification.png"
+            />
+        </a>
+        <button
+          class="flex border-0 items-center px-1 py-2 text-sm bg-white rounded-md dark:text-white dark:bg-slate-700 group"
+          type=""
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <img
+            class="w-[36.84px] h-[36.84px] rounded-full"
+            src="/public/assets/images/icons-yoga/5456d9c431578988d2340c4b5c4edd1c.png"
+          />
+          <div
+            class="w-[185.64px] h-[39.27px] text-[#222222] text-[18.99px] font-semibold font-['Inter'] leading-[42.02px]"
+          >
+            System Admin
+          </div>
+        </button>
+      </div>
+      
+    <button class=" font-bold mt-[-10px] items-center px-3  text-lg bg-white dark:text-white dark:bg-slate-700 group" type="button" aria-haspopup="true" aria-expanded="false">
+        Navigations  <ion-icon name="chevron-down-outline" class="ml-2 text-lg duration-200 group-aria-expanded:rotate-180 md hydrated" role="img" aria-label="chevron down outline"></ion-icon> 
+    </button>
+    
+    <div uk-dropdown="offset:10;pos: bottom-right ; animation: uk-animation-slide-bottom-small" class="uk-dropdown"> 
+      <nav>
+        <a href="home.html"> <ion-icon class="text-xl md hydrated" name="home-outline" role="img" aria-label="home outline"></ion-icon>  Home </a>  
+        <a href="article.html"> <ion-icon class="text-xl md hydrated" name="newspaper-outline" role="img" aria-label="newspapers outline"></ion-icon>  Articles </a>  
+    </nav>
+    </div>
+
+    </div>
+</header>
+ 
+<div
+        class="w-full max-w-[1200px] mx-auto mt-4 flex flex-col items-center gap-8 px-4 sm:px-6 lg:px-8 font-inter bg-white rounded-xl shadow-sm">
+        
+        <div>
+                    <!-- Sub Header Section -->
+            <div class="w-full text-center flex flex-col items-center gap-2 my-5">
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-black leading-tight">
+                    Engage With Article
+                </h1>
+                <p class="text-sm sm:text-base font-medium text-gray-600">
+                    Daily new blogs, don't miss them!
+                </p>
+            </div>
+
+            <!-- Content Section: Blog Card and Search Section with Additional Sections -->
+            <div class="flex flex-wrap justify-between gap-8 mt-8">
+                <!-- Blog Card -->
+                <div
+                    class="w-full lg:w-[60%] bg-white border border-none rounded-lg overflow-hidden shadow-sm hover:shadow-xl">
+                    <div class="relative hover:scale-105 transform transition duration-300 ease-in-out">
+                        <img src="/public/assets/images/nutrition-blogs/food1.png" alt="Blog Image" class="w-full h-[200px] object-cover" />
+                        <div class="absolute bottom-2 left-2 bg-white/90 text-center rounded-md px-2 py-1">
+                            <p class="text-black text-sm font-bold">18</p>
+                            <p class="text-gray-500 text-xs uppercase">Nov</p>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-center gap-4 text-sm text-gray-500">
+                            <!-- First Row -->
+                            <div class="flex items-center gap-4">
+                                <img src="/public/assets/images/nutrition-blogs/audio.svg" alt="" />
+                                <span>Listen to audio</span>
+                            </div>
+
+                            <!-- Second Row -->
+                            <div class="flex items-center gap-4">
+                                <img src="/public/assets/images/nutrition-blogs/wishlistbtn.svg" alt="Add to wishlist" />
+                                <img src="/public/assets/images/nutrition-blogs/like.svg" alt="" />
+                                <img src="/public/assets/images/nutrition-blogs/dislike.svg" alt="" />
+                            </div>
+                        </div>
+                        <h2 class="mt-4 text-lg font-semibold text-black leading-tight">
+                            Curabitur porttitor orci eget neque accumsan venenatis. Nunc
+                            fermentum.
+                        </h2>
+                        <p class="mt-2 text-gray-600 text-sm leading-relaxed">
+                            Maecenas elementum in risus sed condimentum. Duis convallis ante
+                            ac tempus maximus. Fusce malesuada sed velit ut dictum.
+                        </p>
+                        <button class="mt-4 text-blue-500 text-sm font-medium flex items-center gap-1">
+                            Read More
+                            <svg class="w-4 h-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M12.293 5.293a1 1 0 0 1 1.414 0L16.414 8a1 1 0 0 1 0 1.414l-2.707 2.707a1 1 0 0 1-1.414-1.414L13.586 9H4a1 1 0 0 1 0-2h9.586l-1.293-1.293a1 1 0 0 1 0-1.414z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Search Section (with additional sections below) -->
+                <div class="w-full lg:w-[35%] mt-8 lg:mt-0">
+                    <!-- Search Bar -->
+                    <div class="w-full flex items-center justify-center mb-6">
+                        <div class="w-full flex items-center border border-gray-300 rounded-md p-2">
+                            <input type="text" placeholder="Search"
+                                class="flex-grow bg-transparent text-gray-700 placeholder-gray-500 text-sm outline-none" />
+                            <svg class="w-5 h-5 text-gray-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.387 5.387-1.41 1.41-5.387-5.387zM8 14a6 6 0 1 0 0-12 6 6 0 0 0 0 12z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Top Categories Section -->
+                    <div class=" w-full h-[276.26px] pb-[40px] bg-white flex-col justify-start items-start gap-[14.12px] inline-flex">
+                        <!-- Header -->
+                        <div class="self-stretch pb-[3.53px] justify-center items-center inline-flex">
+                            <div class="grow shrink basis-0 text-[#191919] text-lg font-medium leading-relaxed">
+                                Top Categories
+                            </div>
+                            <!-- <div class="w-[17.65px] h-[17.65px] relative overflow-hidden"></div> -->
+                        </div>
+                    
+                        <!-- Dropdown -->
+                        <div class="self-stretch">
+                            <label for="categorySelect" class="sr-only">Select Category</label>
+                            <select id="categorySelect"
+                                class="w-full border border-gray-300 rounded-lg p-1 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option value="fresh-fruit">Fresh Fruit</option>
+                                <option value="vegetables">Vegetables</option>
+                                <option value="spices">Spices</option>
+                                <option value="meat">Meat</option>
+                                <option value="allergies">Allergies</option>
+                                <option value="fish">Fish</option>
+                                <option value="nuts">Nuts</option>
+                            </select>
+                        </div>
+                    
+                        <!-- Category List -->
+                        <div class="w-full justify-between items-start inline-flex">
+                            <div class="text-[#191919] text-xs font-normal font-['Inter'] leading-[18.53px]">Fresh Fruit</div>
+                            <div class="text-[#7f7f7f] text-xs font-normal font-['Poppins'] leading-[18.53px]"> (134)</div>
+                        </div>
+                        <div class="w-full justify-between items-start inline-flex">
+                            <div class="text-[#191919] text-xs font-normal font-['Inter'] leading-[18.53px]">Vegetables</div>
+                            <div class="text-[#7f7f7f] text-xs font-normal font-['Poppins'] leading-[18.53px]"> (150)</div>
+                        </div>
+                        <div class="w-full justify-between items-start inline-flex">
+                            <div class="text-[#191919] text-xs font-normal font-['Inter'] leading-[18.53px]">Spices</div>
+                            <div class="text-[#7f7f7f] text-xs font-normal font-['Inter'] leading-[18.53px]"> (54)</div>
+                        </div>
+                        <div class="w-full justify-between items-start inline-flex">
+                            <div class="text-[#191919] text-xs font-normal font-['Inter'] leading-[18.53px]">Meat</div>
+                            <div class="text-[#7f7f7f] text-xs font-normal font-['Inter'] leading-[18.53px]"> (47)</div>
+                        </div>
+                        <div class="w-full justify-between items-start inline-flex">
+                            <div class="text-[#191919] text-xs font-normal font-['Inter'] leading-[18.53px]">Allergies</div>
+                            <div class="text-[#7f7f7f] text-xs font-normal font-['Inter'] leading-[18.53px]"> (43)</div>
+                        </div>
+                        <div class="w-full justify-between items-start inline-flex">
+                            <div class="text-[#191919] text-xs font-normal font-['Inter'] leading-[18.53px]">Fish</div>
+                            <div class="text-[#7f7f7f] text-xs font-normal font-['Inter'] leading-[18.53px]"> (38)</div>
+                        </div>
+                        <div class="w-full justify-between items-start inline-flex">
+                            <div class="text-[#191919] text-xs font-normal font-['Inter'] leading-[18.53px]">Nuts</div>
+                            <div class="text-[#7f7f7f] text-xs font-normal font-['Inter'] leading-[18.53px]"> (15)</div>
+                        </div>
+                    </div>
+
+
+                    <!-- Popular Tags Section -->
+                    <div class="mb-6 mt-20">
+                        <h2 class="text-2xl sm:text-3xl lg:text-xl font-medium text-black mb-6">
+                            Popular Tags
+                        </h2>
+                        <div class="flex flex-wrap justify-center gap-4">
+                            <span class="bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm">Web
+                                Development</span>
+                            <span class="bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm">AI</span>
+                            <span class="bg-purple-100 text-purple-600 px-4 py-2 rounded-full text-sm">Business</span>
+                            <span class="bg-yellow-100 text-yellow-600 px-4 py-2 rounded-full text-sm">Finance</span>
+                            <span class="bg-red-100 text-red-600 px-4 py-2 rounded-full text-sm">Health</span>
+                            <span class="bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm">Web
+                                Development</span>
+                            <span class="bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm">AI</span>
+                            <span class="bg-purple-100 text-purple-600 px-4 py-2 rounded-full text-sm">Business</span>
+                            <span class="bg-yellow-100 text-yellow-600 px-4 py-2 rounded-full text-sm">Finance</span>
+                            <span class="bg-red-100 text-red-600 px-4 py-2 rounded-full text-sm">Health</span>
+                        </div>
+                    </div>
+
+                    <!-- Recently Added Section -->
+                    <div class="bg-white border border-none rounded-lg shadow-sm p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                            Recently Added
+                        </h3>
+                        <div class="flex flex-col gap-4">
+                            <!-- Recently Added Item 1 -->
+                            <div class="flex gap-4 items-start">
+                                <img src="/public/assets/images/nutrition-blogs/food1.png" alt="Recently Added Image"
+                                    class="w-20 h-20 object-cover rounded-md" />
+                                <div class="flex flex-col">
+                                    <h4 class="text-lg font-semibold text-gray-800">
+                                        Curabitur porttitor orci eget neque accumsan venenatis.
+                                    </h4>
+                                    <p class="text-sm text-gray-600">
+                                        Maecenas elementum in risus sed condimentum. Duis
+                                        convallis ante ac
+                                    </p>
+
+                                    <div class="flex items-center gap-2">
+                                        <img src="/public/assets/images/nutrition-blogs/calendar1.svg" alt="" class="w-4 h-4" />
+                                        <span class="text-xs text-gray-500">18 Nov, 2025</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Recently Added Item 2 -->
+                            <div class="flex gap-4 items-start">
+                                <img src="/public/assets/images/nutrition-blogs/food2.png" alt="Recently Added Image"
+                                    class="w-20 h-20 object-cover rounded-md" />
+                                <div class="flex flex-col">
+                                    <h4 class="text-lg font-semibold text-gray-800">
+                                        Maecenas elementum in risus sed condimentum.
+                                    </h4>
+                                    <p class="text-sm text-gray-600">
+                                        Fusce malesuada sed velit ut dictum. Morbi faucibus vitae
+                                        orci at euismod.
+                                    </p>
+                                    <div class="flex items-center gap-2">
+                                        <img src="/public/assets/images/nutrition-blogs/calendar1.svg" alt="" class="w-4 h-4" />
+                                        <span class="text-xs text-gray-500">18 Nov, 2025</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Recently Added Item 3 -->
+                            <div class="flex gap-4 items-start">
+                                <img src="/public/assets/images/nutrition-blogs/food2.png" alt="Recently Added Image"
+                                    class="w-20 h-20 object-cover rounded-md" />
+                                <div class="flex flex-col">
+                                    <h4 class="text-lg font-semibold text-gray-800">
+                                        Integer auctor augue in erat vehicula.
+                                    </h4>
+                                    <p class="text-sm text-gray-600">
+                                        Pellentesque ac elit nec libero volutpat consequat.
+                                        Integer auctor augue in erat vehicula.
+                                    </p>
+                                    <div class="flex items-center gap-2">
+                                        <img src="/public/assets/images/nutrition-blogs/calendar1.svg" alt="" class="w-4 h-4" />
+                                        <span class="text-xs text-gray-500">18 Nov, 2025</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Uikit js you can use cdn  https://getuikit.com/docs/installation  or fine the latest  https://getuikit.com/docs/installation -->
+    <script src="/public/assets/js/uikit.min.js"></script>
+    <script src="/public/assets/js/script.js"></script>
+    <script src="/public/assets/js/script-1.js"></script>
+    
+    <!-- Ion icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.27/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.27/dist/js/uikit-icons.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"
+      defer
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+  </body>
+</html>
