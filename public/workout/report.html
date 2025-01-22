@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Favicon -->
-    <link href="assets/images/favicon.png" rel="icon" type="image/png" />
+    <link href="/public/assets/images/favicon.png" rel="icon" type="image/png" />
 
     <!-- title and description-->
-    <title>Work out Page</title>
+    <title>Work out | Reports</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <meta
       name="description"
@@ -17,8 +17,8 @@
     />
 
     <!-- css files -->
-    <link rel="stylesheet" href="assets/css/tailwind.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="/public/assets/css/tailwind.css" />
+    <link rel="stylesheet" href="/public/assets/css/style.css" />
 
     <!-- google font -->
     <link
@@ -48,105 +48,117 @@
     </style>
   </head>
   <body class="bg-gray-100 dark:bg-slate-950 overflow-x-hidden">
-    <!-- header -->
+    <!-- Header -->
     <header
-      class="lg:py-4 h-20 lg:px-6 py-3 px-4 shadow-[0_4px_4px_0px_rgba(0,0,0,0.3)] bg-white/100 backdrop-blur-xl z-40 dark:bg-slate-900/80 uk-animation-slide-top-small"
-      uk-sticky
-    >
-      <div class="max-w-[1440px] mx-auto">
-        <div class="flex justify-between items-center">
-          <div class="flex gap-2 items-center z-20 relative">
-            <button
-              type="button"
-              class="p-2.5 text-lg max-md:flex hidden group z"
-              uk-toggle="target: #header-nav ; cls:max-md:hidden"
-            >
-              <ion-icon
-                name="menu"
-                class="group-aria-expanded:inline hidden"
-              ></ion-icon>
-              <ion-icon
-                name="close"
-                class="group-aria-expanded:hidden"
-              ></ion-icon>
-            </button>
-            <a href="workoutpage.html"
-              ><img
-                src="assets/images/logo.png"
-                alt=""
-                class="mt-[5px] w-[189.70px] h-[59px]"
-            /></a>
-          </div>
-          <div
-            id="header-nav"
-            class="max-md:hidden max-md:bg-white max-md:p-5 max-md:fixed max-md:top-0 max-md:shadow-md max-md:left-0 max-md:pt-14 max-md:w-full max-md:z-10"
+    class="lg:py-4 h-20 lg:px-6 py-3 px-4 shadow-[0_4px_4px_0px_rgba(0,0,0,0.3)] bg-white/100 backdrop-blur-xl z-40 dark:bg-slate-900/80 uk-animation-slide-top-small"
+    uk-sticky
+  >
+    <div class="max-w-[1440px] mx-auto">
+      <div class="flex justify-between items-center">
+        <div class="flex gap-2 items-center z-20 relative">
+          <button
+            type="button"
+            class="p-2.5 text-lg max-md:flex hidden group z"
+            uk-toggle="target: #header-nav ; cls:max-md:hidden"
           >
-            <nav
-              class="flex sm:items-start lg:items-center font-semibold text-slate-500 dark:text-white/70 lg:gap-1 max-md:border-t max-md:pt-2 max-md:flex max-md:flex-col"
-              uk-scrollspy-nav="closest: a ; scroll: true"
-            >
-              <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
-                ><img
-                  class="h-auto w-[40px]"
-                  src="/public/assets/images/workout_icons/calender-checked.png"
-              /></a>
-              <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
-                ><img
-                  class="h-auto w-[40px]"
-                  src="/public/assets/images/workout_icons/calender-date.png"
-              /></a>
-              <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
-                ><img
-                  class="h-auto w-[40px]"
-                  src="/public/assets/images/workout_icons/3d-folder.png"
-                />
-              </a>
-              <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
-                ><img
-                  class="h-auto w-[40px]"
-                  src="/public/assets/images/workout_icons/realistic-upward.png"
-                />
-              </a>
-              <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
-                ><img
-                  class="h-auto w-[40px]"
-                  src="/public/assets/images/workout_icons/3d-movie.png"
-                />
-              </a>
-              <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
-                ><img
-                  class="h-auto w-[40px]"
-                  src="/public/assets/images/workout_icons/sports-gym.png"
-                />
-              </a>
-            </nav>
-          </div>
-          <div class=" flex flex-row gap-4 mt-[-10px]">
-            <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
-                ><img
-                  class="h-auto w-[54px]"
-                  src="/public/assets/images/workout_icons/minimal-notification.png"
-                />
-            </a>
-            <button
-              class="flex border-0 items-center px-1 py-2 text-sm bg-white rounded-md dark:text-white dark:bg-slate-700 group"
-              type=""
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <img
-                class="w-[36.84px] h-[36.84px] rounded-full"
-                src="/public/assets/images/icons-yoga/5456d9c431578988d2340c4b5c4edd1c.png"
-              />
-              <div
-                class="w-[185.64px] h-[39.27px] text-[#222222] text-[18.99px] font-semibold font-['Inter'] leading-[42.02px]"
-              >
-                System Admin
-              </div>
-            </button>
-          </div>
+            <ion-icon
+              name="menu"
+              class="group-aria-expanded:inline hidden"
+            ></ion-icon>
+            <ion-icon
+              name="close"
+              class="group-aria-expanded:hidden"
+            ></ion-icon>
+          </button>
+          <a href="home.html"
+            ><img
+              src="/public/assets/images/logo.png"
+              alt=""
+              class="hidden md:block lg:block mt-[5px] w-[189.70px] h-[59px]"
+          /></a>
         </div>
-    </header>
+        <div
+          id="header-nav"
+          class="max-md:hidden max-md:bg-white max-md:p-5 max-md:fixed max-md:top-0 max-md:shadow-md max-md:left-0 max-md:pt-14 max-md:w-full max-md:z-10"
+        >
+          <nav
+            class="flex sm:items-start lg:items-center font-semibold text-slate-500 dark:text-white/70 lg:gap-1 max-md:border-t max-md:pt-2 max-md:flex max-md:flex-col"
+            uk-scrollspy-nav="closest: a ; scroll: true"
+          >
+            <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+              ><img
+                class="h-auto w-[40px]"
+                src="/public/assets/images/workout_icons/calender-checked.png"
+            /></a>
+            <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+              ><img
+                class="h-auto w-[40px]"
+                src="/public/assets/images/workout_icons/calender-date.png"
+            /></a>
+            <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+              ><img
+                class="h-auto w-[40px]"
+                src="/public/assets/images/workout_icons/3d-folder.png"
+              />
+            </a>
+            <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+              ><img
+                class="h-auto w-[40px]"
+                src="/public/assets/images/workout_icons/realistic-upward.png"
+              />
+            </a>
+            <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+              ><img
+                class="h-auto w-[40px]"
+                src="/public/assets/images/workout_icons/3d-movie.png"
+              />
+            </a>
+            <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+              ><img
+                class="h-auto w-[40px]"
+                src="/public/assets/images/workout_icons/sports-gym.png"
+              />
+            </a>
+          </nav>
+        </div>
+        <div class=" flex flex-row gap-4 mt-[-10px]">
+          <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
+              ><img
+                class="h-auto w-[54px]"
+                src="/public/assets/images/workout_icons/minimal-notification.png"
+              />
+          </a>
+          <button
+            class="flex border-0 items-center px-1 py-2 text-sm bg-white rounded-md dark:text-white dark:bg-slate-700 group"
+            type=""
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <img
+              class="w-[36.84px] h-[36.84px] rounded-full"
+              src="/public/assets/images/icons-yoga/5456d9c431578988d2340c4b5c4edd1c.png"
+            />
+            <div
+              class="w-[185.64px] h-[39.27px] text-[#222222] text-[18.99px] font-semibold font-['Inter'] leading-[42.02px]"
+            >
+              System Admin
+            </div>
+          </button>
+        </div>
+        
+      <button class=" font-bold mt-[-10px] items-center px-3  text-sm bg-white dark:text-white dark:bg-slate-700 group" type="button" aria-haspopup="true" aria-expanded="false">
+          Navigations  <ion-icon name="chevron-down-outline" class="ml-2 text-lg duration-200 group-aria-expanded:rotate-180 md hydrated" role="img" aria-label="chevron down outline"></ion-icon> 
+      </button>
+      
+      <div uk-dropdown="offset:10;pos: bottom-right ; animation: uk-animation-slide-bottom-small" class="uk-dropdown"> 
+          <nav>
+              <a href="home.html"> <ion-icon class="text-xl md hydrated" name="Home-outline" role="img" aria-label="person outline"></ion-icon>  Home </a>  
+              <a href="blog.html"> <ion-icon class="text-xl md hydrated" name="newspaper-outline" role="img" aria-label="mail outline"></ion-icon>  Blogs </a>  
+          </nav>
+      </div>
+
+      </div>
+  </header>
     <div class="w-max:[1440px] lg:mx-[40px] md:mx-[40px] my-[40px]  sm:mx-[0px]">
         <div class="flex flex-wrap gap-4 justify-center sm:justify-center lg:justify-center">
             <div
@@ -566,7 +578,7 @@
     </div>
   </div>
 </div>
-<div class="w-max-[[1440px]] mx-auto rounded-2xl mt-6 ml-[0px] md:ml-[95px] lg:ml-[95px] relative flex" style="margin: 0 auto !important;">
+<div class="w-max-[1440px] mx-auto rounded-2xl mt-6 ml-[0px] md:ml-[95px] lg:ml-[95px] relative flex" style="margin: 0 auto !important;">
   <!-- Image -->
   <div class="w-[1074px] h-[412.04px] relative bg-cover rounded-2xl" style="background-image: url(/public/assets/images/workout_images/sport-girl.jpeg); margin: 32px auto;">
      <!-- Text Overlay -->
@@ -585,7 +597,7 @@
   </div>
 </div>
 
-<div class="w-max-[[1440px]]  rounded-2xl mt-6 ml-[0px] md:ml-[95px] lg:ml-[95px] relative table" style="margin: 32px auto;">
+<div class="w-max-[1440px]  rounded-2xl mt-6 ml-[0px] md:ml-[95px] lg:ml-[95px] relative table" style="margin: 32px auto;">
   <div class="mt-6 text-black text-[28px] font-semibold font-['Inter']">Upcoming Workout</div>
   <div class="w-full md:w-[600px] lg:w-[1092px] mt-8 flex flex-wrap gap-4 justify-start">
     <!-- Card -->
@@ -707,7 +719,7 @@
     </div>
     
 </div>       
-<div class="w-max-[[1440px]] mx-auto mt-8 rounded-2xl  ml-[0px] md:ml-[95px] lg:ml-[95px] relative mb-8 table" style="margin: 32px auto;">
+<div class="w-max-[1440px] mx-auto mt-8 rounded-2xl  ml-[0px] md:ml-[95px] lg:ml-[95px] relative mb-8 table" style="margin: 32px auto;">
   <div class="w-full md:w-[600px] lg:w-[1092px] mt-8 flex flex-wrap gap-4 justify-start">
     <!-- Card -->
     <div class="w-full md:w-1/3 lg:w-[23.8%] bg-white rounded-xl shadow-lg overflow-hidden h-[300px]">
@@ -866,8 +878,8 @@
 </div>
 </div>
     <!-- Uikit js you can use cdn  https://getuikit.com/docs/installation  or fine the latest  https://getuikit.com/docs/installation -->
-    <script src="assets/js/uikit.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="/public/assets/js/uikit.min.js"></script>
+    <script src="/public/assets/js/script.js"></script>
 
     <!-- Ion icon -->
     <script
