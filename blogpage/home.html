@@ -14,12 +14,12 @@
       href="https://cdn.jsdelivr.net/npm/uikit@3.16.27/dist/css/uikit.min.css"
     />
         <!-- css files -->
-        <link rel="stylesheet" href="/public/assets/css/tailwind.css">
-        <link rel="stylesheet" href="/public/assets/css/style.css">  
+        <link rel="stylesheet" href="../assets/css/tailwind.css">
+        <link rel="stylesheet" href="../assets/css/style.css">  
   </head>
 
   <body
-    class="bg-gray-100 min-h-screen flex flex-col items-center justify-start"
+    class="flex flex-col items-center justify-start min-h-screen bg-gray-100"
   >
   <!-- Header -->
   <header
@@ -28,7 +28,7 @@
 >
   <div class="max-w-[1440px] mx-auto">
     <div class="flex justify-between items-cnter">
-      <div class="flex gap-2 items-center z-20 relative">
+      <div class="relative z-20 flex items-center gap-2">
         <button
           type="button"
           class="p-2.5 text-lg max-md:flex hidden group z"
@@ -36,7 +36,7 @@
         >
           <ion-icon
             name="menu"
-            class="group-aria-expanded:inline hidden"
+            class="hidden group-aria-expanded:inline"
           ></ion-icon>
           <ion-icon
             name="close"
@@ -45,7 +45,7 @@
         </button>
         <a href="home.html"
           ><img
-            src="/public/assets/images/logo.png"
+            src="../assets/images/logo.png"
             alt=""
             class="hidden md:block lg:block mt-[5px] w-[189.70px] h-[59px]"
         /></a>
@@ -55,41 +55,41 @@
         class="max-md:hidden max-md:bg-white max-md:p-5 max-md:fixed max-md:top-0 max-md:shadow-md max-md:left-0 max-md:pt-14 max-md:w-full max-md:z-10"
       >
         <nav
-          class="flex sm:items-start lg:items-center font-semibold text-slate-500 dark:text-white/70 lg:gap-1 max-md:border-t max-md:pt-2 max-md:flex max-md:flex-col"
+          class="flex font-semibold sm:items-start lg:items-center text-slate-500 dark:text-white/70 lg:gap-1 max-md:border-t max-md:pt-2 max-md:flex max-md:flex-col"
           uk-scrollspy-nav="closest: a ; scroll: true"
         >
           <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
             ><img
               class="h-auto w-[40px]"
-              src="/public/assets/images/workout_icons/calender-checked.png"
+              src="../assets/images/workout_icons/calender-checked.png"
           /></a>
           <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
             ><img
               class="h-auto w-[40px]"
-              src="/public/assets/images/workout_icons/calender-date.png"
+              src="../assets/images/workout_icons/calender-date.png"
           /></a>
           <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
             ><img
               class="h-auto w-[40px]"
-              src="/public/assets/images/workout_icons/3d-folder.png"
+              src="../assets/images/workout_icons/3d-folder.png"
             />
           </a>
           <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
             ><img
               class="h-auto w-[40px]"
-              src="/public/assets/images/workout_icons/realistic-upward.png"
+              src="../assets/images/workout_icons/realistic-upward.png"
             />
           </a>
           <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
             ><img
               class="h-auto w-[40px]"
-              src="/public/assets/images/workout_icons/3d-movie.png"
+              src="../assets/images/workout_icons/3d-movie.png"
             />
           </a>
           <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
             ><img
               class="h-auto w-[40px]"
-              src="/public/assets/images/workout_icons/sports-gym.png"
+              src="../assets/images/workout_icons/sports-gym.png"
             />
           </a>
         </nav>
@@ -98,18 +98,18 @@
         <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
             ><img
               class="h-auto w-[54px]"
-              src="/public/assets/images/workout_icons/minimal-notification.png"
+              src="../assets/images/workout_icons/minimal-notification.png"
             />
         </a>
         <button
-          class="flex border-0 items-center px-1 py-2 text-sm bg-white rounded-md dark:text-white dark:bg-slate-700 group"
+          class="flex items-center px-1 py-2 text-sm bg-white border-0 rounded-md dark:text-white dark:bg-slate-700 group"
           type=""
           aria-haspopup="true"
           aria-expanded="false"
         >
           <img
             class="w-[36.84px] h-[36.84px] rounded-full"
-            src="/public/assets/images/icons-yoga/5456d9c431578988d2340c4b5c4edd1c.png"
+            src="../assets/images/icons-yoga/5456d9c431578988d2340c4b5c4edd1c.png"
           />
           <div
             class="w-[185.64px] h-[39.27px] text-[#222222] text-[18.99px] font-semibold font-['Inter'] leading-[42.02px]"
@@ -136,21 +136,21 @@
 <div
         class="w-full max-w-[1200px] mx-auto mt-4 flex flex-col items-center gap-8 px-4 sm:px-6 lg:px-8 font-inter bg-white rounded-xl shadow-sm">
         <!-- Header Section -->
-        <div class="text-center flex flex-col items-center gap-2 mt-2 mb-5 pt-5">
-            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-black leading-tight">
+        <div class="flex flex-col items-center gap-2 pt-5 mt-2 mb-5 text-center">
+            <h1 class="text-3xl font-extrabold leading-tight text-black sm:text-4xl lg:text-5xl">
                 Welcome to our blogs
             </h1>
-            <p class="text-sm sm:text-base font-medium text-gray-600">
+            <p class="text-sm font-medium text-gray-600 sm:text-base">
                 Daily new blogs, don't miss them!
             </p>
         </div>
 
         <!-- Search and Category Section -->
-        <div class="w-full flex flex-wrap justify-between items-center gap-4">
+        <div class="flex flex-wrap items-center justify-between w-full gap-4">
             <!-- Search Bar -->
-            <div class="flex-grow flex items-center border border-gray-300 rounded-md p-2">
+            <div class="flex items-center flex-grow p-2 border border-gray-300 rounded-md">
                 <input type="text" placeholder="Search"
-                    class="flex-grow bg-transparent border-none border text-gray-700 placeholder-gray-500 text-sm outline-none" />
+                    class="flex-grow text-sm text-gray-700 placeholder-gray-500 bg-transparent border border-none outline-none" />
                 <svg class="w-5 h-5 text-gray-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20">
                     <path
@@ -161,13 +161,13 @@
 
             <!-- Category Button -->
             <div class="relative">
-                <button class="bg-gray-400 text-white text-sm font-semibold px-4 py-2 rounded-full focus:outline-none"
+                <button class="px-4 py-2 text-sm font-semibold text-white bg-gray-400 rounded-full focus:outline-none"
                     id="categoryButton" aria-expanded="false" aria-haspopup="true">
                     View Category
                 </button>
 
                 <!-- Dropdown Menu -->
-                <div class="absolute mt-2 right-0 w-48 bg-white border border-gray-200 rounded-md shadow-lg hidden"
+                <div class="absolute right-0 hidden w-48 mt-2 bg-white border border-gray-200 rounded-md shadow-lg"
                     id="categoryMenu">
                     <a href="/categories/all" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">All
                         Categories</a>
@@ -183,16 +183,16 @@
             </div>
         </div>
         <!-- Blog Posts Section -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <!-- Blog Card -->
             <div
-                class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl hover:scale-105 transform transition duration-300 ease-in-out">
+                class="overflow-hidden transition duration-300 ease-in-out transform bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-xl hover:scale-105">
                 <!-- Image and Date -->
                 <div class="relative">
-                    <img src="/public/assets/images/nutrition-blogs/food7.png" alt="Blog Image" class="w-full h-[200px] object-cover">
-                    <div class="absolute bottom-2 left-2 bg-white/90 text-center rounded-md px-2 py-1">
-                        <p class="text-black text-sm font-bold">18</p>
-                        <p class="text-gray-500 text-xs uppercase">Nov</p>
+                    <img src="../assets/images/nutrition-blogs/food7.png" alt="Blog Image" class="w-full h-[200px] object-cover">
+                    <div class="absolute px-2 py-1 text-center rounded-md bottom-2 left-2 bg-white/90">
+                        <p class="text-sm font-bold text-black">18</p>
+                        <p class="text-xs text-gray-500 uppercase">Nov</p>
                     </div>
                 </div>
                 <!-- Blog Content -->
@@ -230,13 +230,13 @@
                         </svg>
                         <span>65 Comments</span>
                     </div>
-                    <h2 class="mt-4 text-lg font-semibold text-black leading-tight">
+                    <h2 class="mt-4 text-lg font-semibold leading-tight text-black">
                         Curabitur porttitor orci eget neque accumsan venenatis.
                     </h2>
-                    <p class="mt-2 text-gray-600 text-sm leading-relaxed">
+                    <p class="mt-2 text-sm leading-relaxed text-gray-600">
                         Maecenas elementum in risus sed condimentum. Duis convallis ante ac tempus maximus.
                     </p>
-                    <button class="mt-4 text-blue-500 text-sm font-medium flex items-center gap-1">
+                    <button class="flex items-center gap-1 mt-4 text-sm font-medium text-blue-500">
                         Read More
                         <svg class="w-4 h-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                             <path
@@ -248,13 +248,13 @@
             </div>
         
             <div
-                class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl hover:scale-105 transform transition duration-300 ease-in-out">
+                class="overflow-hidden transition duration-300 ease-in-out transform bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-xl hover:scale-105">
                 <!-- Image and Date -->
                 <div class="relative">
-                    <img src="/public/assets/images/nutrition-blogs/food6.png" alt="Blog Image" class="w-full h-[200px] object-cover">
-                    <div class="absolute bottom-2 left-2 bg-white/90 text-center rounded-md px-2 py-1">
-                        <p class="text-black text-sm font-bold">18</p>
-                        <p class="text-gray-500 text-xs uppercase">Nov</p>
+                    <img src="../assets/images/nutrition-blogs/food6.png" alt="Blog Image" class="w-full h-[200px] object-cover">
+                    <div class="absolute px-2 py-1 text-center rounded-md bottom-2 left-2 bg-white/90">
+                        <p class="text-sm font-bold text-black">18</p>
+                        <p class="text-xs text-gray-500 uppercase">Nov</p>
                     </div>
                 </div>
                 <!-- Blog Content -->
@@ -292,13 +292,13 @@
                         </svg>
                         <span>65 Comments</span>
                     </div>
-                    <h2 class="mt-4 text-lg font-semibold text-black leading-tight">
+                    <h2 class="mt-4 text-lg font-semibold leading-tight text-black">
                         Curabitur porttitor orci eget neque accumsan venenatis.
                     </h2>
-                    <p class="mt-2 text-gray-600 text-sm leading-relaxed">
+                    <p class="mt-2 text-sm leading-relaxed text-gray-600">
                         Maecenas elementum in risus sed condimentum. Duis convallis ante ac tempus maximus.
                     </p>
-                    <button class="mt-4 text-blue-500 text-sm font-medium flex items-center gap-1">
+                    <button class="flex items-center gap-1 mt-4 text-sm font-medium text-blue-500">
                         Read More
                         <svg class="w-4 h-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                             <path
@@ -309,13 +309,13 @@
                 </div>
             </div>
             <div
-                class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl hover:scale-105 transform transition duration-300 ease-in-out">
+                class="overflow-hidden transition duration-300 ease-in-out transform bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-xl hover:scale-105">
                 <!-- Image and Date -->
                 <div class="relative">
-                    <img src="/public/assets/images/nutrition-blogs/food7.png" alt="Blog Image" class="w-full h-[200px] object-cover">
-                    <div class="absolute bottom-2 left-2 bg-white/90 text-center rounded-md px-2 py-1">
-                        <p class="text-black text-sm font-bold">18</p>
-                        <p class="text-gray-500 text-xs uppercase">Nov</p>
+                    <img src="../assets/images/nutrition-blogs/food7.png" alt="Blog Image" class="w-full h-[200px] object-cover">
+                    <div class="absolute px-2 py-1 text-center rounded-md bottom-2 left-2 bg-white/90">
+                        <p class="text-sm font-bold text-black">18</p>
+                        <p class="text-xs text-gray-500 uppercase">Nov</p>
                     </div>
                 </div>
                 <!-- Blog Content -->
@@ -353,13 +353,13 @@
                         </svg>
                         <span>65 Comments</span>
                     </div>
-                    <h2 class="mt-4 text-lg font-semibold text-black leading-tight">
+                    <h2 class="mt-4 text-lg font-semibold leading-tight text-black">
                         Curabitur porttitor orci eget neque accumsan venenatis.
                     </h2>
-                    <p class="mt-2 text-gray-600 text-sm leading-relaxed">
+                    <p class="mt-2 text-sm leading-relaxed text-gray-600">
                         Maecenas elementum in risus sed condimentum. Duis convallis ante ac tempus maximus.
                     </p>
-                    <button class="mt-4 text-blue-500 text-sm font-medium flex items-center gap-1">
+                    <button class="flex items-center gap-1 mt-4 text-sm font-medium text-blue-500">
                         Read More
                         <svg class="w-4 h-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                             <path
@@ -371,18 +371,18 @@
             </div>
         
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-2">
             <!-- Blog Card -->
             <div
-                class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl hover:scale-105 transform transition duration-300 ease-in-out flex flex-col lg:flex-row">
+                class="flex flex-col overflow-hidden transition duration-300 ease-in-out transform bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-xl hover:scale-105 lg:flex-row">
                 <!-- Main Content -->
                 <div class="flex-1">
                     <!-- Image and Date -->
                     <div class="relative">
-                        <img src="/public/assets/images/nutrition-blogs/food1.png" alt="Blog Image" class="w-full h-[200px] object-cover" />
-                        <div class="absolute bottom-2 left-2 bg-white/90 text-center rounded-md px-2 py-1">
-                            <p class="text-black text-sm font-bold">18</p>
-                            <p class="text-gray-500 text-xs uppercase">Nov</p>
+                        <img src="../assets/images/nutrition-blogs/food1.png" alt="Blog Image" class="w-full h-[200px] object-cover" />
+                        <div class="absolute px-2 py-1 text-center rounded-md bottom-2 left-2 bg-white/90">
+                            <p class="text-sm font-bold text-black">18</p>
+                            <p class="text-xs text-gray-500 uppercase">Nov</p>
                         </div>
                     </div>
                     <!-- Blog Content -->
@@ -427,18 +427,18 @@
                             </div>
                         </div>
                         <!-- Title -->
-                        <h3 class="text-lg font-bold mt-4">
+                        <h3 class="mt-4 text-lg font-bold">
                             Delicious Beans Recipe for Everyone
                         </h3>
                         <!-- Description
-                        <p class="text-gray-600 mt-2">Discover the best recipe for cooking beans that will leave your taste buds
+                        <p class="mt-2 text-gray-600">Discover the best recipe for cooking beans that will leave your taste buds
                             craving for more. Perfect for family meals and gatherings.</p> -->
                     </div>
                 </div>
 
                 <!-- Side Content -->
-                <div class="w-full lg:w-full bg-white p-4 border-t lg:border-l border-gray-200">
-                    <p class="text-gray-600 mt-2">
+                <div class="w-full p-4 bg-white border-t border-gray-200 lg:w-full lg:border-l">
+                    <p class="mt-2 text-gray-600">
                         Discover the best recipe for cooking beans that will leave your
                         taste buds craving for more. Perfect for family meals and
                         gatherings. Discover the best recipe for cooking beans that will
@@ -457,10 +457,10 @@
                 class="lg:w-[400px] md:w-[250px] bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl hover:scale-105 transform transition duration-300 ease-in-out">
                 <!-- Image and Date -->
                 <div class="relative">
-                    <img src="/public/assets/images/nutrition-blogs/food2.png" alt="Blog Image" class="w-full h-[200px] object-cover" />
-                    <div class="absolute bottom-2 left-2 bg-white/90 text-center rounded-md px-2 py-1">
-                        <p class="text-black text-sm font-bold">18</p>
-                        <p class="text-gray-500 text-xs uppercase">Nov</p>
+                    <img src="../assets/images/nutrition-blogs/food2.png" alt="Blog Image" class="w-full h-[200px] object-cover" />
+                    <div class="absolute px-2 py-1 text-center rounded-md bottom-2 left-2 bg-white/90">
+                        <p class="text-sm font-bold text-black">18</p>
+                        <p class="text-xs text-gray-500 uppercase">Nov</p>
                     </div>
                 </div>
                 <!-- Blog Content -->
@@ -500,14 +500,14 @@
                         </svg>
                         <span>65 Comments</span>
                     </div>
-                    <h2 class="mt-4 text-lg font-semibold text-black leading-tight">
+                    <h2 class="mt-4 text-lg font-semibold leading-tight text-black">
                         Curabitur porttitor orci eget neque accumsan venenatis.
                     </h2>
-                    <p class="mt-2 text-gray-600 text-sm leading-relaxed">
+                    <p class="mt-2 text-sm leading-relaxed text-gray-600">
                         Maecenas elementum in risus sed condimentum. Duis convallis ante
                         ac tempus maximus.
                     </p>
-                    <button class="mt-4 text-blue-500 text-sm font-medium flex items-center gap-1">
+                    <button class="flex items-center gap-1 mt-4 text-sm font-medium text-blue-500">
                         Read More
                         <svg class="w-4 h-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                             <path
@@ -518,16 +518,16 @@
                 </div>
             </div>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <!-- Blog Card -->
             <div
-                class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl hover:scale-105 transform transition duration-300 ease-in-out">
+                class="overflow-hidden transition duration-300 ease-in-out transform bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-xl hover:scale-105">
                 <!-- Image and Date -->
                 <div class="relative">
-                    <img src="/public/assets/images/nutrition-blogs/food7.png" alt="Blog Image" class="w-full h-[200px] object-cover">
-                    <div class="absolute bottom-2 left-2 bg-white/90 text-center rounded-md px-2 py-1">
-                        <p class="text-black text-sm font-bold">18</p>
-                        <p class="text-gray-500 text-xs uppercase">Nov</p>
+                    <img src="../assets/images/nutrition-blogs/food7.png" alt="Blog Image" class="w-full h-[200px] object-cover">
+                    <div class="absolute px-2 py-1 text-center rounded-md bottom-2 left-2 bg-white/90">
+                        <p class="text-sm font-bold text-black">18</p>
+                        <p class="text-xs text-gray-500 uppercase">Nov</p>
                     </div>
                 </div>
                 <!-- Blog Content -->
@@ -567,13 +567,13 @@
                         </svg>
                         <span>65 Comments</span>
                     </div>
-                    <h2 class="mt-4 text-lg font-semibold text-black leading-tight">
+                    <h2 class="mt-4 text-lg font-semibold leading-tight text-black">
                         Curabitur porttitor orci eget neque accumsan venenatis.
                     </h2>
-                    <p class="mt-2 text-gray-600 text-sm leading-relaxed">
+                    <p class="mt-2 text-sm leading-relaxed text-gray-600">
                         Maecenas elementum in risus sed condimentum. Duis convallis ante ac tempus maximus.
                     </p>
-                    <button class="mt-4 text-blue-500 text-sm font-medium flex items-center gap-1">
+                    <button class="flex items-center gap-1 mt-4 text-sm font-medium text-blue-500">
                         Read More
                         <svg class="w-4 h-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                             <path
@@ -585,13 +585,13 @@
             </div>
 
             <div
-                class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl hover:scale-105 transform transition duration-300 ease-in-out">
+                class="overflow-hidden transition duration-300 ease-in-out transform bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-xl hover:scale-105">
                 <!-- Image and Date -->
                 <div class="relative">
-                    <img src="/public/assets/images/nutrition-blogs/food6.png" alt="Blog Image" class="w-full h-[200px] object-cover">
-                    <div class="absolute bottom-2 left-2 bg-white/90 text-center rounded-md px-2 py-1">
-                        <p class="text-black text-sm font-bold">18</p>
-                        <p class="text-gray-500 text-xs uppercase">Nov</p>
+                    <img src="../assets/images/nutrition-blogs/food6.png" alt="Blog Image" class="w-full h-[200px] object-cover">
+                    <div class="absolute px-2 py-1 text-center rounded-md bottom-2 left-2 bg-white/90">
+                        <p class="text-sm font-bold text-black">18</p>
+                        <p class="text-xs text-gray-500 uppercase">Nov</p>
                     </div>
                 </div>
                 <!-- Blog Content -->
@@ -628,13 +628,13 @@
                         </svg>
                         <span>65 Comments</span>
                     </div>
-                    <h2 class="mt-4 text-lg font-semibold text-black leading-tight">
+                    <h2 class="mt-4 text-lg font-semibold leading-tight text-black">
                         Curabitur porttitor orci eget neque accumsan venenatis.
                     </h2>
-                    <p class="mt-2 text-gray-600 text-sm leading-relaxed">
+                    <p class="mt-2 text-sm leading-relaxed text-gray-600">
                         Maecenas elementum in risus sed condimentum. Duis convallis ante ac tempus maximus.
                     </p>
-                    <button class="mt-4 text-blue-500 text-sm font-medium flex items-center gap-1">
+                    <button class="flex items-center gap-1 mt-4 text-sm font-medium text-blue-500">
                         Read More
                         <svg class="w-4 h-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                             <path
@@ -645,13 +645,13 @@
                 </div>
             </div>
             <div
-                class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl hover:scale-105 transform transition duration-300 ease-in-out">
+                class="overflow-hidden transition duration-300 ease-in-out transform bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-xl hover:scale-105">
                 <!-- Image and Date -->
                 <div class="relative">
-                    <img src="/public/assets/images/nutrition-blogs/food7.png" alt="Blog Image" class="w-full h-[200px] object-cover">
-                    <div class="absolute bottom-2 left-2 bg-white/90 text-center rounded-md px-2 py-1">
-                        <p class="text-black text-sm font-bold">18</p>
-                        <p class="text-gray-500 text-xs uppercase">Nov</p>
+                    <img src="../assets/images/nutrition-blogs/food7.png" alt="Blog Image" class="w-full h-[200px] object-cover">
+                    <div class="absolute px-2 py-1 text-center rounded-md bottom-2 left-2 bg-white/90">
+                        <p class="text-sm font-bold text-black">18</p>
+                        <p class="text-xs text-gray-500 uppercase">Nov</p>
                     </div>
                 </div>
                 <!-- Blog Content -->
@@ -688,13 +688,13 @@
                         </svg>
                         <span>65 Comments</span>
                     </div>
-                    <h2 class="mt-4 text-lg font-semibold text-black leading-tight">
+                    <h2 class="mt-4 text-lg font-semibold leading-tight text-black">
                         Curabitur porttitor orci eget neque accumsan venenatis.
                     </h2>
-                    <p class="mt-2 text-gray-600 text-sm leading-relaxed">
+                    <p class="mt-2 text-sm leading-relaxed text-gray-600">
                         Maecenas elementum in risus sed condimentum. Duis convallis ante ac tempus maximus.
                     </p>
-                    <button class="mt-4 text-blue-500 text-sm font-medium flex items-center gap-1">
+                    <button class="flex items-center gap-1 mt-4 text-sm font-medium text-blue-500">
                         Read More
                         <svg class="w-4 h-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                             <path
@@ -710,9 +710,8 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Uikit js you can use cdn  https://getuikit.com/docs/installation  or fine the latest  https://getuikit.com/docs/installation -->
-    <script src="/public/assets/js/uikit.min.js"></script>
-    <script src="/public/assets/js/script.js"></script>
-    <script src="/public/assets/js/script-1.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/script-1.js"></script>
     
     <!-- Ion icon -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

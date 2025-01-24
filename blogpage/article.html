@@ -14,12 +14,12 @@
       href="https://cdn.jsdelivr.net/npm/uikit@3.16.27/dist/css/uikit.min.css"
     />
         <!-- css files -->
-        <link rel="stylesheet" href="/public/assets/css/tailwind.css">
-        <link rel="stylesheet" href="/public/assets/css/style.css">  
+        <link rel="stylesheet" href="../assets/css/tailwind.css">
+        <link rel="stylesheet" href="../assets/css/style.css">  
   </head>
 
   <body
-    class="bg-gray-100 min-h-screen flex flex-col items-center justify-start"
+    class="flex flex-col items-center justify-start min-h-screen bg-gray-100"
   >
   <!-- Header -->
   <header
@@ -28,7 +28,7 @@
 >
   <div class="max-w-[1440px] mx-auto">
     <div class="flex justify-between items-cnter">
-      <div class="flex gap-2 items-center z-20 relative">
+      <div class="relative z-20 flex items-center gap-2">
         <button
           type="button"
           class="p-2.5 text-lg max-md:flex hidden group z"
@@ -36,7 +36,7 @@
         >
           <ion-icon
             name="menu"
-            class="group-aria-expanded:inline hidden"
+            class="hidden group-aria-expanded:inline"
           ></ion-icon>
           <ion-icon
             name="close"
@@ -45,7 +45,7 @@
         </button>
         <a href="home.html"
           ><img
-            src="/public/assets/images/logo.png"
+            src="../assets/images/logo.png"
             alt=""
             class="hidden md:block lg:block mt-[5px] w-[189.70px] h-[59px]"
         /></a>
@@ -55,41 +55,41 @@
         class="max-md:hidden max-md:bg-white max-md:p-5 max-md:fixed max-md:top-0 max-md:shadow-md max-md:left-0 max-md:pt-14 max-md:w-full max-md:z-10"
       >
         <nav
-          class="flex sm:items-start lg:items-center font-semibold text-slate-500 dark:text-white/70 lg:gap-1 max-md:border-t max-md:pt-2 max-md:flex max-md:flex-col"
+          class="flex font-semibold sm:items-start lg:items-center text-slate-500 dark:text-white/70 lg:gap-1 max-md:border-t max-md:pt-2 max-md:flex max-md:flex-col"
           uk-scrollspy-nav="closest: a ; scroll: true"
         >
           <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
             ><img
               class="h-auto w-[40px]"
-              src="/public/assets/images/workout_icons/calender-checked.png"
+              src="../assets/images/workout_icons/calender-checked.png"
           /></a>
           <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
             ><img
               class="h-auto w-[40px]"
-              src="/public/assets/images/workout_icons/calender-date.png"
+              src="../assets/images/workout_icons/calender-date.png"
           /></a>
           <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
             ><img
               class="h-auto w-[40px]"
-              src="/public/assets/images/workout_icons/3d-folder.png"
+              src="../assets/images/workout_icons/3d-folder.png"
             />
           </a>
           <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
             ><img
               class="h-auto w-[40px]"
-              src="/public/assets/images/workout_icons/realistic-upward.png"
+              src="../assets/images/workout_icons/realistic-upward.png"
             />
           </a>
           <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
             ><img
               class="h-auto w-[40px]"
-              src="/public/assets/images/workout_icons/3d-movie.png"
+              src="../assets/images/workout_icons/3d-movie.png"
             />
           </a>
           <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
             ><img
               class="h-auto w-[40px]"
-              src="/public/assets/images/workout_icons/sports-gym.png"
+              src="../assets/images/workout_icons/sports-gym.png"
             />
           </a>
         </nav>
@@ -98,18 +98,18 @@
         <a class="lg:py-1.5 py-2.5 px-3 duration-500" href="#"
             ><img
               class="h-auto w-[54px]"
-              src="/public/assets/images/workout_icons/minimal-notification.png"
+              src="../assets/images/workout_icons/minimal-notification.png"
             />
         </a>
         <button
-          class="flex border-0 items-center px-1 py-2 text-sm bg-white rounded-md dark:text-white dark:bg-slate-700 group"
+          class="flex items-center px-1 py-2 text-sm bg-white border-0 rounded-md dark:text-white dark:bg-slate-700 group"
           type=""
           aria-haspopup="true"
           aria-expanded="false"
         >
           <img
             class="w-[36.84px] h-[36.84px] rounded-full"
-            src="/public/assets/images/icons-yoga/5456d9c431578988d2340c4b5c4edd1c.png"
+            src="../assets/images/icons-yoga/5456d9c431578988d2340c4b5c4edd1c.png"
           />
           <div
             class="w-[185.64px] h-[39.27px] text-[#222222] text-[18.99px] font-semibold font-['Inter'] leading-[42.02px]"
@@ -138,11 +138,11 @@
         
         <div>
                     <!-- Sub Header Section -->
-            <div class="w-full text-center flex flex-col items-center gap-2 my-5">
-                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-black leading-tight">
+            <div class="flex flex-col items-center w-full gap-2 my-5 text-center">
+                <h1 class="text-3xl font-extrabold leading-tight text-black sm:text-4xl lg:text-5xl">
                     Engage With Article
                 </h1>
-                <p class="text-sm sm:text-base font-medium text-gray-600">
+                <p class="text-sm font-medium text-gray-600 sm:text-base">
                     Daily new blogs, don't miss them!
                 </p>
             </div>
@@ -152,37 +152,37 @@
                 <!-- Blog Card -->
                 <div
                     class="w-full lg:w-[60%] bg-white border border-none rounded-lg overflow-hidden shadow-sm hover:shadow-xl">
-                    <div class="relative hover:scale-105 transform transition duration-300 ease-in-out">
-                        <img src="/public/assets/images/nutrition-blogs/food1.png" alt="Blog Image" class="w-full h-[200px] object-cover" />
-                        <div class="absolute bottom-2 left-2 bg-white/90 text-center rounded-md px-2 py-1">
-                            <p class="text-black text-sm font-bold">18</p>
-                            <p class="text-gray-500 text-xs uppercase">Nov</p>
+                    <div class="relative transition duration-300 ease-in-out transform hover:scale-105">
+                        <img src="../assets/images/nutrition-blogs/food1.png" alt="Blog Image" class="w-full h-[200px] object-cover" />
+                        <div class="absolute px-2 py-1 text-center rounded-md bottom-2 left-2 bg-white/90">
+                            <p class="text-sm font-bold text-black">18</p>
+                            <p class="text-xs text-gray-500 uppercase">Nov</p>
                         </div>
                     </div>
                     <div class="p-4">
-                        <div class="flex justify-between items-center gap-4 text-sm text-gray-500">
+                        <div class="flex items-center justify-between gap-4 text-sm text-gray-500">
                             <!-- First Row -->
                             <div class="flex items-center gap-4">
-                                <img src="/public/assets/images/nutrition-blogs/audio.svg" alt="" />
+                                <img src="../assets/images/nutrition-blogs/audio.svg" alt="" />
                                 <span>Listen to audio</span>
                             </div>
 
                             <!-- Second Row -->
                             <div class="flex items-center gap-4">
-                                <img src="/public/assets/images/nutrition-blogs/wishlistbtn.svg" alt="Add to wishlist" />
-                                <img src="/public/assets/images/nutrition-blogs/like.svg" alt="" />
-                                <img src="/public/assets/images/nutrition-blogs/dislike.svg" alt="" />
+                                <img src="../assets/images/nutrition-blogs/wishlistbtn.svg" alt="Add to wishlist" />
+                                <img src="../assets/images/nutrition-blogs/like.svg" alt="" />
+                                <img src="../assets/images/nutrition-blogs/dislike.svg" alt="" />
                             </div>
                         </div>
-                        <h2 class="mt-4 text-lg font-semibold text-black leading-tight">
+                        <h2 class="mt-4 text-lg font-semibold leading-tight text-black">
                             Curabitur porttitor orci eget neque accumsan venenatis. Nunc
                             fermentum.
                         </h2>
-                        <p class="mt-2 text-gray-600 text-sm leading-relaxed">
+                        <p class="mt-2 text-sm leading-relaxed text-gray-600">
                             Maecenas elementum in risus sed condimentum. Duis convallis ante
                             ac tempus maximus. Fusce malesuada sed velit ut dictum.
                         </p>
-                        <button class="mt-4 text-blue-500 text-sm font-medium flex items-center gap-1">
+                        <button class="flex items-center gap-1 mt-4 text-sm font-medium text-blue-500">
                             Read More
                             <svg class="w-4 h-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20">
@@ -197,10 +197,10 @@
                 <!-- Search Section (with additional sections below) -->
                 <div class="w-full lg:w-[35%] mt-8 lg:mt-0">
                     <!-- Search Bar -->
-                    <div class="w-full flex items-center justify-center mb-6">
-                        <div class="w-full flex items-center border border-gray-300 rounded-md p-2">
+                    <div class="flex items-center justify-center w-full mb-6">
+                        <div class="flex items-center w-full p-2 border border-gray-300 rounded-md">
                             <input type="text" placeholder="Search"
-                                class="flex-grow bg-transparent text-gray-700 placeholder-gray-500 text-sm outline-none" />
+                                class="flex-grow text-sm text-gray-700 placeholder-gray-500 bg-transparent outline-none" />
                             <svg class="w-5 h-5 text-gray-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20">
                                 <path
@@ -224,7 +224,7 @@
                         <div class="self-stretch">
                             <label for="categorySelect" class="sr-only">Select Category</label>
                             <select id="categorySelect"
-                                class="w-full border border-gray-300 rounded-lg p-1 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                class="w-full p-1 text-gray-700 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                                 <option value="fresh-fruit">Fresh Fruit</option>
                                 <option value="vegetables">Vegetables</option>
                                 <option value="spices">Spices</option>
@@ -236,31 +236,31 @@
                         </div>
                     
                         <!-- Category List -->
-                        <div class="w-full justify-between items-start inline-flex">
+                        <div class="inline-flex items-start justify-between w-full">
                             <div class="text-[#191919] text-xs font-normal font-['Inter'] leading-[18.53px]">Fresh Fruit</div>
                             <div class="text-[#7f7f7f] text-xs font-normal font-['Poppins'] leading-[18.53px]"> (134)</div>
                         </div>
-                        <div class="w-full justify-between items-start inline-flex">
+                        <div class="inline-flex items-start justify-between w-full">
                             <div class="text-[#191919] text-xs font-normal font-['Inter'] leading-[18.53px]">Vegetables</div>
                             <div class="text-[#7f7f7f] text-xs font-normal font-['Poppins'] leading-[18.53px]"> (150)</div>
                         </div>
-                        <div class="w-full justify-between items-start inline-flex">
+                        <div class="inline-flex items-start justify-between w-full">
                             <div class="text-[#191919] text-xs font-normal font-['Inter'] leading-[18.53px]">Spices</div>
                             <div class="text-[#7f7f7f] text-xs font-normal font-['Inter'] leading-[18.53px]"> (54)</div>
                         </div>
-                        <div class="w-full justify-between items-start inline-flex">
+                        <div class="inline-flex items-start justify-between w-full">
                             <div class="text-[#191919] text-xs font-normal font-['Inter'] leading-[18.53px]">Meat</div>
                             <div class="text-[#7f7f7f] text-xs font-normal font-['Inter'] leading-[18.53px]"> (47)</div>
                         </div>
-                        <div class="w-full justify-between items-start inline-flex">
+                        <div class="inline-flex items-start justify-between w-full">
                             <div class="text-[#191919] text-xs font-normal font-['Inter'] leading-[18.53px]">Allergies</div>
                             <div class="text-[#7f7f7f] text-xs font-normal font-['Inter'] leading-[18.53px]"> (43)</div>
                         </div>
-                        <div class="w-full justify-between items-start inline-flex">
+                        <div class="inline-flex items-start justify-between w-full">
                             <div class="text-[#191919] text-xs font-normal font-['Inter'] leading-[18.53px]">Fish</div>
                             <div class="text-[#7f7f7f] text-xs font-normal font-['Inter'] leading-[18.53px]"> (38)</div>
                         </div>
-                        <div class="w-full justify-between items-start inline-flex">
+                        <div class="inline-flex items-start justify-between w-full">
                             <div class="text-[#191919] text-xs font-normal font-['Inter'] leading-[18.53px]">Nuts</div>
                             <div class="text-[#7f7f7f] text-xs font-normal font-['Inter'] leading-[18.53px]"> (15)</div>
                         </div>
@@ -268,36 +268,36 @@
 
 
                     <!-- Popular Tags Section -->
-                    <div class="mb-6 mt-20">
-                        <h2 class="text-2xl sm:text-3xl lg:text-xl font-medium text-black mb-6">
+                    <div class="mt-20 mb-6">
+                        <h2 class="mb-6 text-2xl font-medium text-black sm:text-3xl lg:text-xl">
                             Popular Tags
                         </h2>
                         <div class="flex flex-wrap justify-center gap-4">
-                            <span class="bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm">Web
+                            <span class="px-4 py-2 text-sm text-blue-600 bg-blue-100 rounded-full">Web
                                 Development</span>
-                            <span class="bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm">AI</span>
-                            <span class="bg-purple-100 text-purple-600 px-4 py-2 rounded-full text-sm">Business</span>
-                            <span class="bg-yellow-100 text-yellow-600 px-4 py-2 rounded-full text-sm">Finance</span>
-                            <span class="bg-red-100 text-red-600 px-4 py-2 rounded-full text-sm">Health</span>
-                            <span class="bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm">Web
+                            <span class="px-4 py-2 text-sm text-green-600 bg-green-100 rounded-full">AI</span>
+                            <span class="px-4 py-2 text-sm text-purple-600 bg-purple-100 rounded-full">Business</span>
+                            <span class="px-4 py-2 text-sm text-yellow-600 bg-yellow-100 rounded-full">Finance</span>
+                            <span class="px-4 py-2 text-sm text-red-600 bg-red-100 rounded-full">Health</span>
+                            <span class="px-4 py-2 text-sm text-blue-600 bg-blue-100 rounded-full">Web
                                 Development</span>
-                            <span class="bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm">AI</span>
-                            <span class="bg-purple-100 text-purple-600 px-4 py-2 rounded-full text-sm">Business</span>
-                            <span class="bg-yellow-100 text-yellow-600 px-4 py-2 rounded-full text-sm">Finance</span>
-                            <span class="bg-red-100 text-red-600 px-4 py-2 rounded-full text-sm">Health</span>
+                            <span class="px-4 py-2 text-sm text-green-600 bg-green-100 rounded-full">AI</span>
+                            <span class="px-4 py-2 text-sm text-purple-600 bg-purple-100 rounded-full">Business</span>
+                            <span class="px-4 py-2 text-sm text-yellow-600 bg-yellow-100 rounded-full">Finance</span>
+                            <span class="px-4 py-2 text-sm text-red-600 bg-red-100 rounded-full">Health</span>
                         </div>
                     </div>
 
                     <!-- Recently Added Section -->
-                    <div class="bg-white border border-none rounded-lg shadow-sm p-4">
-                        <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                    <div class="p-4 bg-white border border-none rounded-lg shadow-sm">
+                        <h3 class="mb-2 text-lg font-semibold text-gray-800">
                             Recently Added
                         </h3>
                         <div class="flex flex-col gap-4">
                             <!-- Recently Added Item 1 -->
-                            <div class="flex gap-4 items-start">
-                                <img src="/public/assets/images/nutrition-blogs/food1.png" alt="Recently Added Image"
-                                    class="w-20 h-20 object-cover rounded-md" />
+                            <div class="flex items-start gap-4">
+                                <img src="../assets/images/nutrition-blogs/food1.png" alt="Recently Added Image"
+                                    class="object-cover w-20 h-20 rounded-md" />
                                 <div class="flex flex-col">
                                     <h4 class="text-lg font-semibold text-gray-800">
                                         Curabitur porttitor orci eget neque accumsan venenatis.
@@ -308,15 +308,15 @@
                                     </p>
 
                                     <div class="flex items-center gap-2">
-                                        <img src="/public/assets/images/nutrition-blogs/calendar1.svg" alt="" class="w-4 h-4" />
+                                        <img src="../assets/images/nutrition-blogs/calendar1.svg" alt="" class="w-4 h-4" />
                                         <span class="text-xs text-gray-500">18 Nov, 2025</span>
                                     </div>
                                 </div>
                             </div>
                             <!-- Recently Added Item 2 -->
-                            <div class="flex gap-4 items-start">
-                                <img src="/public/assets/images/nutrition-blogs/food2.png" alt="Recently Added Image"
-                                    class="w-20 h-20 object-cover rounded-md" />
+                            <div class="flex items-start gap-4">
+                                <img src="../assets/images/nutrition-blogs/food2.png" alt="Recently Added Image"
+                                    class="object-cover w-20 h-20 rounded-md" />
                                 <div class="flex flex-col">
                                     <h4 class="text-lg font-semibold text-gray-800">
                                         Maecenas elementum in risus sed condimentum.
@@ -326,15 +326,15 @@
                                         orci at euismod.
                                     </p>
                                     <div class="flex items-center gap-2">
-                                        <img src="/public/assets/images/nutrition-blogs/calendar1.svg" alt="" class="w-4 h-4" />
+                                        <img src="../assets/images/nutrition-blogs/calendar1.svg" alt="" class="w-4 h-4" />
                                         <span class="text-xs text-gray-500">18 Nov, 2025</span>
                                     </div>
                                 </div>
                             </div>
                             <!-- Recently Added Item 3 -->
-                            <div class="flex gap-4 items-start">
-                                <img src="/public/assets/images/nutrition-blogs/food2.png" alt="Recently Added Image"
-                                    class="w-20 h-20 object-cover rounded-md" />
+                            <div class="flex items-start gap-4">
+                                <img src="../assets/images/nutrition-blogs/food2.png" alt="Recently Added Image"
+                                    class="object-cover w-20 h-20 rounded-md" />
                                 <div class="flex flex-col">
                                     <h4 class="text-lg font-semibold text-gray-800">
                                         Integer auctor augue in erat vehicula.
@@ -344,7 +344,7 @@
                                         Integer auctor augue in erat vehicula.
                                     </p>
                                     <div class="flex items-center gap-2">
-                                        <img src="/public/assets/images/nutrition-blogs/calendar1.svg" alt="" class="w-4 h-4" />
+                                        <img src="../assets/images/nutrition-blogs/calendar1.svg" alt="" class="w-4 h-4" />
                                         <span class="text-xs text-gray-500">18 Nov, 2025</span>
                                     </div>
                                 </div>
@@ -358,9 +358,8 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Uikit js you can use cdn  https://getuikit.com/docs/installation  or fine the latest  https://getuikit.com/docs/installation -->
-    <script src="/public/assets/js/uikit.min.js"></script>
-    <script src="/public/assets/js/script.js"></script>
-    <script src="/public/assets/js/script-1.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/script-1.js"></script>
     
     <!-- Ion icon -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
