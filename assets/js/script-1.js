@@ -62,22 +62,22 @@ document.addEventListener("DOMContentLoaded", function () {
 // Array of meals to dynamically generate meal cards
 const meals = [
   {
-    name: "Greek Green Salad",
-    image: "/public/assets/images/nutrition-blogs/food3.png",
+    name: "Greek Green Salad ",
+    image: "../assets/images/nutrition-blogs/food3.png",
     calories: "330Kal",
     protein: "60 g",
     fat: "100 g",
   },
   {
     name: "Grilled Chicken",
-    image: "/public/assets/images/nutrition-blogs/food4.png",
+    image: "../assets/images/nutrition-blogs/food4.png",
     calories: "450Kal",
     protein: "80 g",
     fat: "120 g",
   },
   {
     name: "Veggie Delight",
-    image: "/public/assets/images/nutrition-blogs/food5.png",
+    image: "../assets/images/nutrition-blogs/food5.png",
     calories: "280Kal",
     protein: "30 g",
     fat: "70 g",
