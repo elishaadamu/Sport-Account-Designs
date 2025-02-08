@@ -12,7 +12,7 @@ const DietPlanCard = () => {
   ];
 
   return (
-    <div className="bg-[#142129] z-10 rounded-2xl p-6 md:p-8 lg:p-10 flex flex-col lg:flex-row items-center lg:items-start overflow-hidden relative">
+    <div className="bg-[#142129] mt-[5%] rounded-2xl p-6 md:p-8 lg:p-10 flex flex-col lg:flex-row items-center lg:items-start overflow-hidden relative -z-50">
       {/* Left Section */}
       <div className="flex flex-col w-full gap-6 lg:gap-8 lg:w-auto">
         {/* Heading */}
