@@ -25,7 +25,7 @@ export default function RootLayout({
         <header className="lg:py-4 h-20 lg:px-6 py-3 px-4 shadow-md bg-white backdrop-blur-xl z-40 dark:bg-slate-900 fixed top-0 left-0 w-full ">
           <Navbar />
         </header>
-        <main>{children}</main>
+        <main className="mt-[15%]">{children}</main>
       </body>
     </html>
   );
